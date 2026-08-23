@@ -1,0 +1,13 @@
+hf download wikimedia/wikipedia 20231101.ca/ --repo-type dataset --local-dir wikimedia/
+hf download wikimedia/wikipedia 20231101.en/ --repo-type dataset --local-dir wikimedia/
+hf download wikimedia/wikipedia 20231101.es/ --repo-type dataset --local-dir wikimedia/
+hf download wikimedia/wikipedia 20231101.fr/ --repo-type dataset --local-dir wikimedia/
+hf download wikimedia/wikipedia 20231101.hu/ --repo-type dataset --local-dir wikimedia/
+hf download wikimedia/wikipedia 20231101.nl/ --repo-type dataset --local-dir wikimedia/
+hf download wikimedia/wikipedia 20231101.tr/ --repo-type dataset --local-dir wikimedia/
+hf download wikimedia/wikipedia 20231101.ar/ --repo-type dataset --local-dir wikimedia/
+hf download wikimedia/wikipedia 20231101.el/ --repo-type dataset --local-dir wikimedia/
+hf download wikimedia/wikipedia 20231101.he/ --repo-type dataset --local-dir wikimedia/
+hf download wikimedia/wikipedia 20231101.ja/ --repo-type dataset --local-dir wikimedia/
+hf download wikimedia/wikipedia 20231101.ko/ --repo-type dataset --local-dir wikimedia/
+hf download wikimedia/wikipedia 20231101.zh/ --repo-type dataset --local-dir wikimedia/
