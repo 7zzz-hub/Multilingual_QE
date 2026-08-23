@@ -1,14 +1,14 @@
 import json
 import torch
 
-from auto_gptq import AutoGPTQForCausalLM, BaseQuantizeConfig
 from transformers import AutoTokenizer
+from gptqmodel import GPTQModel, QuantizeConfig
 
 
-pretrained_model_dir = "models/Meta-Llama-3.1-8B-Instruct"
-quantized_model_dir = "models/Meta-Llama-3.1-8B-Instruct-GPTQ-INT4"
+pretrained_model_dir = "models/qwen3-8b"
+quantized_model_dir = "models/qwen3-8b-GPTQ-INT4"
 
-calibration_file = "data/calibration_wikipedia_multilingual.jsonl"
+calibration_file = "data/quantization/calibration_wikipedia_multilingual.jsonl"
 
 
 print("Loading tokenizer...")
@@ -24,9 +24,10 @@ print("Building calibration samples...")
 calibration_samples = []
 
 with open(calibration_file, "r", encoding="utf-8") as f:
-    for line in f:
-        data = json.loads(line)
 
+    for line in f:
+
+        data = json.loads(line)
         text = data.get("text", "").strip()
 
         if not text:
@@ -39,7 +40,6 @@ with open(calibration_file, "r", encoding="utf-8") as f:
             max_length=2048
         )
 
-        # 保证长度满足GPTQ输入要求
         if inputs.input_ids.shape[1] < 2048:
             continue
 
@@ -54,7 +54,7 @@ with open(calibration_file, "r", encoding="utf-8") as f:
 print(f"Calibration samples: {len(calibration_samples)}")
 
 
-quantize_config = BaseQuantizeConfig(
+quantize_config = QuantizeConfig(
     bits=4,
     group_size=128,
     desc_act=True,
@@ -65,22 +65,24 @@ quantize_config = BaseQuantizeConfig(
 
 print("Loading model...")
 
-model = AutoGPTQForCausalLM.from_pretrained(
+model = GPTQModel.load(
     pretrained_model_dir,
-    quantize_config
+    quantize_config=quantize_config,
+    device="cuda"
 )
 
 
 print("Quantizing...")
 
-model.quantize(calibration_samples)
+model.quantize(
+    calibration_samples
+)
 
 
 print("Saving...")
 
-model.save_quantized(
-    quantized_model_dir,
-    use_safetensors=True
+model.save(
+    quantized_model_dir
 )
 
 print("Done.")

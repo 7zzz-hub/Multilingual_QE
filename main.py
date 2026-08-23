@@ -43,7 +43,7 @@ def inference(samples, tokenizer, model, batch_size):
             padding=True,
             return_dict=True,
             return_tensors="pt"
-        ).to(model.device)
+        )
 
         outputs = model.generate(
             **inputs,

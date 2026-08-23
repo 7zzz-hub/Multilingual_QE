@@ -9,6 +9,7 @@ models/
 results/
 data/klar_origin/
 data/quantization/wikimedia
+logs/
 
 # IDE
 .vscode/

@@ -52,13 +52,32 @@ def get_prompt(dataset, n_prompt=5):
 def load_model(args):
 
     tokenizer = AutoTokenizer.from_pretrained(
-        args.checkpoint
+        args.checkpoint,
+        use_fast=False
     )
 
     if tokenizer.pad_token_id is None:
         tokenizer.pad_token = tokenizer.eos_token
 
-    if args.quant_type == "fp16":
+    if "AWQ" in args.checkpoint or "awq" in args.checkpoint:
+
+        from awq import AutoAWQForCausalLM
+
+        model = AutoAWQForCausalLM.from_quantized(
+            args.checkpoint,
+            fuse_layers=False,
+            device_map="auto"
+        )
+
+    # elif "GPTQ" in args.checkpoint or "gptq" in args.checkpoint:
+
+    #     from auto_gptq import AutoGPTQForCausalLM
+
+    #     model = AutoGPTQForCausalLM.from_quantized(
+    #         args.checkpoint,
+    #         device="cuda:0"
+    #     )
+    elif args.quant_type == "fp16":
         model = AutoModelForCausalLM.from_pretrained(
             args.checkpoint,
             torch_dtype=torch.float16,
@@ -77,7 +96,7 @@ def load_model(args):
     else:
         model = AutoModelForCausalLM.from_pretrained(
             args.checkpoint,
-            device_map="auto"
+            device_map="auto",
         )
     model.eval()
 
@@ -95,14 +114,22 @@ def build_samples(dataset_full, dataset_prompt, lang):
                 "tid": tid,
                 "question": data["question"],
                 "answer": data["answer"],
+                # "messages": [
+                #     {
+                #         "role":"user",
+                #         "content":dataset_prompt[lang]
+                #     },
+                #     {
+                #         "role":"user",
+                #         "content":data["question"]+"\n"
+                #     }
+                # ]
                 "messages": [
                     {
-                        "role":"user",
-                        "content":dataset_prompt[lang]
-                    },
-                    {
-                        "role":"user",
-                        "content":data["question"]+"\n"
+                        "role": "user",
+                        "content": dataset_prompt[lang]
+                        + "\n\n"
+                        + data["question"]
                     }
                 ]
             })
