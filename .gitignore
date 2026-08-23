@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.so
+
+# Data
+models/
+results/
+data/klar_origin/
+data/quantization/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# System
+.DS_Store
+.Trash-*/
+.autodl/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+.env.local
+
+# AutoDL
+*.out
+nohup.out
