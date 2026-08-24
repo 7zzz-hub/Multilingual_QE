@@ -42,9 +42,12 @@ def get_prompt(dataset, n_prompt=5):
         dataset_full[lang] = dataset[lang][5:]
 
         ### prompts
-        dataset_prompt[lang] = ""
-        for idx, data in enumerate(dataset[lang][:5]):
-             dataset_prompt[lang] += f"{data[idx]['question']}\n{data[idx]['answer']}\n\n"
+        dataset_prompt[lang] = []
+        for i in range(len(dataset[lang][:5])):
+            dataset_prompt[lang].extend([
+                {"role": "user", "content": dataset_full[lang][i][i]["question"]},
+                {"role": "assistant", "content": dataset_full[lang][i][i]["answer"]}
+            ])
 
     return dataset_prompt, dataset_full
 
@@ -56,6 +59,8 @@ def load_model(args):
         use_fast=False
     )
 
+    tokenizer.padding_side = "left"
+    
     if tokenizer.pad_token_id is None:
         tokenizer.pad_token = tokenizer.eos_token
 
@@ -68,20 +73,11 @@ def load_model(args):
             fuse_layers=False,
             device_map="auto"
         )
-
-    # elif "GPTQ" in args.checkpoint or "gptq" in args.checkpoint:
-
-    #     from auto_gptq import AutoGPTQForCausalLM
-
-    #     model = AutoGPTQForCausalLM.from_quantized(
-    #         args.checkpoint,
-    #         device="cuda:0"
-    #     )
     elif args.quant_type == "fp16":
         model = AutoModelForCausalLM.from_pretrained(
             args.checkpoint,
             torch_dtype=torch.float16,
-            device_map="auto"
+            device_map="auto",
         )
     elif "bnb" in args.quant_type:
         quant_config = BitsAndBytesConfig(
@@ -114,9 +110,11 @@ def build_samples(dataset_full, dataset_prompt, lang):
                 "tid": tid,
                 "question": data["question"],
                 "answer": data["answer"],
+                "messages": dataset_prompt[lang] + [{"role": "user", "content": data["question"]}]
+            
                 # "messages": [
                 #     {
-                #         "role":"user",
+                #         "role":"system",
                 #         "content":dataset_prompt[lang]
                 #     },
                 #     {
@@ -124,14 +122,13 @@ def build_samples(dataset_full, dataset_prompt, lang):
                 #         "content":data["question"]+"\n"
                 #     }
                 # ]
-                "messages": [
-                    {
-                        "role": "user",
-                        "content": dataset_prompt[lang]
-                        + "\n\n"
-                        + data["question"]
-                    }
-                ]
+                # "messages": [
+                #     {
+                #         "role": "user",
+                #         "content": dataset_prompt[lang]
+                #         + data["question"]+"\n"
+                #     }
+                # ]
             })
-
+            
     return samples

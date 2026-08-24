@@ -23,12 +23,14 @@ def parse_args():
     parser.add_argument("--languages", required=True)
     parser.add_argument("--batch_size", type=int, default=16)
     parser.add_argument("--save_path", default="results")
+    parser.add_argument("--enable_thinking", default=False)
+    
 
     return parser.parse_args()
 
 
 @torch.no_grad()
-def inference(samples, tokenizer, model, batch_size):
+def inference(samples, tokenizer, model, model_type, enable_thinking, batch_size):
 
     records = {}
     for i in tqdm(
@@ -36,14 +38,23 @@ def inference(samples, tokenizer, model, batch_size):
     ):
 
         batch = samples[i:i+batch_size]
+
+        chat_template_kwargs = {
+            "add_generation_prompt": True,
+            "tokenize": True,
+            "padding": True,
+            "return_dict": True,
+            "return_tensors": "pt",
+        }
+        
+        # enable_thinking只适用于Qwen3
+        if model_type == "qwen3":
+            chat_template_kwargs["enable_thinking"] = enable_thinking
+
         inputs = tokenizer.apply_chat_template(
             [x["messages"] for x in batch],
-            add_generation_prompt=True,
-            tokenize=True,
-            padding=True,
-            return_dict=True,
-            return_tensors="pt"
-        )
+            **chat_template_kwargs
+        ).to(model.device)
 
         outputs = model.generate(
             **inputs,
@@ -133,6 +144,8 @@ def main():
             samples,
             tokenizer,
             model,
+            args.model_type,
+            args.enable_thinking,
             args.batch_size
         )
 

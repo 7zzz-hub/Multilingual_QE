@@ -4,8 +4,8 @@ from awq import AutoAWQForCausalLM
 from transformers import AutoTokenizer
 
 
-pretrained_model_dir = "models/aya-expanse-8b"
-quantized_model_dir = "models/aya-expanse-8b-AWQ-INT4"
+pretrained_model_dir = "models/qwen3-8b"
+quantized_model_dir = "models/qwen3-8b-AWQ-INT4"
 
 calibration_file = "data/quantization/calibration_wikipedia_multilingual.jsonl"
 

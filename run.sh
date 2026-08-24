@@ -1,8 +1,8 @@
 python main.py \
   --dataset_type klar \
-  --checkpoint /root/autodl-tmp/models/gemma2-9b \
-  --quant_type fp16 \
-  --model_type gemma2 \
+  --checkpoint /root/autodl-tmp/models/qwen3-8b \
+  --quant_type bnb-nf4 \
+  --model_type qwen3 \
   --languages ar,ca,el,en,es,fr,he,hu,ja,ko,nl,tr,zh \
-  --batch_size 16 \
+  --batch_size 1 \
   --save_path results
