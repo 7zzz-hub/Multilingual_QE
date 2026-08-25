@@ -64,16 +64,7 @@ def load_model(args):
     if tokenizer.pad_token_id is None:
         tokenizer.pad_token = tokenizer.eos_token
 
-    if "AWQ" in args.checkpoint or "awq" in args.checkpoint:
-
-        from awq import AutoAWQForCausalLM
-
-        model = AutoAWQForCausalLM.from_quantized(
-            args.checkpoint,
-            fuse_layers=False,
-            device_map="auto"
-        )
-    elif args.quant_type == "fp16":
+    if args.quant_type == "fp16":
         model = AutoModelForCausalLM.from_pretrained(
             args.checkpoint,
             torch_dtype=torch.float16,
@@ -87,12 +78,14 @@ def load_model(args):
         model = AutoModelForCausalLM.from_pretrained(
             args.checkpoint,
             quantization_config=quant_config,
-            device_map="auto"
+            device_map="auto",
+            torch_dtype=torch.float16
         )
     else:
         model = AutoModelForCausalLM.from_pretrained(
             args.checkpoint,
             device_map="auto",
+            torch_dtype=torch.float16,
         )
     model.eval()
 

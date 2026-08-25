@@ -134,7 +134,8 @@ def main():
     languages = args.languages.split(",")
     dataset_prompt, dataset_full = get_dataset(args.dataset_type)
     tokenizer, model = load_model(args)
-    
+
+    final_results = {}
     for lang in languages:
 
         print(f"\nEvaluating {lang}")
@@ -150,7 +151,7 @@ def main():
         )
 
         acc = evaluate(records)
-        final_results = {
+        final_results[lang] = {
             "accuracy": acc,
             "samples": len(records),
             "records": records
@@ -158,7 +159,9 @@ def main():
 
         print(f"{lang} accuracy: {acc:.4f}")
 
-        save_results(final_results, lang, args)
+        save_results(final_results[lang], lang, args)
+        
+    save_results(final_results, lang, args)
 
 if __name__ == "__main__":
     main()
