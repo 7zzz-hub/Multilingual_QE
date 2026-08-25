@@ -113,6 +113,7 @@ def evaluate(records):
 
 def save_results(
     results,
+    lang,
     args
 ):
     save_dir = os.path.join(
@@ -123,7 +124,7 @@ def save_results(
     )
 
     os.makedirs(save_dir, exist_ok=True)
-    with open(os.path.join(save_dir, "results.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(save_dir, f"{lang}.json"), "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
 
 
@@ -134,7 +135,6 @@ def main():
     dataset_prompt, dataset_full = get_dataset(args.dataset_type)
     tokenizer, model = load_model(args)
     
-    final_results = {}
     for lang in languages:
 
         print(f"\nEvaluating {lang}")
@@ -150,7 +150,7 @@ def main():
         )
 
         acc = evaluate(records)
-        final_results[lang] = {
+        final_results = {
             "accuracy": acc,
             "samples": len(records),
             "records": records
@@ -158,7 +158,7 @@ def main():
 
         print(f"{lang} accuracy: {acc:.4f}")
 
-    save_results(final_results, args)
+        save_results(final_results, lang, args)
 
 if __name__ == "__main__":
     main()
