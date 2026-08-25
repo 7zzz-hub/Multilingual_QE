@@ -8,9 +8,9 @@ from transformers import AutoTokenizer
 from gptqmodel import GPTQConfig, GPTQModel
 
 
-pretrained_model_dir = "models/mistral-7b"
+pretrained_model_dir = "models/llama3.1-8b"
 quantized_model_dir = (
-    "models/mistral-7b-GPTQ-INT4"
+    "models/llama3.1-8b-GPTQ-INT4"
 )
 
 calibration_file = (

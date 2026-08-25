@@ -11,7 +11,7 @@ LANGUAGES = ["ar","ca","el","en","es","fr","he","hu","ja","ko","nl","tr","zh"]
 def get_dataset(dataset_name):
     dataset = {}
     for lang in LANGUAGES:
-        with open(f"/root/autodl-tmp/data/{dataset_name}/{lang}.json") as f:
+        with open(f"data/{dataset_name}/{lang}.json") as f:
             dataset[lang] = json.load(f)
 
     dataset_template = {}
@@ -102,7 +102,7 @@ def load_model(args):
 def build_samples(dataset_full, dataset_prompt, lang):
 
     samples = []
-    for sid in range(len(dataset_full[lang][:5])):
+    for sid in range(len(dataset_full[lang])):
         for tid in range(len(dataset_full[lang][sid])):
             data = dataset_full[lang][sid][tid]
             samples.append({
@@ -111,24 +111,6 @@ def build_samples(dataset_full, dataset_prompt, lang):
                 "question": data["question"],
                 "answer": data["answer"],
                 "messages": dataset_prompt[lang] + [{"role": "user", "content": data["question"]}]
-            
-                # "messages": [
-                #     {
-                #         "role":"system",
-                #         "content":dataset_prompt[lang]
-                #     },
-                #     {
-                #         "role":"user",
-                #         "content":data["question"]+"\n"
-                #     }
-                # ]
-                # "messages": [
-                #     {
-                #         "role": "user",
-                #         "content": dataset_prompt[lang]
-                #         + data["question"]+"\n"
-                #     }
-                # ]
             })
             
     return samples
