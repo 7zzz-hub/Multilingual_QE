@@ -18,11 +18,11 @@ def get_args():
     parser.add_argument("--num_languages", type=int, default=13)
     parser.add_argument("--records_per_language", type=int, default=1000)
     parser.add_argument("--samples_per_language", type=int, default=32)
-    parser.add_argument("--seq_len", type=int, default=2048)
+    parser.add_argument("--seq_len", type=int, default=512)
 
     parser.add_argument("--w_bit", type=int, default=4)
     parser.add_argument("--q_group_size", type=int, default=128)
-    parser.add_argument("--zero_point", action="store_true")
+    parser.add_argument("--zero_point", action=argparse.BooleanOptionalAction, default=True)
     parser.add_argument("--version", default="GEMM")
 
     parser.add_argument("--seed", type=int, default=0)
