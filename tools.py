@@ -82,7 +82,7 @@ def load_model(args):
         model = AutoModelForCausalLM.from_pretrained(
             args.checkpoint,
             quantization_config=quant_config,
-            device_map="auto",
+            device_map="cuda:0",
             torch_dtype=torch.float16
         )
     else:
