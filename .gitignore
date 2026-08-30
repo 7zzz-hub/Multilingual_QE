@@ -10,6 +10,7 @@ results/
 data/klar_origin/
 data/quantization/wikimedia
 logs/
+run_*.sh
 
 # IDE
 .vscode/

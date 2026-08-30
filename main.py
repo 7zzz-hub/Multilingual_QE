@@ -60,15 +60,15 @@ def inference(samples, tokenizer, model, model_type, enable_thinking, batch_size
             **inputs,
             max_new_tokens=8
         )
-
-        lengths = inputs["attention_mask"].sum(dim=1)
+        
+        input_length = inputs["input_ids"].shape[1]
         
         preds = [
             tokenizer.decode(
-                output[length:],
+                output[input_length:],
                 skip_special_tokens=True
-            )
-            for output, length in zip(outputs, lengths)
+            ).strip()
+            for output in outputs
         ]
 
         for item, pred in zip(batch, preds):

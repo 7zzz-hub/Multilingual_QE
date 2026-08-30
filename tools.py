@@ -35,18 +35,22 @@ def get_dataset(dataset_name):
 
 
 def get_prompt(dataset, n_prompt=5):
-    dataset_prompt={}; dataset_full={}
+    dataset_prompt = {}
+    dataset_full = {}
+
     for lang in LANGUAGES:
-
-        ### samples
-        dataset_full[lang] = dataset[lang][5:]
-
-        ### prompts
+        dataset_full[lang] = dataset[lang][n_prompt:]
         dataset_prompt[lang] = []
-        for i in range(len(dataset[lang][:5])):
+        for i in range(n_prompt):
             dataset_prompt[lang].extend([
-                {"role": "user", "content": dataset_full[lang][i][i]["question"]},
-                {"role": "assistant", "content": dataset_full[lang][i][i]["answer"]}
+                {
+                    "role": "user",
+                    "content": dataset[lang][i][i]["question"]
+                },
+                {
+                    "role": "assistant",
+                    "content": dataset[lang][i][i]["answer"]
+                }
             ])
 
     return dataset_prompt, dataset_full

@@ -20,7 +20,7 @@ def get_args():
     parser.add_argument("--samples_per_lang", type=int, default=32)
     parser.add_argument("--seqlen", type=int, default=2048)
 
-    parser.add_argument("--bits", type=int, default=4)
+    parser.add_argument("--bits", type=int, required=True)
     parser.add_argument("--group_size", type=int, default=128)
 
     parser.add_argument("--seed", type=int, default=0)
