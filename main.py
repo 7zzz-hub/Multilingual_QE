@@ -127,6 +127,10 @@ def save_results(
     with open(os.path.join(save_dir, f"{lang}.json"), "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
 
+    if lang =="-1":
+        with open(os.path.join(save_dir, f"{args.model_type}_{args.quant_type}_result.json"), "w", encoding="utf-8") as f:
+            json.dump(results, f, ensure_ascii=False, indent=2)
+
 
 def main():
 
@@ -161,7 +165,7 @@ def main():
 
         save_results(final_results[lang], lang, args)
         
-    save_results(final_results, lang, args)
+    save_results(final_results, "-1", args)
 
 if __name__ == "__main__":
     main()
