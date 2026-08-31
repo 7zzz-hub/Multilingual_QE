@@ -124,11 +124,12 @@ def save_results(
     )
 
     os.makedirs(save_dir, exist_ok=True)
-    with open(os.path.join(save_dir, f"{lang}.json"), "w", encoding="utf-8") as f:
-        json.dump(results, f, ensure_ascii=False, indent=2)
-
+    
     if lang =="-1":
         with open(os.path.join(save_dir, f"{args.model_type}_{args.quant_type}_result.json"), "w", encoding="utf-8") as f:
+            json.dump(results, f, ensure_ascii=False, indent=2)
+    else:
+        with open(os.path.join(save_dir, f"{lang}.json"), "w", encoding="utf-8") as f:
             json.dump(results, f, ensure_ascii=False, indent=2)
 
 

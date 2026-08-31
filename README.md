@@ -1,19 +1,19 @@
 # Multilingual Quantization Evaluation
 
-This repository compares several quantization methods on **Llama-3.1-8B-Instruct** under a multilingual evaluation setting.
+This repository compares several quantization methods on **Llama-3.1-8B-Instruct**, **Qwen-3-8B** and **Gemma-2-9B-it** under a multilingual evaluation setting.
 
 ## Quantization Methods
 
 The following model precision and quantization methods are used:
 
-| Method | Precision | Calibration Required |
-|---|---:|---|
-| FP16 | 16-bit | No |
-| BitsAndBytes INT8 | 8-bit | No |
-| BitsAndBytes NF4 | 4-bit | No |
-| GPTQ INT8 | 8-bit | Yes |
-| GPTQ INT4 | 4-bit | Yes |
-| AWQ INT4 | 4-bit | Yes |
+| Method            | Precision | Calibration Required |
+| ----------------- | --------: | -------------------- |
+| FP16              |    16-bit | No                   |
+| BitsAndBytes INT8 |     8-bit | No                   |
+| BitsAndBytes NF4  |     4-bit | No                   |
+| GPTQ INT8         |     8-bit | Yes                  |
+| GPTQ INT4         |     4-bit | Yes                  |
+| AWQ INT4          |     4-bit | Yes                  |
 
 ### FP16
 
@@ -25,8 +25,8 @@ BitsAndBytes performs quantization during model loading and does not require a s
 
 The following settings are used:
 
-- `bnb-int8`: 8-bit quantization
-- `bnb-nf4`: 4-bit NF4 quantization
+* `bnb-int8`: 8-bit quantization
+* `bnb-nf4`: 4-bit NF4 quantization
 
 ### GPTQ
 
@@ -34,10 +34,8 @@ GPTQ is a post-training quantization method that uses calibration data.
 
 The following settings are used:
 
-- GPTQ INT8
-- GPTQ INT4
-
-Both GPTQ models are quantized using the multilingual Wikipedia calibration dataset.
+* GPTQ INT8
+* GPTQ INT4
 
 ### AWQ
 
@@ -45,9 +43,25 @@ AWQ is an activation-aware post-training weight quantization method.
 
 The current experiment uses:
 
-- AWQ INT4
+* AWQ INT4
 
-AWQ also uses the multilingual Wikipedia calibration dataset.
+Both GPTQ and AWQ use the multilingual Wikipedia calibration dataset.
+
+---
+
+## Environment
+
+The experiments are conducted in a Linux-based GPU environment.
+
+| Component    | Version          |
+| ------------ | ---------------- |
+| Python       | 3.12             |
+| PyTorch      | 2.12.1+cu130     |
+| Transformers | 5.16.1           |
+| GPTQ         | GPTQModel        |
+| AWQ          | AutoAWQ          |
+| Quantization | BitsAndBytes     |
+| GPU          | NVIDIA A100 40GB |
 
 ---
 
