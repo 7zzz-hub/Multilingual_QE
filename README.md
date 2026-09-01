@@ -1,6 +1,88 @@
 # Multilingual Quantization Evaluation
 
-This repository compares several quantization methods on **Llama-3.1-8B-Instruct**, **Qwen-3-8B** and **Gemma-2-9B-it** under a multilingual evaluation setting.
+This repository compares several quantization methods on **Llama-3.1-8B-Instruct**, **Qwen-3-8B**, and **Gemma-2-9B-it** under a multilingual evaluation setting.
+
+The evaluation focuses on how different post-training quantization methods affect multilingual capabilities across several tasks, including language understanding, knowledge-intensive multiple-choice question answering, and mathematical reasoning.
+
+---
+
+## Datasets
+
+Three multilingual evaluation datasets are currently supported:
+
+| Dataset | Task Type                                       | Output Format    | Main Capability                     |
+| ------- | ----------------------------------------------- | ---------------- | ----------------------------------- |
+| KLAR    | Multilingual language understanding / reasoning | Dataset-specific | General multilingual capability     |
+| INCLUDE | Multiple-choice question answering              | A / B / C / D    | Knowledge-intensive QA              |
+| MCLM    | Mathematical reasoning                          | Free-form answer | Multilingual mathematical reasoning |
+
+### KLAR
+
+**KLAR** is used to evaluate general multilingual language understanding and reasoning capabilities across the selected target languages.
+
+It serves as the primary multilingual evaluation benchmark in the original experimental setup.
+
+### INCLUDE
+
+**INCLUDE** is a multilingual knowledge-intensive multiple-choice question answering benchmark covering a range of domains and subjects.
+
+Each example contains one question and four candidate answers. During evaluation, the model is instructed to return the corresponding option label:
+
+```text
+A
+B
+C
+D
+```
+
+INCLUDE is used to evaluate whether knowledge-based multilingual question answering performance is preserved after quantization.
+
+### MCLM
+
+**MCLM** is used to evaluate multilingual mathematical reasoning.
+
+The dataset contains semantically aligned mathematical problems across multiple languages together with their reference answers. Unlike INCLUDE, MCLM requires the model to directly generate the final mathematical answer rather than select from predefined options.
+
+For example:
+
+```json
+{
+  "question": "افترض أن $\\sin D = 0.7$ ... ما هو $DE$؟",
+  "answer": "\\sqrt{51}"
+}
+```
+
+MCLM is used to measure whether quantization affects mathematical reasoning differently across languages.
+
+### Languages
+
+The current evaluation covers the following 13 languages:
+
+```text
+ar, ca, el, en, es, fr, he, hu, ja, ko, nl, tr, zh
+```
+
+where:
+
+| Code | Language  |
+| ---- | --------- |
+| ar   | Arabic    |
+| ca   | Catalan   |
+| el   | Greek     |
+| en   | English   |
+| es   | Spanish   |
+| fr   | French    |
+| he   | Hebrew    |
+| hu   | Hungarian |
+| ja   | Japanese  |
+| ko   | Korean    |
+| nl   | Dutch     |
+| tr   | Turkish   |
+| zh   | Chinese   |
+
+The exact number of available samples may differ between datasets and languages.
+
+---
 
 ## Quantization Methods
 
@@ -67,7 +149,45 @@ The experiments are conducted in a Linux-based GPU environment.
 
 # Usage
 
+The evaluation dataset is selected through:
+
+```bash
+--dataset_type
+```
+
+Currently supported values are:
+
+```text
+klar
+include
+mclm
+```
+
+For example:
+
+```bash
+--dataset_type klar
+```
+
+can be replaced with:
+
+```bash
+--dataset_type include
+```
+
+or:
+
+```bash
+--dataset_type mclm
+```
+
+to evaluate the same model and quantization setting on the corresponding dataset.
+
+---
+
 ## 1. FP16
+
+### KLAR
 
 ```bash
 python main.py \
@@ -75,7 +195,33 @@ python main.py \
   --checkpoint models/llama3.1-8b/llama3.1-8b-instruct \
   --quant_type fp16 \
   --model_type llama3.1 \
-  --languages ar,ca,el,en,he,es,fr,hu,ja,ko,nl,tr,zh \
+  --languages ar,ca,el,en,es,fr,he,hu,ja,ko,nl,tr,zh \
+  --batch_size 32 \
+  --save_path results
+```
+
+### INCLUDE
+
+```bash
+python main.py \
+  --dataset_type include \
+  --checkpoint models/llama3.1-8b/llama3.1-8b-instruct \
+  --quant_type fp16 \
+  --model_type llama3.1 \
+  --languages ar,ca,el,en,es,fr,he,hu,ja,ko,nl,tr,zh \
+  --batch_size 32 \
+  --save_path results
+```
+
+### MCLM
+
+```bash
+python main.py \
+  --dataset_type mclm \
+  --checkpoint models/llama3.1-8b/llama3.1-8b-instruct \
+  --quant_type fp16 \
+  --model_type llama3.1 \
+  --languages ar,ca,el,en,es,fr,he,hu,ja,ko,nl,tr,zh \
   --batch_size 32 \
   --save_path results
 ```
@@ -95,6 +241,24 @@ python main.py \
   --languages ar,ca,el,en,es,fr,he,hu,ja,ko,nl,tr,zh \
   --batch_size 32 \
   --save_path results
+```
+
+To evaluate INCLUDE or MCLM, replace:
+
+```text
+--dataset_type klar
+```
+
+with:
+
+```text
+--dataset_type include
+```
+
+or:
+
+```text
+--dataset_type mclm
 ```
 
 ---
@@ -193,3 +357,5 @@ python main.py \
   --batch_size 32 \
   --save_path results
 ```
+
+For all quantization methods, `--dataset_type` can be switched among `klar`, `include`, and `mclm` without changing the quantized model.
