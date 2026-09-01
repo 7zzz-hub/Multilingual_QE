@@ -1,0 +1,398 @@
+[
+  {
+    "question": "Stel dat $\\sin D = 0.7$ in het onderstaande diagram. Wat is $DE$? [asy]\npair D,E,F;\nF = (0,0);\nD = (sqrt(51),7);\nE = (0,7);\ndraw(D--E--F--D);\ndraw(rightanglemark(D,E,F,15));\nlabel(\"$D$\",D,NE);\nlabel(\"$E$\",E,NW);\nlabel(\"$F$\",F,SW);\nlabel(\"$7$\",(E+F)/2,W);\n[/asy]",
+    "answer": "\\sqrt{51}"
+  },
+  {
+    "question": "Laat $z = 2 + \\sqrt{2} - (3 + 3 \\sqrt{2})i$, en laat $c = 2 - 3i$. Laat $w$ het resultaat zijn wanneer $z$ tegen de klok in wordt geroteerd rond $c$ met $\\frac{\\pi}{4}$.\n\n[asy]\nunitsize(0.6 cm);\n\npair C, W, Z;\n\nZ = (2 + sqrt(2), -3 - 3*sqrt(2));\nC = (2,-3);\nW = rotate(45,C)*(Z);\n\ndraw(Z--C--W);\n\ndot(\"$c$\", C, N);\ndot(\"$w$\", W, SE);\ndot(\"$z$\", Z, S);\nlabel(\"$\\frac{\\pi}{4}$\", C + (0.6,-1));\n[/asy]\n\nVind $w.$",
+    "answer": "6 - 5i"
+  },
+  {
+    "question": "Vereenvoudig $\\sqrt{242}$.",
+    "answer": "11\\sqrt2"
+  },
+  {
+    "question": "Op hoeveel manieren kunnen 8 mensen rond een ronde tafel zitten als 3 van de mensen -- Pierre, Rosa en Thomas -- allemaal samen willen zitten? (Twee zitplaatsen worden als hetzelfde beschouwd als de ene een rotatie van de andere is.)",
+    "answer": "720"
+  },
+  {
+    "question": "Vind de constante term in de expansie van $$\\left(10x^3-\\frac{1}{2x^2}\\right)^{5}$$",
+    "answer": "-125"
+  },
+  {
+    "question": "Als $n \\equiv 2 \\pmod{7}$, vind dan de rest wanneer $(n + 2)(n + 4)(n + 6)$ wordt gedeeld door 7.",
+    "answer": "3"
+  },
+  {
+    "question": "Een regelmatige vijfhoek wordt tegen de klok in geroteerd om zijn middelpunt. Wat is het minimale aantal graden dat het moet worden geroteerd totdat het samenvalt met zijn oorspronkelijke positie?",
+    "answer": "72"
+  },
+  {
+    "question": "De coördinaten van een parallellogram zijn (5, 3), (6, 8), (7, 4) en $(x, y)$ en $x > 7$. Wat is de waarde van $x + y$?",
+    "answer": "17"
+  },
+  {
+    "question": "In rechthoekige driehoek $ABC$ met $\\angle B = 90^\\circ$, hebben we $\\sin A = 2\\cos A$. Wat is $\\tan A$?",
+    "answer": "2"
+  },
+  {
+    "question": "De grafiek van $f(x)=\\frac{2x}{x^2-5x-14}$ heeft verticale asymptoten $x=a$ en $x=b$, en een horizontale asymptoot $y=c$. Vind $a+b+c$.",
+    "answer": "5"
+  },
+  {
+    "question": "Bereken $99^2+99+1$ in je hoofd.",
+    "answer": "9901"
+  },
+  {
+    "question": "Vind het kleinste positieve reële getal $C$ waarvoor\n\\[\\left\\| \\begin{pmatrix} 2 & 3 \\\\ 0 & -2 \\end{pmatrix} \\bold{v} \\right\\| \\le C \\|\\bold{v}\\|\\]voor alle tweedimensionale vectoren $\\bold{v}.$\n\nMerk op dat voor een tweedimensionale vector $\\mathbf{a},$ $\\|\\mathbf{a}\\|$ de grootte van $\\mathbf{a}$ is.",
+    "answer": "4"
+  },
+  {
+    "question": "Wat is $1^{(2^{235423523})}$?",
+    "answer": "1"
+  },
+  {
+    "question": "Laat $z$ een complex getal zijn zodanig dat $z^5 = 1$ en $z \\neq 1.$ Bereken\n\\[z + \\frac{1}{z} + z^2 + \\frac{1}{z^2}.\\]",
+    "answer": "-1"
+  },
+  {
+    "question": "Bereken $58_9 - 18_9.$ Druk je antwoord uit in basis $9.$",
+    "answer": "40_9"
+  },
+  {
+    "question": "Vereenvoudig\n\\[\\frac{\\sec x}{\\sin x} - \\frac{\\sin x}{\\cos x}.\\]",
+    "answer": "\\cot x"
+  },
+  {
+    "question": "Tien treeks wegen evenveel als drie squigs en één goolee. Twee treeks en één goolee zijn qua gewicht gelijk aan één squig. Het gecombineerde gewicht van hoeveel treeks is gelijk aan het gewicht van één squig?",
+    "answer": "3"
+  },
+  {
+    "question": "Het product van $3t^2+5t+a$ en $4t^2+bt-2$ is $12t^4+26t^3-8t^2-16t+6$. Wat is $a+b$?",
+    "answer": "-1"
+  },
+  {
+    "question": "Een rechte cilindrische tank met cirkelvormige bodems wordt gevuld met water met een snelheid van $20\\pi$ kubieke meter per uur. Terwijl de tank wordt gevuld, stijgt het waterniveau met vier meter per uur. Wat is de straal van de tank, in meters? Druk je antwoord uit in de eenvoudigste vorm van een wortel.",
+    "answer": "\\sqrt{5}"
+  },
+  {
+    "question": "Beschouw de functie \\[ f(x) =\n\\begin{cases}\nax^2 & \\text{als } x \\geq a,\\\\\nax +2a& \\text{als } x <a,\n\\end{cases}\n\\]waarbij $a$ een getal is.\n\nWat is de grootste waarde van $a$ zodanig dat de grafiek van $y=f(x)$ elke horizontale lijn minstens één keer snijdt?",
+    "answer": "2"
+  },
+  {
+    "question": "Voor welke waarde van $c$ zal de cirkel met de vergelijking $x^2 - 10x + y^2 + 6y + c = 0$ een straal van lengte 1 hebben?",
+    "answer": "33"
+  },
+  {
+    "question": "Laat $\\lambda$ een constante zijn, $0 \\le \\lambda \\le 4,$ en laat $f : [0,1] \\to [0,1]$ gedefinieerd zijn door\n\\[f(x) = \\lambda x(1 - x).\\]Vind de waarden van $\\lambda,$ $0 \\le \\lambda \\le 4,$ waarvoor er een $x \\in [0,1]$ bestaat zodanig dat $f(x) \\neq x$ maar $f(f(x)) = x.$",
+    "answer": "(3,4]"
+  },
+  {
+    "question": "Vind de graadmaat van de kleinste positieve hoek $\\theta$ waarvoor\n\\[\\tan \\theta = \\frac{\\cos 5^\\circ \\cos 20^\\circ + \\cos 35^\\circ \\cos 50^\\circ - \\sin 5^\\circ \\sin 20^\\circ - \\sin 35^\\circ \\sin 50^\\circ}{\\sin 5^\\circ \\cos 20^\\circ - \\sin 35^\\circ \\cos 50^\\circ + \\cos 5^\\circ \\sin 20^\\circ - \\cos 35^\\circ \\sin 50^\\circ}.\\]",
+    "answer": "120^\\circ"
+  },
+  {
+    "question": "Bepaal het aantal manieren om de letters van het woord ELLIPSE te rangschikken.",
+    "answer": "1260"
+  },
+  {
+    "question": "Hoeveel nullen staan er aan het einde van $42!$ (42 faculteit)? (Herinnering: Het getal $n!$ is het product van de gehele getallen van 1 tot $n$. Bijvoorbeeld, $5!=5\\cdot 4\\cdot3\\cdot2\\cdot 1= 120$.)",
+    "answer": "9"
+  },
+  {
+    "question": "Vind de maximale waarde van\n\\[f(x,y) = x \\sqrt{1 - y^2} + y \\sqrt{1 - x^2},\\]waarbij $-1 \\le x,$ $y \\le 1.$",
+    "answer": "1"
+  },
+  {
+    "question": "De punten $O,$ $A,$ en $B$ voldoen aan $\\overrightarrow{OA} = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix}$ en $\\overrightarrow{OB} = \\begin{pmatrix} -3 \\\\ -2 \\\\ 1 \\end{pmatrix}.$ Vind de oppervlakte van driehoek $OAB.$",
+    "answer": "3 \\sqrt{5}"
+  },
+  {
+    "question": "Laat $z$ een complex getal zijn zodanig dat\n\\[z + \\frac{1}{z} = \\frac{1 + \\sqrt{5}}{2}.\\] Vind\n\\[z^{85} + \\frac{1}{z^{85}}.\\]",
+    "answer": "-2"
+  },
+  {
+    "question": "De mediaanlijnen $AD$, $BE$ en $CF$ van driehoek $ABC$ snijden elkaar in het zwaartepunt $G$. De lijn door $G$ die parallel is aan $BC$ snijdt $AB$ en $AC$ respectievelijk in $M$ en $N$. Als de oppervlakte van driehoek $ABC$ 144 is, vind dan de oppervlakte van driehoek $ENG$.",
+    "answer": "8"
+  },
+  {
+    "question": "Een boekenkast heeft 3 planken met in totaal 24 boeken. De bovenste plank heeft 8 mysterieuze boeken. De middelste plank heeft 10 wiskundeboeken. De onderste plank heeft 6 wetenschapsboeken. Er worden nu twee boeken van elke plank gehaald. Welk deel van de overgebleven boeken op de drie planken zijn wiskundeboeken? Druk je antwoord uit als een breuk.",
+    "answer": "\\frac{4}{9}"
+  },
+  {
+    "question": "Het volume van een kegel wordt gegeven door de formule $V = \\frac{1}{3}Bh$, waarbij $B$ de oppervlakte van de basis is en $h$ de hoogte. De oppervlakte van de basis van een kegel is 30 vierkante eenheden, en de hoogte is 6,5 eenheden. Wat is het aantal kubieke eenheden in zijn volume?",
+    "answer": "65"
+  },
+  {
+    "question": "Als de vierde term van een rekenkundige reeks $200$ is en de achtste term $500$, wat is dan de zesde term?",
+    "answer": "350"
+  },
+  {
+    "question": "Zet $\\frac{21}{2^2 \\cdot 5^7}$ om in een begrensde decimaal.",
+    "answer": ".0000672"
+  },
+  {
+    "question": "Hoeveel positieve tweecijferige gehele getallen zijn factoren van zowel 100 als 150?",
+    "answer": "3"
+  },
+  {
+    "question": "Voor hoeveel positieve gehele getallen $n>1$ is het waar dat $2^{24}$ een perfecte $n^{\\text{de}}$ macht is?",
+    "answer": "7"
+  },
+  {
+    "question": "Hillary heeft elf munten, allemaal dubbeltjes en stuivers. In totaal zijn de munten 75 cent waard. Hoeveel stuivers heeft ze?",
+    "answer": "7"
+  },
+  {
+    "question": "Paul en Jesse kiezen elk een willekeurig getal uit de eerste zes priemgetallen. Wat is de kans dat de som van de getallen die ze kiezen even is?",
+    "answer": "\\frac{13}{18}"
+  },
+  {
+    "question": "Het punt $(a, b)$ ligt op de lijn met de vergelijking $3x + 2y = 12.$ Wanneer $a = 4$, wat is de waarde van $b$?",
+    "answer": "0"
+  },
+  {
+    "question": "Twaalf 1 bij 1 vierkanten vormen een rechthoek, zoals getoond. Wat is de totale oppervlakte van het gearceerde gebied? [asy]\nsize(4cm);defaultpen(linewidth(0.75));\n\n// Ingevulde delen\nfill((0, 4)--(0, 0)--(2, 0)--cycle, gray(0.75));\nfill((0, 4)--(3, 4)--(3, 0)--cycle, gray(0.75));\n\n// rooster\nint j;\nfor (j = 0; j < 4; ++j) {draw((j, 0)--(j, 4));}\nfor (j = 0; j < 5; ++j) {draw((0, j)--(3, j));}\n\n// diagonalen\ndraw((0, 4)--(3, 0)); draw((0, 4)--(2, 0));\n[/asy]",
+    "answer": "10"
+  },
+  {
+    "question": "Wat is het kleinste positieve veelvoud van 450 waarvan alle cijfers nullen en enen zijn?",
+    "answer": "11,\\! 111,\\! 111,\\! 100"
+  },
+  {
+    "question": "Het getoonde wiel wordt twee keer gedraaid, zodat de door de wijzer aangegeven nummers willekeurig worden bepaald (waarbij elk nummer op het wiel even waarschijnlijk is). De twee op deze manier bepaalde nummers worden genoteerd. Het eerste nummer wordt gedeeld door 4, waarbij een van de restwaarden 1, 2, 3 wordt bepaald die de kolommen van het getoonde dambord markeren. Het tweede nummer wordt gedeeld door 5, waarbij een van de restwaarden 1, 2, 3, 4 wordt bepaald die de rijen van het dambord markeren. Ten slotte wordt een damsteen geplaatst op het vakje waar deze kolom en rij elkaar kruisen. Wat is de kans dat de damsteen op een gearceerd vakje van het dambord wordt geplaatst?",
+    "answer": "\\frac{1}{2}"
+  },
+  {
+    "question": "Wat is de som van de cijfers in de eindige decimale representatie van de breuk $\\frac{4321}{5^7\\cdot2^8}$?",
+    "answer": "14"
+  },
+  {
+    "question": "Vind $\\sin 20^\\circ \\sin 40^\\circ \\sin 60^\\circ \\sin 80^\\circ \\sin 100^\\circ \\sin 120^\\circ \\sin 140^\\circ \\sin 160^\\circ.$",
+    "answer": "\\frac{9}{256}"
+  },
+  {
+    "question": "Voor een constante $c,$ in cilindrische coördinaten $(r,\\theta,z),$ vind de vorm die wordt beschreven door de vergelijking\n\\[z = c.\\](A) Lijn\n(B) Cirkel\n(C) Vlak\n(D) Bol\n(E) Cilinder\n(F) Kegel\n\nVoer de letter van de juiste optie in.",
+    "answer": "\\text{(C)}"
+  },
+  {
+    "question": "Als $\\mathbf{a}$ en $\\mathbf{b}$ vectoren zijn zodanig dat $\\|\\mathbf{a}\\| = 2,$ $\\|\\mathbf{b}\\| = 7,$ en\n\\[\\mathbf{a} \\times \\mathbf{b} = \\begin{pmatrix} 3 \\\\ 2 \\\\ 6 \\end{pmatrix},\\]vind dan de kleinste mogelijke hoek tussen $\\mathbf{a}$ en $\\mathbf{b},$ in graden.",
+    "answer": "30^\\circ"
+  },
+  {
+    "question": "Laat $f$ de functie zijn gedefinieerd door $f(x) = x^3 - 49x^2 + 623x - 2015,$ en laat $g(x) = f(x + 5).$ Bereken de som van de wortels van $g.$",
+    "answer": "34"
+  },
+  {
+    "question": "Bereken\n\\[\\frac{1}{\\cos^2 10^\\circ} + \\frac{1}{\\sin^2 20^\\circ} + \\frac{1}{\\sin^2 40^\\circ}.\\]",
+    "answer": "12"
+  },
+  {
+    "question": "Hoeveel zijden zou een convexe veelhoek hebben als de som van alle binnenhoeken behalve één $1070^{\\circ}$ is?",
+    "answer": "8"
+  },
+  {
+    "question": "Vind het unieke $\\textbf{oneven}$ geheel getal $t$ zodanig dat $0<t<23$ en $t+2$ de inverse is van $t$ modulo $23$.",
+    "answer": "17"
+  },
+  {
+    "question": "Wat is de totale oppervlakte, in vierkante inches, van een kubus met een volume van $1$ kubieke voet?",
+    "answer": "864 \\mbox{ inches}^2"
+  },
+  {
+    "question": "Bereken het product van het getal $5+\\sqrt{3}$ en zijn radicaal geconjugeerde.",
+    "answer": "22"
+  },
+  {
+    "question": "Wat is de 2003e term van de reeks oneven getallen 1, 3, 5, 7, $\\dots$?",
+    "answer": "4005"
+  },
+  {
+    "question": "Laat $f(x) = 2x-3$ en $g(x) = x+1$. Wat is de waarde van $g(f(5)-1)$?",
+    "answer": "7"
+  },
+  {
+    "question": "Vind alle oplossingen voor\n\\[\\sin \\left( \\tan^{-1} (x) + \\cot^{-1} \\left( \\frac{1}{x} \\right) \\right) = \\frac{1}{3}.\\]Voer alle oplossingen in, gescheiden door komma's.",
+    "answer": "3 \\pm 2 \\sqrt{2}"
+  },
+  {
+    "question": "Een lijn wordt gedefinieerd door\n\\[\\begin{pmatrix} 3 \\\\ -10 \\\\ 1 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ -9 \\\\ -2 \\end{pmatrix}.\\]Een andere lijn wordt gedefinieerd door\n\\[\\begin{pmatrix} -5 \\\\ -3 \\\\ 6 \\end{pmatrix} + u \\begin{pmatrix} 4 \\\\ -18 \\\\ -4 \\end{pmatrix}.\\]Deze twee lijnen zijn parallel. Vind de afstand tussen deze twee lijnen.",
+    "answer": "7"
+  },
+  {
+    "question": "Beschouw het rechthoekige gebied met de volgende punten als hoekpunten: $$(5,4), (-5,4), (-5,-4), (5,-4).$$ Hoeveel punten met gehele coördinaten zullen zich strikt in het binnenste van dit rechthoekige gebied bevinden?",
+    "answer": "63"
+  },
+  {
+    "question": "Laat $\\mathbf{a},$ $\\mathbf{b},$ $\\mathbf{c}$ drie vectoren zijn zodanig dat\n\\[\\mathbf{a} \\times \\mathbf{b} = \\begin{pmatrix} 6 \\\\ -7 \\\\ 3 \\end{pmatrix}, \\quad \\mathbf{a} \\times \\mathbf{c} = \\begin{pmatrix} 4 \\\\ 7 \\\\ 2 \\end{pmatrix}, \\quad \\mathbf{b} \\times \\mathbf{c} = \\begin{pmatrix} 1 \\\\ -7 \\\\ 18 \\end{pmatrix}.\\]Bereken $(2 \\mathbf{b} - \\mathbf{a}) \\times (3 \\mathbf{c} + \\mathbf{a}).$",
+    "answer": "\\begin{pmatrix} -18 \\\\ -49 \\\\ 96 \\end{pmatrix}"
+  },
+  {
+    "question": "$\\textbf{Juans Oude Verzamelplekken}$\n\nJuan organiseert de postzegels in zijn collectie per land en per decennium waarin ze zijn uitgegeven. De prijzen die hij ervoor betaalde in een postzegelwinkel waren: Brazilië en Frankrijk, $6$ cent per stuk, Peru $4$ cent per stuk, en Spanje $5$ cent per stuk. (Brazilië en Peru zijn Zuid-Amerikaanse landen en Frankrijk en Spanje liggen in Europa.) [asy]\n/* AMC8 2002 #8, 9, 10 Probleem */\nsize(3inch, 1.5inch);\nfor ( int y = 0; y <= 5; ++y )\n{\n\ndraw((0,y)--(18,y));\n}\ndraw((0,0)--(0,5));\ndraw((6,0)--(6,5));\ndraw((9,0)--(9,5));\ndraw((12,0)--(12,5));\ndraw((15,0)--(15,5));\ndraw((18,0)--(18,5));\n\nlabel(scale(0.8)*\"50s\", (7.5,4.5));\nlabel(scale(0.8)*\"4\", (7.5,3.5));\nlabel(scale(0.8)*\"8\", (7.5,2.5));\nlabel(scale(0.8)*\"6\", (7.5,1.5));\nlabel(scale(0.8)*\"3\", (7.5,0.5));\n\nlabel(scale(0.8)*\"60s\", (10.5,4.5));\nlabel(scale(0.8)*\"7\", (10.5,3.5));\nlabel(scale(0.8)*\"4\", (10.5,2.5));\nlabel(scale(0.8)*\"4\", (10.5,1.5));\nlabel(scale(0.8)*\"9\", (10.5,0.5));\n\nlabel(scale(0.8)*\"70s\", (13.5,4.5));\nlabel(scale(0.8)*\"12\", (13.5,3.5));\nlabel(scale(0.8)*\"12\", (13.5,2.5));\nlabel(scale(0.8)*\"6\", (13.5,1.5));\nlabel(scale(0.8)*\"13\", (13.5,0.5));\n\nlabel(scale(0.8)*\"80s\", (16.5,4.5));\nlabel(scale(0.8)*\"8\", (16.5,3.5));\nlabel(scale(0.8)*\"15\", (16.5,2.5));\nlabel(scale(0.8)*\"10\", (16.5,1.5));\nlabel(scale(0.8)*\"9\", (16.5,0.5));\n\nlabel(scale(0.8)*\"Land\", (3,4.5));\nlabel(scale(0.8)*\"Brazilië\", (3,3.5));\nlabel(scale(0.8)*\"Frankrijk\", (3,2.5));\nlabel(scale(0.8)*\"Peru\", (3,1.5));\nlabel(scale(0.8)*\"Spanje\", (3,0.5));\n\nlabel(scale(0.9)*\"Juans Postzegelcollectie\", (9,0), S);\nlabel(scale(0.9)*\"Aantal Postzegels per Decennium\", (9,5), N);\n[/asy] Wat was de gemiddelde prijs, in centen, van zijn $70\\text{'s}$ postzegels? Rond je antwoord af op één decimaal.",
+    "answer": "5.4 \\text{ cents}"
+  },
+  {
+    "question": "Stel dat $ABCD$ een trapezium is waarin $\\overline{AD}|| \\overline{BC}$. Gegeven dat $\\overline{AC}\\perp\\overline{CD}$, $\\overline{AC}$ de hoek $\\angle BAD$ middendoor deelt, en $[ABCD]=42$, bereken dan $[\\triangle ACD]$.",
+    "answer": "28"
+  },
+  {
+    "question": "Als $\\frac{\\sqrt{2x}}{\\sqrt{3x-1}}=\\frac32$, los op voor $x$. Druk je antwoord uit in de eenvoudigste breukvorm.",
+    "answer": "\\frac9{19}"
+  },
+  {
+    "question": "De bewerking @ is gedefinieerd als $\\frac{m}{n}@\\frac{p}{q} = (m)(p)\\left(\\frac{q}{n}\\right)$ voor vereenvoudigde breuken $\\frac{p}{q}$. Wat is de vereenvoudigde waarde van $\\frac{7}{30}@\\frac{10}{21}$?",
+    "answer": "49"
+  },
+  {
+    "question": "Vier punten, $A$, $B$, $C$, en $D$, worden willekeurig en onafhankelijk gekozen op de omtrek van een cirkel. Wat is de kans dat de lijnstukken $AB$ en $CD$ elkaar snijden?",
+    "answer": "\\frac{1}{3}"
+  },
+  {
+    "question": "In het diagram hebben twee cirkels, elk met middelpunt $D$, stralen van $1$ en $2$. De totale oppervlakte van het gearceerde gebied is $\\frac5{12}$ van de oppervlakte van de grotere cirkel. Hoeveel graden meet (de kleinere) $\\angle ADC$?",
+    "answer": "120"
+  },
+  {
+    "question": "Een cilindrische beker is 8 cm hoog en heeft een straal van 3 cm. Hoeveel van zulke bekers water zijn er nodig om een bolvormige tank met een straal van 6 cm te vullen?",
+    "answer": "4"
+  },
+  {
+    "question": "Evalueer\n\\[\\sin (\\arcsin 0.4 + \\arcsin 0.5) \\cdot \\sin (\\arcsin 0.5 - \\arcsin 0.4).\\]",
+    "answer": "\\frac{9}{100}"
+  },
+  {
+    "question": "Een fiets rijdt met een snelheid van 20 voet per minuut. Wat is de snelheid van de fiets uitgedrukt in inches per seconde?",
+    "answer": "4"
+  },
+  {
+    "question": "Een Senaatscommissie heeft 8 Republikeinen en 6 Democraten. Op hoeveel manieren kunnen we een subcommissie van 5 leden vormen die ten minste één lid van elke partij heeft?",
+    "answer": "1940"
+  },
+  {
+    "question": "Wat is de waarde van $513^2 - 487^2$?",
+    "answer": "26000"
+  },
+  {
+    "question": "Het product van drie opeenvolgende gehele getallen is 120. Dat product gedeeld door het gemiddelde van de drie gehele getallen is 24. Wat is het grootste van de drie opeenvolgende gehele getallen?",
+    "answer": "6"
+  },
+  {
+    "question": "Los de positieve waarde van $x$ op zodanig dat $\\sqrt[3]{x^2 - 4x + 4} = 16$.",
+    "answer": "66"
+  },
+  {
+    "question": "Vereenvoudig\n\\[\\cos \\left( \\frac{2 \\pi}{15} \\right) \\cos \\left (\\frac {4 \\pi}{15} \\right) \\cos \\left( \\frac{8 \\pi}{15} \\right) \\cos \\left( \\frac {16 \\pi}{15} \\right).\\]",
+    "answer": "\\frac{1}{16}"
+  },
+  {
+    "question": "Driehoek $ABC$ is gelijkbenig, met $AB=AC$ en hoogte $AM=11.$ Stel dat er een punt $D$ is op $\\overline{AM}$ met $AD=10$ en $\\angle BDC=3\\angle BAC.$ Vind de omtrek van driehoek $ABC.$\n\n[asy]\nunitsize(0.4 cm);\n\npair A, B, C, D, M;\n\nA = (0,11);\nD = (0,1);\nB = (-11/2,0);\nC = (11/2,0);\nM = (B + C)/2;\n\ndraw(A--B--C--cycle);\ndraw(A--M);\ndraw(B--D--C);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, NW);\nlabel(\"$M$\", M, S);\n[/asy]",
+    "answer": "11 \\sqrt{5} + 11"
+  },
+  {
+    "question": "De som van 27 opeenvolgende positieve gehele getallen is $3^7$. Wat is hun mediaan?",
+    "answer": "81"
+  },
+  {
+    "question": "Voor welke reële waarden van $x$ is $-4<x^{4}+4x^{2}<21$ voldaan? Druk je antwoord uit in intervalnotatie.",
+    "answer": "(-\\sqrt{3}, \\sqrt{3})"
+  },
+  {
+    "question": "Stel dat $x,$ $y,$ en $z$ voldoen aan de vergelijkingen\n\\begin{align*}\nxyz &= 4, \\\\\nx^3 + y^3 + z^3 &= 4, \\\\\nxy^2 + x^2 y + xz^2 + x^2 z + yz^2 + y^2 z &= 12.\n\\end{align*}Bereken de waarde van $xy + yz + zx.$",
+    "answer": "6"
+  },
+  {
+    "question": "De gegevens in de onderstaande tabel tonen het percentage busreizigers in een enquête onder studenten van Central H.S.; 300 mannen en 300 vrouwen in elke klas werden ondervraagd. Voor welke klas is het aantal mannelijke busreizigers het dichtst bij $135\\%$ van het aantal vrouwelijke busreizigers? \\begin{tabular}{|l|c|c|}\\hline\nKlas & Mannen & Vrouwen \\\\ \\hline\n$9^{\\mathrm{de}}$ klas & $41.1\\%$ & $39.4\\%$ \\\\ \\hline\n$10^{\\mathrm{de}}$ klas & $34.4\\%$ & $33.1\\%$ \\\\ \\hline\n$11^{\\mathrm{de}}$ klas & $20.6\\%$ & $13.8\\%$ \\\\ \\hline\n$12^{\\mathrm{de}}$ klas & $11.6\\%$ & $8.6\\%$ \\\\ \\hline\n\\end{tabular}",
+    "answer": "12"
+  },
+  {
+    "question": "Los op\n\\[\\frac{|x^2 - 81|}{x^2 - 36x} < 0.\\]",
+    "answer": "(0,9) \\cup (9,36)"
+  },
+  {
+    "question": "Een rechthoekig veld is ingesloten in een atletiekbaan, zoals hieronder weergegeven. De baan bestaat uit twee randen van het veld en twee halve cirkels. De lengte van de baan is 400 meter. Wat is de grootst mogelijke oppervlakte van het veld, in vierkante meters?\n\n[asy]\nunitsize(1 cm);\n\nfilldraw((0,0)--(3,0)--(3,2)--(0,2)--cycle,lightgreen);\ndraw((0,0)--(3,0),linewidth(2*bp));\ndraw((0,2)--(3,2),linewidth(2*bp));\ndraw(arc((3,1),1,-90,90),linewidth(2*bp));\ndraw(arc((0,1),1,90,270),linewidth(2*bp));\n[/asy]",
+    "answer": "\\frac{20000}{\\pi}"
+  },
+  {
+    "question": "In $\\triangle{RST}$, zoals getoond, is $\\sin{R}=\\frac{2}{5}$. Wat is $\\sin{T}$?\n\n[asy]\npair R,S,T;\nT = (0,0);\nS = (2,0);\nR = (2,sqrt(21));\ndraw(R--S--T--R);\ndraw(rightanglemark(R,S,T,10));\nlabel(\"$T$\",T,SW);\nlabel(\"$S$\",S,SE);\nlabel(\"$R$\",R,NE);\nlabel(\"$5$\",(R+T)/2,NW);\n[/asy]",
+    "answer": "\\frac{\\sqrt{21}}{5}"
+  },
+  {
+    "question": "De kleinste afstand tussen de oorsprong en een punt op de grafiek van $y=\\frac{1}{\\sqrt{2}}\\left(x^2-3\\right)$ kan worden uitgedrukt als $\\sqrt{a}/b$, waarbij $a$ en $b$ positieve gehele getallen zijn zodanig dat $a$ niet deelbaar is door het kwadraat van een geheel getal groter dan één. Vind $a+b$.",
+    "answer": "12"
+  },
+  {
+    "question": "Zij $f$ gedefinieerd door  \\[f(x) = \\left\\{\n\\begin{array}{cl}\n3-x & \\text{ als } x \\leq 3, \\\\\n-x^3+2x^2+3x & \\text{ als } x>3.\n\\end{array}\n\\right.\\]Bereken $f^{-1}(0)+f^{-1}(6)$.",
+    "answer": "0"
+  },
+  {
+    "question": "De afstanden van een punt $P$ tot vijf van de hoekpunten van een regelmatig octaëder zijn 3, 7, 8, 9 en 11. Vind de afstand van $P$ tot het zesde hoekpunt.\n\n[asy]\nimport three;\n\nsize(125);\ncurrentprojection = perspective(6,3,1);\n\ntriple A, B, C, D, E, F, P;\n\nA = (1,0,0);\nB = (-1,0,0);\nC = (0,1,0);\nD = (0,-1,0);\nE = (0,0,1);\nF = (0,0,-1);\nP = (1.2,1.5,1);\n\ndraw(A--P,red);\ndraw(B--P,red);\ndraw(C--P,red);\ndraw(D--P,red);\ndraw(E--P,red);\ndraw(F--P,red);\n\ndraw(A--C);\ndraw(A--D);\ndraw(A--E);\ndraw(A--F);\ndraw(C--E--D--F--cycle);\ndraw(D--B--C,dashed);\ndraw(B--C,dashed);\ndraw(B--D,dashed);\ndraw(B--E,dashed);\ndraw(B--F,dashed);\n\nlabel(\"$P$\", P, NE);\n[/asy]",
+    "answer": "\\sqrt{66}"
+  },
+  {
+    "question": "Het is een bekende natuurkundige formule dat kracht gelijk is aan massa maal versnelling. Jen wil een softbal gooien met dezelfde kracht als Jack een honkbal gooit. Als de softbal een massa van $200$ g heeft en de honkbal een massa van $150$ g, wat is dan de verhouding van de versnelling van Jen's bal tot die van Jack? Antwoord als een breuk in de eenvoudigste vorm.",
+    "answer": "\\frac 34"
+  },
+  {
+    "question": "Hoeveel van dezelfde cijfers worden gevonden in de basis 7 en basis 8 representaties van $629_{10}$? Bijvoorbeeld, $121_{3}$ en $413_{5}$ zouden één cijfer gemeen hebben.",
+    "answer": "3"
+  },
+  {
+    "question": "Zes heksen en tien tovenaars zijn op een magische bijeenkomst. De heksen hebben besloten om de hand te schudden met elk van de tovenaars. Geen van de heksen nam de moeite om elkaar de hand te schudden, aangezien ze allemaal al goede vrienden zijn, en de tovenaars hebben een hekel aan elkaar en schudden geen handen met andere tovenaars. Hoeveel handdrukken vonden er plaats op de bijeenkomst?",
+    "answer": "60"
+  },
+  {
+    "question": "Laat $f(x)$ de polynoom zijn \\[f(x)=3x^4+5x^2-9x-2.\\] Als $g(x)$ gelijk is aan de polynoom $f(x-1)$, wat is dan de som van de coëfficiënten van $g$?",
+    "answer": "-2"
+  },
+  {
+    "question": "Wat is de kortste afstand van het punt $(6, 0)$ tot de lijn $y = 2x-2$? Druk je antwoord uit in de eenvoudigste vorm met wortels.",
+    "answer": "2\\sqrt{5}"
+  },
+  {
+    "question": "De complexe getallen $\\alpha_1, \\alpha_2, \\alpha_3$, en $\\alpha_4$ zijn de vier verschillende wortels van de vergelijking $x^4+2x^3+2=0$. Bepaal de ongeordende verzameling \\[\n\\{\\alpha_1\\alpha_2 + \\alpha_3\\alpha_4, \\alpha_1\\alpha_3 + \\alpha_2\\alpha_4, \\alpha_1\\alpha_4 + \\alpha_2\\alpha_3\\}.\n\\]",
+    "answer": "\\{1\\pm\\sqrt{5},-2\\}"
+  },
+  {
+    "question": "Drie potloden en een jumbo gum kosten $\\$1.24$. Vijf potloden en een jumbo gum kosten $\\$1.82$. Geen van de prijzen is inclusief belasting. Wat kost een potlood in centen?",
+    "answer": "29"
+  },
+  {
+    "question": "Wat is het laatste niet-nul cijfer rechts van de decimale punt in de decimale uitbreiding van $\\frac{137}{500}$?",
+    "answer": "4"
+  },
+  {
+    "question": "Rechthoek $ABCD$ heeft centrum $O$ en $AB/AD=k$. Er wordt willekeurig een punt gekozen uit het binnenste van rechthoek $ABCD$. Wat is de kans dat het dichter bij $O$ is dan bij een van de vier hoekpunten?  [asy]\nsize(200);\ndraw((-250,100)--(250,100)--(250,-100)--(-250,-100)--cycle);\ndot((0,0));\nlabel(\"$O$\",(0,0),N);\nlabel(\"$A$\",(-250,100),NW); label(\"$B$\",(250,100),NE); label(\"$C$\",(250,-100),SE); label(\"$D$\",(-250,-100),SW);[/asy]",
+    "answer": "\\frac{1}{2}"
+  },
+  {
+    "question": "Bepaal de rest van 54 (mod 6).",
+    "answer": "0"
+  },
+  {
+    "question": "Laat \\[f(n) = \\left\\{\n\\begin{array}{cl}\n\\lfloor n \\rfloor & \\text{ als }n \\geq 4, \\\\\n\\lceil n \\rceil & \\text{ als } n < 4.\n\\end{array}\n\\right.\\]Vind $f\\left(\\frac{\\pi}{3}\\right) + f(\\sqrt{45}) + f(8^{2/3})$.",
+    "answer": "12"
+  },
+  {
+    "question": "Linda, Sherry, June en Connie liepen door hun buurten om girl scout cookies te verkopen. Linda verdiende $\\$27.47$, Sherry verdiende $\\$35.23$, June verdiende $\\$37.37$, en Connie verdiende $\\$26.52$. Na de verkoop verzamelden ze hun geld en gingen naar de bank om de munten om te wisselen in dollars. Hoeveel geld, in centen, bleef er over nadat ze zoveel mogelijk van de munten in biljetten hadden omgezet?",
+    "answer": "59"
+  },
+  {
+    "question": "Een klas van 30 studenten heeft onlangs een toets gemaakt. Als 20 studenten een score van 80 behaalden, 8 studenten een score van 90, en 2 studenten een score van 100, wat was dan het gemiddelde (de mean) van de klas op deze toets?",
+    "answer": "84"
+  },
+  {
+    "question": "Hieronder staat een magisch vierkant, wat betekent dat de som van de getallen in elke rij, in elke kolom en in elk van de $2$ hoofddiagonalen gelijk is. Wat is de waarde van $n$?\n\n[asy]size(125);\nfor(int i = 0; i<4; ++i)\n{\n\ndraw((0,i)--(3,i),linewidth(1));\n}\n\nfor(int j = 0; j<4; ++j)\n{\n\ndraw((j,0)--(j,3),linewidth(1));\n}\n\nlabel(\"$n-3$\",(.5,.5));\nlabel(\"3\",(.5,1.5));\nlabel(\"$n+1$\",(.5,2.5));\n\nlabel(\"$n+2$\",(1.5,.5));\nlabel(\"$2n-9$\",(1.5,1.5));\nlabel(\"$1$\",(1.5,2.5));\n\nlabel(\"$2$\",(2.5,.5));\nlabel(\"$n$\",(2.5,1.5));\nlabel(\"$n-1$\",(2.5,2.5));\n[/asy]",
+    "answer": "7"
+  },
+  {
+    "question": "Jim en Martha staan samen op de hoek van een rechthoekig veld. Jim loopt diagonaal over het veld. Martha bereikt dezelfde locatie door langs de lengte en breedte te lopen. Het veld is 300 voet breed en 400 voet lang. Hoeveel voet minder loopt Jim dan Martha?",
+    "answer": "200"
+  },
+  {
+    "question": "Laat $\\omega$ een complex getal zijn zodanig dat $\\omega^3 = 1.$ Vind alle mogelijke waarden van\n\\[\\frac{1}{1 + \\omega} + \\frac{1}{1 + \\omega^2}.\\]Voer alle mogelijke waarden in, gescheiden door komma's.",
+    "answer": "1"
+  },
+  {
+    "question": "Wat is de kortste afstand die kan worden afgelegd als je begint bij een willekeurig punt, $A$, $B$, $C$, of $D$, en de andere drie punten eenmaal bezoekt?",
+    "answer": "13"
+  }
+]

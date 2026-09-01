@@ -1,0 +1,398 @@
+[
+  {
+    "question": "Supposons que $\\sin D = 0.7$ dans le diagramme ci-dessous. Quelle est la valeur de $DE$? [asy]\npair D,E,F;\nF = (0,0);\nD = (sqrt(51),7);\nE = (0,7);\ndraw(D--E--F--D);\ndraw(rightanglemark(D,E,F,15));\nlabel(\"$D$\",D,NE);\nlabel(\"$E$\",E,NW);\nlabel(\"$F$\",F,SW);\nlabel(\"$7$\",(E+F)/2,W);\n[/asy]",
+    "answer": "\\sqrt{51}"
+  },
+  {
+    "question": "Soit $z = 2 + \\sqrt{2} - (3 + 3 \\sqrt{2})i$, et soit $c = 2 - 3i$. Soit $w$ le résultat lorsque $z$ est tourné autour de $c$ de $\\frac{\\pi}{4}$ dans le sens antihoraire.\n\n[asy]\nunitsize(0.6 cm);\n\npair C, W, Z;\n\nZ = (2 + sqrt(2), -3 - 3*sqrt(2));\nC = (2,-3);\nW = rotate(45,C)*(Z);\n\ndraw(Z--C--W);\n\ndot(\"$c$\", C, N);\ndot(\"$w$\", W, SE);\ndot(\"$z$\", Z, S);\nlabel(\"$\\frac{\\pi}{4}$\", C + (0.6,-1));\n[/asy]\n\nTrouvez $w.$",
+    "answer": "6 - 5i"
+  },
+  {
+    "question": "Simplifiez $\\sqrt{242}$.",
+    "answer": "11\\sqrt2"
+  },
+  {
+    "question": "De combien de façons 8 personnes peuvent-elles s'asseoir autour d'une table ronde si 3 d'entre elles -- Pierre, Rosa et Thomas -- veulent toutes s'asseoir ensemble ? (Deux dispositions sont considérées comme identiques si l'une est une rotation de l'autre.)",
+    "answer": "720"
+  },
+  {
+    "question": "Trouvez le terme constant dans le développement de $$\\left(10x^3-\\frac{1}{2x^2}\\right)^{5}$$",
+    "answer": "-125"
+  },
+  {
+    "question": "Si $n \\equiv 2 \\pmod{7}$, alors trouvez le reste lorsque $(n + 2)(n + 4)(n + 6)$ est divisé par 7.",
+    "answer": "3"
+  },
+  {
+    "question": "Un pentagone régulier est tourné dans le sens antihoraire autour de son centre. Quel est le nombre minimum de degrés qu'il doit être tourné jusqu'à ce qu'il coïncide avec sa position d'origine ?",
+    "answer": "72"
+  },
+  {
+    "question": "Les coordonnées d'un parallélogramme sont (5, 3), (6, 8), (7, 4) et $(x, y)$ et $x > 7$. Quelle est la valeur de $x + y$ ?",
+    "answer": "17"
+  },
+  {
+    "question": "Dans le triangle rectangle $ABC$ avec $\\angle B = 90^\\circ$, nous avons $\\sin A = 2\\cos A$. Quelle est la valeur de $\\tan A$ ?",
+    "answer": "2"
+  },
+  {
+    "question": "Le graphe de $f(x)=\\frac{2x}{x^2-5x-14}$ a des asymptotes verticales $x=a$ et $x=b$, et une asymptote horizontale $y=c$. Trouvez $a+b+c$.",
+    "answer": "5"
+  },
+  {
+    "question": "Calculez $99^2+99+1$ de tête.",
+    "answer": "9901"
+  },
+  {
+    "question": "Trouvez le plus petit nombre réel positif $C$ pour lequel\n\\[\\left\\| \\begin{pmatrix} 2 & 3 \\\\ 0 & -2 \\end{pmatrix} \\bold{v} \\right\\| \\le C \\|\\bold{v}\\|\\] pour tous les vecteurs bidimensionnels $\\bold{v}.$\n\nNotez que pour un vecteur bidimensionnel $\\mathbf{a},$ $\\|\\mathbf{a}\\|$ est la magnitude de $\\mathbf{a}.$",
+    "answer": "4"
+  },
+  {
+    "question": "Quel est $1^{(2^{235423523})}$ ?",
+    "answer": "1"
+  },
+  {
+    "question": "Soit $z$ un nombre complexe tel que $z^5 = 1$ et $z \\neq 1.$ Calculez\n\\[z + \\frac{1}{z} + z^2 + \\frac{1}{z^2}.\\]",
+    "answer": "-1"
+  },
+  {
+    "question": "Calculez $58_9 - 18_9.$ Exprimez votre réponse en base $9.$",
+    "answer": "40_9"
+  },
+  {
+    "question": "Simplifiez\n\\[\\frac{\\sec x}{\\sin x} - \\frac{\\sin x}{\\cos x}.\\]",
+    "answer": "\\cot x"
+  },
+  {
+    "question": "Dix treeks pèsent autant que trois squigs et un goolee. Deux treeks et un goolee sont égaux en poids à un squig. Le poids combiné de combien de treeks équivaut au poids d'un squig ?",
+    "answer": "3"
+  },
+  {
+    "question": "Le produit de $3t^2+5t+a$ et $4t^2+bt-2$ est $12t^4+26t^3-8t^2-16t+6$. Quelle est la valeur de $a+b$ ?",
+    "answer": "-1"
+  },
+  {
+    "question": "Un réservoir cylindrique droit avec des bases circulaires est rempli d'eau à un taux de $20\\pi$ mètres cubes par heure. À mesure que le réservoir se remplit, le niveau d'eau monte de quatre mètres par heure. Quel est le rayon du réservoir, en mètres ? Exprimez votre réponse sous la forme radicale la plus simple.",
+    "answer": "\\sqrt{5}"
+  },
+  {
+    "question": "Considérez la fonction \\[ f(x) =\n\\begin{cases}\nax^2 & \\text{si } x \\geq a,\\\\\nax +2a& \\text{si } x <a,\n\\end{cases}\n\\]où $a$ est un nombre.\n\nQuelle est la plus grande valeur de $a$ telle que le graphe de $y=f(x)$ intersecte chaque ligne horizontale au moins une fois ?",
+    "answer": "2"
+  },
+  {
+    "question": "Pour quelle valeur de $c$ le cercle avec l'équation $x^2 - 10x + y^2 + 6y + c = 0$ aura-t-il un rayon de longueur 1 ?",
+    "answer": "33"
+  },
+  {
+    "question": "Soit $\\lambda$ une constante, $0 \\le \\lambda \\le 4,$ et soit $f : [0,1] \\to [0,1]$ définie par\n\\[f(x) = \\lambda x(1 - x).\\] Trouvez les valeurs de $\\lambda,$ $0 \\le \\lambda \\le 4,$ pour lesquelles il existe un $x \\in [0,1]$ tel que $f(x) \\neq x$ mais $f(f(x)) = x.$",
+    "answer": "(3,4]"
+  },
+  {
+    "question": "Trouvez la mesure en degrés du plus petit angle positif $\\theta$ pour lequel\n\\[\\tan \\theta = \\frac{\\cos 5^\\circ \\cos 20^\\circ + \\cos 35^\\circ \\cos 50^\\circ - \\sin 5^\\circ \\sin 20^\\circ - \\sin 35^\\circ \\sin 50^\\circ}{\\sin 5^\\circ \\cos 20^\\circ - \\sin 35^\\circ \\cos 50^\\circ + \\cos 5^\\circ \\sin 20^\\circ - \\cos 35^\\circ \\sin 50^\\circ}.\\]",
+    "answer": "120^\\circ"
+  },
+  {
+    "question": "Déterminez le nombre de façons d'arranger les lettres du mot ELLIPSE.",
+    "answer": "1260"
+  },
+  {
+    "question": "Combien de zéros y a-t-il à la fin de $42!$ (42 factorielle) ? (Rappel : Le nombre $n!$ est le produit des entiers de 1 à $n$. Par exemple, $5!=5\\cdot 4\\cdot3\\cdot2\\cdot 1= 120$.)",
+    "answer": "9"
+  },
+  {
+    "question": "Trouvez la valeur maximale de\n\\[f(x,y) = x \\sqrt{1 - y^2} + y \\sqrt{1 - x^2},\\] où $-1 \\le x,$ $y \\le 1.$",
+    "answer": "1"
+  },
+  {
+    "question": "Les points $O,$ $A,$ et $B$ satisfont $\\overrightarrow{OA} = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix}$ et $\\overrightarrow{OB} = \\begin{pmatrix} -3 \\\\ -2 \\\\ 1 \\end{pmatrix}.$ Trouvez l'aire du triangle $OAB.$",
+    "answer": "3 \\sqrt{5}"
+  },
+  {
+    "question": "Soit $z$ un nombre complexe tel que\n\\[z + \\frac{1}{z} = \\frac{1 + \\sqrt{5}}{2}.\\] Trouvez\n\\[z^{85} + \\frac{1}{z^{85}}.\\]",
+    "answer": "-2"
+  },
+  {
+    "question": "Les médianes $AD$, $BE$ et $CF$ du triangle $ABC$ se croisent au centre de gravité $G$. La ligne passant par $G$ qui est parallèle à $BC$ intersecte $AB$ et $AC$ en $M$ et $N$, respectivement. Si l'aire du triangle $ABC$ est 144, trouvez l'aire du triangle $ENG$.",
+    "answer": "8"
+  },
+  {
+    "question": "Une bibliothèque a 3 étagères avec un total de 24 livres. L'étagère du haut a 8 livres de mystère. L'étagère du milieu a 10 livres de mathématiques. L'étagère du bas a 6 livres de science. Deux livres sont maintenant retirés de chaque étagère. Quelle fraction des livres restants sur les trois étagères sont des livres de mathématiques ? Exprimez votre réponse sous forme de fraction commune.",
+    "answer": "\\frac{4}{9}"
+  },
+  {
+    "question": "Le volume d'un cône est donné par la formule $V = \\frac{1}{3}Bh$, où $B$ est l'aire de la base et $h$ est la hauteur. L'aire de la base d'un cône est de 30 unités carrées, et sa hauteur est de 6,5 unités. Quel est le nombre d'unités cubiques dans son volume ?",
+    "answer": "65"
+  },
+  {
+    "question": "Si le quatrième terme d'une suite arithmétique est $200$ et le huitième terme est $500$, quel est le sixième terme ?",
+    "answer": "350"
+  },
+  {
+    "question": "Convertir $\\frac{21}{2^2 \\cdot 5^7}$ en un nombre décimal fini.",
+    "answer": ".0000672"
+  },
+  {
+    "question": "Combien d'entiers positifs à deux chiffres sont des facteurs à la fois de 100 et de 150 ?",
+    "answer": "3"
+  },
+  {
+    "question": "Pour combien d'entiers positifs $n>1$ est-il vrai que $2^{24}$ est une puissance parfaite de $n^{\\text{th}}$ ?",
+    "answer": "7"
+  },
+  {
+    "question": "Hillary a onze pièces, toutes des dimes et des nickels. Au total, les pièces valent 75 cents. Combien de nickels a-t-elle ?",
+    "answer": "7"
+  },
+  {
+    "question": "Paul et Jesse choisissent chacun un nombre au hasard parmi les six premiers nombres premiers. Quelle est la probabilité que la somme des nombres qu'ils choisissent soit paire ?",
+    "answer": "\\frac{13}{18}"
+  },
+  {
+    "question": "Le point $(a, b)$ se trouve sur la ligne avec l'équation $3x + 2y = 12.$ Lorsque $a = 4$, quelle est la valeur de $b$ ?",
+    "answer": "0"
+  },
+  {
+    "question": "Douze carrés de 1 par 1 forment un rectangle, comme illustré. Quelle est la superficie totale de la région ombrée ? [asy]\nsize(4cm);defaultpen(linewidth(0.75));\n\n// Portions remplies\nfill((0, 4)--(0, 0)--(2, 0)--cycle, gray(0.75));\nfill((0, 4)--(3, 4)--(3, 0)--cycle, gray(0.75));\n\n// grille\nint j;\nfor (j = 0; j < 4; ++j) {draw((j, 0)--(j, 4));}\nfor (j = 0; j < 5; ++j) {draw((0, j)--(3, j));}\n\n// diagonales\ndraw((0, 4)--(3, 0)); draw((0, 4)--(2, 0));\n[/asy]",
+    "answer": "10"
+  },
+  {
+    "question": "Quel est le plus petit multiple positif de 450 dont les chiffres sont tous des zéros et des uns ?",
+    "answer": "11,\\! 111,\\! 111,\\! 100"
+  },
+  {
+    "question": "La roue montrée est tournée deux fois, de sorte que les nombres indiqués par le pointeur sont déterminés aléatoirement (chaque nombre sur la roue ayant la même probabilité). Les deux nombres déterminés de cette manière sont enregistrés. Le premier nombre est divisé par 4, déterminant l'un des restes 1, 2, 3 marquant les colonnes de l'échiquier montré. Le second nombre est divisé par 5, déterminant l'un des restes 1, 2, 3, 4 marquant les rangées de l'échiquier. Enfin, un pion est placé sur la case où cette colonne et cette rangée se rencontrent. Quelle est la probabilité que le pion soit placé sur une case ombrée de l'échiquier ?\n\n[asy]\nunitsize(1cm);\ndraw(Circle((0,0),2),linewidth(0.7));\ndraw((1.7,1)--(-1.7,-1),linewidth(0.7));\ndraw((1.7,-1)--(-1.7,1),linewidth(0.7));\ndraw((0,2)--(0,-2));\nlabel(\"1\",(0.8,0.5),NW);\nlabel(\"2\",(0.8,-0.5),SW);\nlabel(\"6\",(-0.8,0.5),NE);\nlabel(\"9\",(-0.8,-0.5),SE);\nlabel(\"3\",(-0.7,0),W);\nlabel(\"7\",(0.7,0),E);\ndraw((-2.8,0)--(-2.1,0),Arrow);\nlabel(\"Pointer\",(-2.8,0),W);\nfill((3,0)--(3,1)--(4,1)--(4,0)--cycle,gray(0.7));\nfill((3,-2)--(3,-1)--(4,-1)--(4,-2)--cycle,gray(0.7));\nfill((4,1)--(4,2)--(5,2)--(5,1)--cycle,gray(0.7));\nfill((4,-1)--(4,0)--(5,0)--(5,-1)--cycle,gray(0.7));\nfill((5,0)--(5,1)--(6,1)--(6,0)--cycle,gray(0.7));\nfill((5,-2)--(5,-1)--(6,-1)--(6,-2)--cycle,gray(0.7));\ndraw((3,-2)--(3,2)--(6,2)--(6,-2)--cycle,linewidth(0.7));\ndraw((3,-1)--(6,-1),linewidth(0.7));\ndraw((3,0)--(6,0),linewidth(0.7));\ndraw((3,1)--(6,1),linewidth(0.7));\ndraw((4,-2)--(4,2),linewidth(0.7));\ndraw((5,-2)--(5,2),linewidth(0.7));\nlabel(\"1\",(3.5,-2),S);\nlabel(\"2\",(4.5,-2),S);\nlabel(\"3\",(5.5,-2),S);\nlabel(\"1\",(3,-1.5),W);\nlabel(\"2\",(3,-0.5),W);\nlabel(\"3\",(3,0.5),W);\nlabel(\"4\",(3,1.5),W);\n[/asy]",
+    "answer": "\\frac{1}{2}"
+  },
+  {
+    "question": "Quelle est la somme des chiffres dans la représentation décimale finie de la fraction $\\frac{4321}{5^7\\cdot2^8}$ ?",
+    "answer": "14"
+  },
+  {
+    "question": "Trouvez $\\sin 20^\\circ \\sin 40^\\circ \\sin 60^\\circ \\sin 80^\\circ \\sin 100^\\circ \\sin 120^\\circ \\sin 140^\\circ \\sin 160^\\circ.$",
+    "answer": "\\frac{9}{256}"
+  },
+  {
+    "question": "Pour une constante $c,$ en coordonnées cylindriques $(r,\\theta,z),$ trouvez la forme décrite par l'équation\n\\[z = c.\\](A) Ligne\n(B) Cercle\n(C) Plan\n(D) Sphère\n(E) Cylindre\n(F) Cône\n\nEntrez la lettre de l'option correcte.",
+    "answer": "\\text{(C)}"
+  },
+  {
+    "question": "Si $\\mathbf{a}$ et $\\mathbf{b}$ sont des vecteurs tels que $\\|\\mathbf{a}\\| = 2,$ $\\|\\mathbf{b}\\| = 7,$ et\n\\[\\mathbf{a} \\times \\mathbf{b} = \\begin{pmatrix} 3 \\\\ 2 \\\\ 6 \\end{pmatrix},\\] alors trouvez le plus petit angle possible entre $\\mathbf{a}$ et $\\mathbf{b},$ en degrés.",
+    "answer": "30^\\circ"
+  },
+  {
+    "question": "Soit $f$ la fonction définie par $f(x) = x^3 - 49x^2 + 623x - 2015,$ et soit $g(x) = f(x + 5).$ Calculez la somme des racines de $g.$",
+    "answer": "34"
+  },
+  {
+    "question": "Calculez\n\\[\\frac{1}{\\cos^2 10^\\circ} + \\frac{1}{\\sin^2 20^\\circ} + \\frac{1}{\\sin^2 40^\\circ}.\\]",
+    "answer": "12"
+  },
+  {
+    "question": "Combien de côtés y aurait-il dans un polygone convexe si la somme de tous ses angles intérieurs sauf un est de $1070^{\\circ}$ ?",
+    "answer": "8"
+  },
+  {
+    "question": "Trouvez l'entier $\\textbf{impair}$ unique $t$ tel que $0<t<23$ et $t+2$ soit l'inverse de $t$ modulo $23$.",
+    "answer": "17"
+  },
+  {
+    "question": "Quelle est la surface totale, en pouces carrés, d'un cube ayant un volume de $1$ pied cube ?",
+    "answer": "864 \\mbox{ inches}^2"
+  },
+  {
+    "question": "Calculez le produit du nombre $5+\\sqrt{3}$ et de son conjugué radical.",
+    "answer": "22"
+  },
+  {
+    "question": "Quel est le 2003ème terme de la suite des nombres impairs 1, 3, 5, 7, $\\dots$ ?",
+    "answer": "4005"
+  },
+  {
+    "question": "Soient $f(x) = 2x-3$ et $g(x) = x+1$. Quelle est la valeur de $g(f(5)-1)$ ?",
+    "answer": "7"
+  },
+  {
+    "question": "Trouvez toutes les solutions de\n\\[\\sin \\left( \\tan^{-1} (x) + \\cot^{-1} \\left( \\frac{1}{x} \\right) \\right) = \\frac{1}{3}.\\]Entrez toutes les solutions, séparées par des virgules.",
+    "answer": "3 \\pm 2 \\sqrt{2}"
+  },
+  {
+    "question": "Une ligne est définie par\n\\[\\begin{pmatrix} 3 \\\\ -10 \\\\ 1 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ -9 \\\\ -2 \\end{pmatrix}.\\]Une autre ligne est définie par\n\\[\\begin{pmatrix} -5 \\\\ -3 \\\\ 6 \\end{pmatrix} + u \\begin{pmatrix} 4 \\\\ -18 \\\\ -4 \\end{pmatrix}.\\]Ces deux lignes sont parallèles. Trouvez la distance entre ces deux lignes.",
+    "answer": "7"
+  },
+  {
+    "question": "Considérez la région rectangulaire avec les points suivants comme sommets : $$(5,4), (-5,4), (-5,-4), (5,-4).$$ Combien de points avec des coordonnées entières seront strictement à l'intérieur de cette région rectangulaire ?",
+    "answer": "63"
+  },
+  {
+    "question": "Soient $\\mathbf{a},$ $\\mathbf{b},$ $\\mathbf{c}$ trois vecteurs tels que\n\\[\\mathbf{a} \\times \\mathbf{b} = \\begin{pmatrix} 6 \\\\ -7 \\\\ 3 \\end{pmatrix}, \\quad \\mathbf{a} \\times \\mathbf{c} = \\begin{pmatrix} 4 \\\\ 7 \\\\ 2 \\end{pmatrix}, \\quad \\mathbf{b} \\times \\mathbf{c} = \\begin{pmatrix} 1 \\\\ -7 \\\\ 18 \\end{pmatrix}.\\]Calculez $(2 \\mathbf{b} - \\mathbf{a}) \\times (3 \\mathbf{c} + \\mathbf{a}).$",
+    "answer": "\\begin{pmatrix} -18 \\\\ -49 \\\\ 96 \\end{pmatrix}"
+  },
+  {
+    "question": "$\\textbf{Les anciens terrains de jeu de Juan}$\n\nJuan organise les timbres de sa collection par pays et par décennie d'émission. Les prix qu'il a payés pour eux dans un magasin de timbres étaient : Brésil et France, $6$ centimes chacun, Pérou $4$ centimes chacun, et Espagne $5$ centimes chacun. (Le Brésil et le Pérou sont des pays d'Amérique du Sud et la France et l'Espagne sont en Europe.) [asy]\n/* AMC8 2002 #8, 9, 10 Problem */\nsize(3inch, 1.5inch);\nfor ( int y = 0; y <= 5; ++y )\n{\n\ndraw((0,y)--(18,y));\n}\ndraw((0,0)--(0,5));\ndraw((6,0)--(6,5));\ndraw((9,0)--(9,5));\ndraw((12,0)--(12,5));\ndraw((15,0)--(15,5));\ndraw((18,0)--(18,5));\n\nlabel(scale(0.8)*\"50s\", (7.5,4.5));\nlabel(scale(0.8)*\"4\", (7.5,3.5));\nlabel(scale(0.8)*\"8\", (7.5,2.5));\nlabel(scale(0.8)*\"6\", (7.5,1.5));\nlabel(scale(0.8)*\"3\", (7.5,0.5));\n\nlabel(scale(0.8)*\"60s\", (10.5,4.5));\nlabel(scale(0.8)*\"7\", (10.5,3.5));\nlabel(scale(0.8)*\"4\", (10.5,2.5));\nlabel(scale(0.8)*\"4\", (10.5,1.5));\nlabel(scale(0.8)*\"9\", (10.5,0.5));\n\nlabel(scale(0.8)*\"70s\", (13.5,4.5));\nlabel(scale(0.8)*\"12\", (13.5,3.5));\nlabel(scale(0.8)*\"12\", (13.5,2.5));\nlabel(scale(0.8)*\"6\", (13.5,1.5));\nlabel(scale(0.8)*\"13\", (13.5,0.5));\n\nlabel(scale(0.8)*\"80s\", (16.5,4.5));\nlabel(scale(0.8)*\"8\", (16.5,3.5));\nlabel(scale(0.8)*\"15\", (16.5,2.5));\nlabel(scale(0.8)*\"10\", (16.5,1.5));\nlabel(scale(0.8)*\"9\", (16.5,0.5));\n\nlabel(scale(0.8)*\"Country\", (3,4.5));\nlabel(scale(0.8)*\"Brazil\", (3,3.5));\nlabel(scale(0.8)*\"France\", (3,2.5));\nlabel(scale(0.8)*\"Peru\", (3,1.5));\nlabel(scale(0.8)*\"Spain\", (3,0.5));\n\nlabel(scale(0.9)*\"Juan's Stamp Collection\", (9,0), S);\nlabel(scale(0.9)*\"Number of Stamps by Decade\", (9,5), N);\n[/asy] Quel était le prix moyen, en centimes, de ses timbres des années $70\\text{'s}$ ? Arrondissez votre réponse au dixième de centime le plus proche.",
+    "answer": "5.4 \\text{ cents}"
+  },
+  {
+    "question": "Supposons que $ABCD$ soit un trapèze dans lequel $\\overline{AD}|| \\overline{BC}$. Étant donné que $\\overline{AC}\\perp\\overline{CD}$, $\\overline{AC}$ bisecte l'angle $\\angle BAD$, et $[ABCD]=42$, calculez $[\\triangle ACD]$.",
+    "answer": "28"
+  },
+  {
+    "question": "Si $\\frac{\\sqrt{2x}}{\\sqrt{3x-1}}=\\frac32$, résolvez pour $x$. Exprimez votre réponse sous forme fractionnaire la plus simple.",
+    "answer": "\\frac9{19}"
+  },
+  {
+    "question": "L'opération @ est définie comme $\\frac{m}{n}@\\frac{p}{q} = (m)(p)\\left(\\frac{q}{n}\\right)$ pour les fractions simplifiées $\\frac{p}{q}$. Quelle est la valeur simplifiée de $\\frac{7}{30}@\\frac{10}{21}$ ?",
+    "answer": "49"
+  },
+  {
+    "question": "Quatre points, $A$, $B$, $C$, et $D$, sont choisis au hasard et indépendamment sur la circonférence d'un cercle. Quelle est la probabilité que les segments $AB$ et $CD$ se croisent ?",
+    "answer": "\\frac{1}{3}"
+  },
+  {
+    "question": "Dans le diagramme, deux cercles, chacun avec le centre $D$, ont des rayons de $1$ et $2$. La surface totale de la région ombrée est $\\frac5{12}$ de la surface du plus grand cercle. Combien de degrés mesure (le plus petit) $\\angle ADC$ ?\n[asy]\nsize(4cm);\ndefaultpen(linewidth(0.75));\nreal adc = 100;\npair d = (0, 0); pair a = 2 * dir(100); pair c = (2, 0);\npath inner = arc(d, a/2, c/2, CW);\n\npath outer = arc(d, c, a, CCW);\nguide region1 = (a--a/2)..inner..(c/2--c)..outer..cycle;\nguide region2 = arc(d, a/2, c/2, CCW)..(c/2--d--a/2)..cycle;\nfill(region1, gray(0.75));\nfill(region2, gray(0.75));\ndraw(unitcircle); draw(scale(2) * unitcircle);\ndraw(a--d--c);\nlabel(\"$A$\", a, N); label(\"$C$\", c, E); label(\"$D$\", d, NE);\n[/asy]",
+    "answer": "120"
+  },
+  {
+    "question": "Un bécher cylindrique a une hauteur de 8 cm et un rayon de 3 cm. Combien de tels béchers d'eau faudra-t-il pour remplir un réservoir sphérique de rayon 6 cm ?",
+    "answer": "4"
+  },
+  {
+    "question": "Évaluez\n\\[\\sin (\\arcsin 0.4 + \\arcsin 0.5) \\cdot \\sin (\\arcsin 0.5 - \\arcsin 0.4).\\]",
+    "answer": "\\frac{9}{100}"
+  },
+  {
+    "question": "Un vélo se déplace à 20 pieds par minute. Quelle est la vitesse du vélo exprimée en pouces par seconde ?",
+    "answer": "4"
+  },
+  {
+    "question": "Un comité du Sénat compte 8 Républicains et 6 Démocrates. De combien de façons peut-on former un sous-comité de 5 membres qui compte au moins un membre de chaque parti ?",
+    "answer": "1940"
+  },
+  {
+    "question": "Quelle est la valeur de $513^2 - 487^2$ ?",
+    "answer": "26000"
+  },
+  {
+    "question": "Le produit de trois entiers consécutifs est 120. Ce produit divisé par la moyenne des trois entiers est 24. Quel est le plus grand des trois entiers consécutifs ?",
+    "answer": "6"
+  },
+  {
+    "question": "Résolvez pour la valeur positive de $x$ telle que $\\sqrt[3]{x^2 - 4x + 4} = 16$.",
+    "answer": "66"
+  },
+  {
+    "question": "Simplifiez\n\\[\\cos \\left( \\frac{2 \\pi}{15} \\right) \\cos \\left (\\frac {4 \\pi}{15} \\right) \\cos \\left( \\frac{8 \\pi}{15} \\right) \\cos \\left( \\frac {16 \\pi}{15} \\right).\\]",
+    "answer": "\\frac{1}{16}"
+  },
+  {
+    "question": "Le triangle $ABC$ est isocèle, avec $AB=AC$ et l'altitude $AM=11.$ Supposons qu'il y a un point $D$ sur $\\overline{AM}$ avec $AD=10$ et $\\angle BDC=3\\angle BAC.$ Trouvez le périmètre du triangle $ABC.$\n\n[asy]\nunitsize(0.4 cm);\n\npair A, B, C, D, M;\n\nA = (0,11);\nD = (0,1);\nB = (-11/2,0);\nC = (11/2,0);\nM = (B + C)/2;\n\ndraw(A--B--C--cycle);\ndraw(A--M);\ndraw(B--D--C);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, NW);\nlabel(\"$M$\", M, S);\n[/asy]",
+    "answer": "11 \\sqrt{5} + 11"
+  },
+  {
+    "question": "La somme de 27 entiers consécutifs positifs est $3^7$. Quelle est leur médiane ?",
+    "answer": "81"
+  },
+  {
+    "question": "Pour quelles valeurs réelles de $x$ l'inégalité $-4<x^{4}+4x^{2}<21$ est-elle satisfaite ? Exprimez votre réponse en notation d'intervalle.",
+    "answer": "(-\\sqrt{3}, \\sqrt{3})"
+  },
+  {
+    "question": "Supposons que $x,$ $y,$ et $z$ satisfont les équations\n\\begin{align*}\nxyz &= 4, \\\\\nx^3 + y^3 + z^3 &= 4, \\\\\nxy^2 + x^2 y + xz^2 + x^2 z + yz^2 + y^2 z &= 12.\n\\end{align*} Calculez la valeur de $xy + yz + zx.$",
+    "answer": "6"
+  },
+  {
+    "question": "Les données dans le tableau ci-dessous montrent le pourcentage d'élèves prenant le bus dans une enquête auprès des élèves de Central H.S. ; 300 garçons et 300 filles de chaque niveau ont été interrogés. Pour quel niveau le nombre de garçons prenant le bus est-il le plus proche de $135\\%$ du nombre de filles prenant le bus ? \\begin{tabular}{|l|c|c|}\\hline\nNiveau & Garçons & Filles \\\\ \\hline\n$9^{\\mathrm{th}}$ niveau & $41.1\\%$ & $39.4\\%$ \\\\ \\hline\n$10^{\\mathrm{th}}$ niveau & $34.4\\%$ & $33.1\\%$ \\\\ \\hline\n$11^{\\mathrm{th}}$ niveau & $20.6\\%$ & $13.8\\%$ \\\\ \\hline\n$12^{\\mathrm{th}}$ niveau & $11.6\\%$ & $8.6\\%$ \\\\ \\hline\n\\end{tabular}",
+    "answer": "12"
+  },
+  {
+    "question": "Résoudre\n\\[\\frac{|x^2 - 81|}{x^2 - 36x} < 0.\\]",
+    "answer": "(0,9) \\cup (9,36)"
+  },
+  {
+    "question": "Un champ rectangulaire est entouré d'une piste d'athlétisme, comme indiqué ci-dessous. La piste se compose de deux bords du champ et de deux demi-cercles. La longueur de la piste est de 400 mètres. Quelle est la plus grande aire possible du champ, en mètres carrés ?\n\n[asy]\nunitsize(1 cm);\n\nfilldraw((0,0)--(3,0)--(3,2)--(0,2)--cycle,lightgreen);\ndraw((0,0)--(3,0),linewidth(2*bp));\ndraw((0,2)--(3,2),linewidth(2*bp));\ndraw(arc((3,1),1,-90,90),linewidth(2*bp));\ndraw(arc((0,1),1,90,270),linewidth(2*bp));\n[/asy]",
+    "answer": "\\frac{20000}{\\pi}"
+  },
+  {
+    "question": "Dans $\\triangle{RST}$, montré, $\\sin{R}=\\frac{2}{5}$. Quelle est la valeur de $\\sin{T}$ ?\n\n[asy]\npair R,S,T;\nT = (0,0);\nS = (2,0);\nR = (2,sqrt(21));\ndraw(R--S--T--R);\ndraw(rightanglemark(R,S,T,10));\nlabel(\"$T$\",T,SW);\nlabel(\"$S$\",S,SE);\nlabel(\"$R$\",R,NE);\nlabel(\"$5$\",(R+T)/2,NW);\n[/asy]",
+    "answer": "\\frac{\\sqrt{21}}{5}"
+  },
+  {
+    "question": "La plus petite distance entre l'origine et un point sur le graphe de $y=\\frac{1}{\\sqrt{2}}\\left(x^2-3\\right)$ peut être exprimée comme $\\sqrt{a}/b$, où $a$ et $b$ sont des entiers positifs tels que $a$ n'est pas divisible par le carré d'un entier supérieur à un. Trouvez $a+b$.",
+    "answer": "12"
+  },
+  {
+    "question": "Soit $f$ définie par \\[f(x) = \\left\\{\n\\begin{array}{cl}\n3-x & \\text{ si } x \\leq 3, \\\\\n-x^3+2x^2+3x & \\text{ si } x>3.\n\\end{array}\n\\right.\\]Calculez $f^{-1}(0)+f^{-1}(6)$.",
+    "answer": "0"
+  },
+  {
+    "question": "Les distances d'un point $P$ à cinq des sommets d'un octaèdre régulier sont 3, 7, 8, 9 et 11. Trouvez la distance de $P$ au sixième sommet.\n\n[asy]\nimport three;\n\nsize(125);\ncurrentprojection = perspective(6,3,1);\n\ntriple A, B, C, D, E, F, P;\n\nA = (1,0,0);\nB = (-1,0,0);\nC = (0,1,0);\nD = (0,-1,0);\nE = (0,0,1);\nF = (0,0,-1);\nP = (1.2,1.5,1);\n\ndraw(A--P,red);\ndraw(B--P,red);\ndraw(C--P,red);\ndraw(D--P,red);\ndraw(E--P,red);\ndraw(F--P,red);\n\ndraw(A--C);\ndraw(A--D);\ndraw(A--E);\ndraw(A--F);\ndraw(C--E--D--F--cycle);\ndraw(D--B--C,dashed);\ndraw(B--C,dashed);\ndraw(B--D,dashed);\ndraw(B--E,dashed);\ndraw(B--F,dashed);\n\nlabel(\"$P$\", P, NE);\n[/asy]",
+    "answer": "\\sqrt{66}"
+  },
+  {
+    "question": "C'est une formule bien connue en physique que la force est égale à la masse multipliée par l'accélération. Jen veut lancer une balle de softball avec la même force que Jack lance une balle de baseball. Si la balle de softball a une masse de $200$ g et la balle de baseball a une masse de $150$ g, quel est le rapport de l'accélération de la balle de Jen par rapport à celle de Jack ? Répondez sous forme de fraction irréductible.",
+    "answer": "\\frac 34"
+  },
+  {
+    "question": "Combien de chiffres identiques trouve-t-on dans les représentations en base 7 et en base 8 de $629_{10}$ ? Par exemple, $121_{3}$ et $413_{5}$ auraient un chiffre en commun.",
+    "answer": "3"
+  },
+  {
+    "question": "Six sorcières et dix sorciers sont à un cocktail arcanique. Les sorcières ont décidé de serrer la main de chacun des sorciers. Aucune des sorcières n'a pris la peine de se serrer la main, car elles sont déjà toutes de bonnes amies, et les sorciers se détestent tous un peu et n'ont pas serré la main des autres sorciers. Combien de poignées de main ont eu lieu lors du cocktail ?",
+    "answer": "60"
+  },
+  {
+    "question": "Soit $f(x)$ le polynôme \\[f(x)=3x^4+5x^2-9x-2.\\] Si $g(x)$ est égal au polynôme $f(x-1)$, quelle est la somme des coefficients de $g$ ?",
+    "answer": "-2"
+  },
+  {
+    "question": "Quelle est la distance la plus courte du point $(6, 0)$ à la ligne $y = 2x-2$ ? Exprimez votre réponse sous la forme radicale la plus simple.",
+    "answer": "2\\sqrt{5}"
+  },
+  {
+    "question": "Les nombres complexes $\\alpha_1, \\alpha_2, \\alpha_3$, et $\\alpha_4$ sont les quatre racines distinctes de l'équation $x^4+2x^3+2=0$. Déterminez l'ensemble non ordonné \\[\n\\{\\alpha_1\\alpha_2 + \\alpha_3\\alpha_4, \\alpha_1\\alpha_3 + \\alpha_2\\alpha_4, \\alpha_1\\alpha_4 + \\alpha_2\\alpha_3\\}.\n\\]",
+    "answer": "\\{1\\pm\\sqrt{5},-2\\}"
+  },
+  {
+    "question": "Trois crayons et une gomme jumbo coûtent $\\$1.24$. Cinq crayons et une gomme jumbo coûtent $\\$1.82$. Aucun prix n'inclut la taxe. En centimes, quel est le coût d'un crayon ?",
+    "answer": "29"
+  },
+  {
+    "question": "Quel est le dernier chiffre non nul à droite du point décimal dans le développement décimal de $\\frac{137}{500}$ ?",
+    "answer": "4"
+  },
+  {
+    "question": "Le rectangle $ABCD$ a pour centre $O$ et $AB/AD=k$. Un point est choisi au hasard à l'intérieur du rectangle $ABCD$. Quelle est la probabilité qu'il soit plus proche de $O$ que de l'un des quatre sommets ?  [asy]\nsize(200);\ndraw((-250,100)--(250,100)--(250,-100)--(-250,-100)--cycle);\ndot((0,0));\nlabel(\"$O$\",(0,0),N);\nlabel(\"$A$\",(-250,100),NW); label(\"$B$\",(250,100),NE); label(\"$C$\",(250,-100),SE); label(\"$D$\",(-250,-100),SW);[/asy]",
+    "answer": "\\frac{1}{2}"
+  },
+  {
+    "question": "Déterminez le reste de 54 (mod 6).",
+    "answer": "0"
+  },
+  {
+    "question": "Soit \\[f(n) = \\left\\{\n\\begin{array}{cl}\n\\lfloor n \\rfloor & \\text{ si }n \\geq 4, \\\\\n\\lceil n \\rceil & \\text{ si } n < 4.\n\\end{array}\n\\right.\\]Trouvez $f\\left(\\frac{\\pi}{3}\\right) + f(\\sqrt{45}) + f(8^{2/3})$.",
+    "answer": "12"
+  },
+  {
+    "question": "Linda, Sherry, June et Connie ont parcouru leur quartier en vendant des cookies de scoutisme. Linda a gagné $\\$27.47$, Sherry a gagné $\\$35.23$, June a gagné $\\$37.37$, et Connie a gagné $\\$26.52$. Après la vente, elles ont mis leur argent en commun et sont allées à la banque pour convertir les pièces en dollars. Combien d'argent, en centimes, restait-il après qu'elles aient converti autant de pièces en billets qu'elles le pouvaient ?",
+    "answer": "59"
+  },
+  {
+    "question": "Une classe de 30 élèves a récemment passé un test. Si 20 élèves ont obtenu 80, 8 élèves ont obtenu 90, et 2 élèves ont obtenu 100, quelle était la moyenne de la classe (la moyenne) à ce test ?",
+    "answer": "84"
+  },
+  {
+    "question": "Ci-dessous se trouve un carré magique, ce qui signifie que la somme des nombres dans chaque ligne, dans chaque colonne, et dans chacune des $2$ diagonales principales est égale. Quelle est la valeur de $n$?\n\n[asy]size(125);\nfor(int i = 0; i<4; ++i)\n{\n\ndraw((0,i)--(3,i),linewidth(1));\n}\n\nfor(int j = 0; j<4; ++j)\n{\n\ndraw((j,0)--(j,3),linewidth(1));\n}\n\nlabel(\"$n-3$\",(.5,.5));\nlabel(\"3\",(.5,1.5));\nlabel(\"$n+1$\",(.5,2.5));\n\nlabel(\"$n+2$\",(1.5,.5));\nlabel(\"$2n-9$\",(1.5,1.5));\nlabel(\"$1$\",(1.5,2.5));\n\nlabel(\"$2$\",(2.5,.5));\nlabel(\"$n$\",(2.5,1.5));\nlabel(\"$n-1$\",(2.5,2.5));\n[/asy]",
+    "answer": "7"
+  },
+  {
+    "question": "Jim et Martha se tiennent ensemble à l'angle d'un champ rectangulaire. Jim traverse le champ en diagonale. Martha atteint le même endroit en marchant le long de sa longueur et de sa largeur. Le champ mesure 300 pieds de large et 400 pieds de long. Combien de pieds Jim marche-t-il de moins que Martha ?",
+    "answer": "200"
+  },
+  {
+    "question": "Soit $\\omega$ un nombre complexe tel que $\\omega^3 = 1.$ Trouvez toutes les valeurs possibles de\n\\[\\frac{1}{1 + \\omega} + \\frac{1}{1 + \\omega^2}.\\]Entrez toutes les valeurs possibles, séparées par des virgules.",
+    "answer": "1"
+  },
+  {
+    "question": "Quelle est la distance la plus courte qui peut être parcourue si vous commencez à n'importe quel point, $A$, $B$, $C$, ou $D$, et visitez les trois autres points une fois ?\n\n[asy]\npair A,B,C, D;\nA = (-3,3); B = (3,0); C = (0, -4); D = (0,0);\ndraw(D--B--C--cycle); draw(D--A--B--cycle);draw(D--A--C--cycle);\nlabel(\"$A$\", A, NW);label(\"$B$\", B, E); label(\"$C$\", C, S);label(\"$D$\", D, NE);\nlabel(\"3\", D--B, S); label(\"6\", A--B, NE); label(\"6\", A--C, SW); label(\"4\", D--C, NW+N);\nlabel(\"5\", A--D, SE+NE); label(\"5\", C--B, E);\n[/asy]",
+    "answer": "13"
+  }
+]

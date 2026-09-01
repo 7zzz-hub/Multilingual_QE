@@ -1,0 +1,398 @@
+[
+  {
+    "question": "Aşağıdaki diyagramda $\\sin D = 0.7$ olduğunu varsayın. $DE$ nedir? [asy]\npair D,E,F;\nF = (0,0);\nD = (sqrt(51),7);\nE = (0,7);\ndraw(D--E--F--D);\ndraw(rightanglemark(D,E,F,15));\nlabel(\"$D$\",D,NE);\nlabel(\"$E$\",E,NW);\nlabel(\"$F$\",F,SW);\nlabel(\"$7$\",(E+F)/2,W);\n[/asy]",
+    "answer": "\\sqrt{51}"
+  },
+  {
+    "question": "$z = 2 + \\sqrt{2} - (3 + 3 \\sqrt{2})i$ ve $c = 2 - 3i$ olsun. $w$, $z$'nin $c$ etrafında $\\frac{\\pi}{4}$ açıyla saat yönünün tersine döndürülmesiyle elde edilen sonuç olsun.\n\n[asy]\nunitsize(0.6 cm);\n\npair C, W, Z;\n\nZ = (2 + sqrt(2), -3 - 3*sqrt(2));\nC = (2,-3);\nW = rotate(45,C)*(Z);\n\ndraw(Z--C--W);\n\ndot(\"$c$\", C, N);\ndot(\"$w$\", W, SE);\ndot(\"$z$\", Z, S);\nlabel(\"$\\frac{\\pi}{4}$\", C + (0.6,-1));\n[/asy]\n\n$w$'yu bulun.",
+    "answer": "6 - 5i"
+  },
+  {
+    "question": "$\\sqrt{242}$ ifadesini basitleştirin.",
+    "answer": "11\\sqrt2"
+  },
+  {
+    "question": "8 kişinin, Pierre, Rosa ve Thomas'ın birlikte oturmak istediği bir yuvarlak masa etrafında kaç farklı şekilde oturabileceğini bulabilir misiniz? (Bir oturma düzeni, diğerinin bir dönüşü ise aynı kabul edilir.)",
+    "answer": "720"
+  },
+  {
+    "question": "$$\\left(10x^3-\\frac{1}{2x^2}\\right)^{5}$$ ifadesinin açılımında sabit terimi bulun.",
+    "answer": "-125"
+  },
+  {
+    "question": "Eğer $n \\equiv 2 \\pmod{7}$ ise, o zaman $(n + 2)(n + 4)(n + 6)$ ifadesi 7'ye bölündüğünde kalanı bulun.",
+    "answer": "3"
+  },
+  {
+    "question": "Düzgün bir beşgen, merkezi etrafında saat yönünün tersine döndürülüyor. Orijinal konumuyla çakışana kadar kaç derece döndürülmelidir?",
+    "answer": "72"
+  },
+  {
+    "question": "Bir paralelkenarın koordinatları (5, 3), (6, 8), (7, 4) ve $(x, y)$ olup $x > 7$'dir. $x + y$ değerini nedir?",
+    "answer": "17"
+  },
+  {
+    "question": "Dik üçgen $ABC$'de $\\angle B = 90^\\circ$ iken, $\\sin A = 2\\cos A$ olduğunu biliyoruz. $\\tan A$ nedir?",
+    "answer": "2"
+  },
+  {
+    "question": "Grafiği $f(x)=\\frac{2x}{x^2-5x-14}$ olan fonksiyonun dikey asimptotları $x=a$ ve $x=b$, yatay asimptotu ise $y=c$'dir. $a+b+c$'yi bulun.",
+    "answer": "5"
+  },
+  {
+    "question": "$99^2+99+1$ işlemini kafanızda hesaplayın.",
+    "answer": "9901"
+  },
+  {
+    "question": "\\[\\left\\| \\begin{pmatrix} 2 & 3 \\\\ 0 & -2 \\end{pmatrix} \\bold{v} \\right\\| \\le C \\|\\bold{v}\\|\\] eşitsizliğini tüm iki boyutlu vektörler $\\bold{v}$ için sağlayan en küçük pozitif gerçek sayı $C$'yi bulun.\n\nBurada, iki boyutlu bir vektör $\\mathbf{a}$ için, $\\|\\mathbf{a}\\|$ ifadesi $\\mathbf{a}$'nın büyüklüğüdür.",
+    "answer": "4"
+  },
+  {
+    "question": "$1^{(2^{235423523})}$ nedir?",
+    "answer": "1"
+  },
+  {
+    "question": "$z$ bir karmaşık sayı olmak üzere $z^5 = 1$ ve $z \\neq 1.$  Aşağıdakini hesaplayın:\n\\[z + \\frac{1}{z} + z^2 + \\frac{1}{z^2}.\\]",
+    "answer": "-1"
+  },
+  {
+    "question": "$58_9 - 18_9$ işlemini hesaplayın. Cevabınızı $9$ tabanında ifade edin.",
+    "answer": "40_9"
+  },
+  {
+    "question": "Basitleştir\n\\[\\frac{\\sec x}{\\sin x} - \\frac{\\sin x}{\\cos x}.\\]",
+    "answer": "\\cot x"
+  },
+  {
+    "question": "On treek, üç squig ve bir goolee kadar ağırlığa sahiptir. İki treek ve bir goolee, bir squig ile eşit ağırlıktadır. Kaç treek'in toplam ağırlığı bir squig'in ağırlığına eşittir?",
+    "answer": "3"
+  },
+  {
+    "question": "$3t^2+5t+a$ ve $4t^2+bt-2$ çarpımının $12t^4+26t^3-8t^2-16t+6$ olduğu verilmiştir. $a+b$ nedir?",
+    "answer": "-1"
+  },
+  {
+    "question": "Dairesel tabanlara sahip dikey bir silindirik tank, saatte $20\\pi$ metreküp hızla su ile dolduruluyor. Tank doldukça, su seviyesi saatte dört metre yükseliyor. Tankın yarıçapı kaç metredir? Cevabınızı en basit köklü formda ifade edin.",
+    "answer": "\\sqrt{5}"
+  },
+  {
+    "question": "\\[ f(x) = \\begin{cases} ax^2 & \\text{eğer } x \\geq a,\\\\ ax +2a& \\text{eğer } x <a, \\end{cases} \\] fonksiyonunu düşünün, burada $a$ bir sayıdır.\n\n$y=f(x)$ grafiğinin her yatay çizgiyi en az bir kez kestiği en büyük $a$ değeri nedir?",
+    "answer": "2"
+  },
+  {
+    "question": "$x^2 - 10x + y^2 + 6y + c = 0$ denklemi ile verilen çemberin yarıçapı 1 uzunluğunda olacak şekilde $c$ hangi değeri almalıdır?",
+    "answer": "33"
+  },
+  {
+    "question": "$\\lambda$ sabit bir sayı olsun, $0 \\le \\lambda \\le 4,$ ve $f : [0,1] \\to [0,1]$ fonksiyonu\n\\[f(x) = \\lambda x(1 - x)\\] ile tanımlansın. $f(x) \\neq x$ ancak $f(f(x)) = x$ olacak şekilde $[0,1]$ aralığında bir $x$ var olduğunda, $0 \\le \\lambda \\le 4$ için $\\lambda$ değerlerini bulun.",
+    "answer": "(3,4]"
+  },
+  {
+    "question": "$\\theta$ açısının en küçük pozitif derece ölçüsünü bulun, öyle ki\n\\[\\tan \\theta = \\frac{\\cos 5^\\circ \\cos 20^\\circ + \\cos 35^\\circ \\cos 50^\\circ - \\sin 5^\\circ \\sin 20^\\circ - \\sin 35^\\circ \\sin 50^\\circ}{\\sin 5^\\circ \\cos 20^\\circ - \\sin 35^\\circ \\cos 50^\\circ + \\cos 5^\\circ \\sin 20^\\circ - \\cos 35^\\circ \\sin 50^\\circ}.\\]",
+    "answer": "120^\\circ"
+  },
+  {
+    "question": "ELLIPSE kelimesinin harflerini düzenlemenin kaç yolu vardır?",
+    "answer": "1260"
+  },
+  {
+    "question": "$42!$ (42 faktöriyel) sayısının sonunda kaç tane sıfır vardır? (Hatırlatma: $n!$ sayısı, 1'den $n$'ye kadar olan tam sayıların çarpımıdır. Örneğin, $5!=5\\cdot 4\\cdot3\\cdot2\\cdot 1= 120$.)",
+    "answer": "9"
+  },
+  {
+    "question": "\\[-1 \\le x,\\] \\[y \\le 1\\] koşuluyla \\[f(x,y) = x \\sqrt{1 - y^2} + y \\sqrt{1 - x^2}\\] ifadesinin maksimum değerini bulun.",
+    "answer": "1"
+  },
+  {
+    "question": "Noktalar $O,$ $A,$ ve $B$ için $\\overrightarrow{OA} = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix}$ ve $\\overrightarrow{OB} = \\begin{pmatrix} -3 \\\\ -2 \\\\ 1 \\end{pmatrix}$ koşulları sağlanmaktadır. Üçgen $OAB$'nin alanını bulun.",
+    "answer": "3 \\sqrt{5}"
+  },
+  {
+    "question": "$z$ karmaşık bir sayı olsun ve\n\\[z + \\frac{1}{z} = \\frac{1 + \\sqrt{5}}{2}.\\] eşitliğini sağlasın. Aşağıdakini bulun:\n\\[z^{85} + \\frac{1}{z^{85}}.\\]",
+    "answer": "-2"
+  },
+  {
+    "question": "Üçgen $ABC$'nin $AD$, $BE$ ve $CF$ kenarortayları ağırlık merkezi $G$'de kesişiyor. $G$'den geçip $BC$'ye paralel olan doğru, sırasıyla $AB$ ve $AC$'yi $M$ ve $N$ noktalarında kesiyor. Üçgen $ABC$'nin alanı 144 ise, üçgen $ENG$'nin alanını bulun.",
+    "answer": "8"
+  },
+  {
+    "question": "Bir kitaplıkta toplam 24 kitap bulunan 3 raf vardır. Üst rafta 8 tane gizem kitabı vardır. Orta rafta 10 tane matematik kitabı vardır. Alt rafta 6 tane bilim kitabı vardır. Şimdi her raftan iki kitap alınıyor. Üç rafta kalan kitapların hangi kesiri matematik kitabıdır? Cevabınızı basit bir kesir olarak ifade edin.",
+    "answer": "\\frac{4}{9}"
+  },
+  {
+    "question": "Bir koninin hacmi, $V = \\frac{1}{3}Bh$ formülü ile verilir, burada $B$ tabanın alanı ve $h$ yüksekliktir. Bir koninin taban alanı 30 birim kare ve yüksekliği 6.5 birimdir. Hacminin kaç birim küp olduğunu bulun.",
+    "answer": "65"
+  },
+  {
+    "question": "Bir aritmetik dizinin dördüncü terimi $200$ ve sekizinci terimi $500$ ise, altıncı terimi nedir?",
+    "answer": "350"
+  },
+  {
+    "question": "$\\frac{21}{2^2 \\cdot 5^7}$ kesirini sonlu bir ondalık sayıya çevirin.",
+    "answer": ".0000672"
+  },
+  {
+    "question": "100 ve 150'nin her ikisinin de böleni olan kaç tane pozitif iki basamaklı tam sayı vardır?",
+    "answer": "3"
+  },
+  {
+    "question": "$2^{24}$'ün mükemmel bir $n^{\\text{th}}$ kuvveti olduğu kaç tane pozitif tam sayı $n>1$ vardır?",
+    "answer": "7"
+  },
+  {
+    "question": "Hillary'nin on bir madeni parası var, hepsi onluk ve beşlik. Toplamda, madeni paralar 75 sent değerinde. Kaç tane beşliği var?",
+    "answer": "7"
+  },
+  {
+    "question": "Paul ve Jesse, ilk altı asal sayıdan rastgele bir sayı seçiyor. Seçtikleri sayıların toplamının çift olma olasılığı nedir?",
+    "answer": "\\frac{13}{18}"
+  },
+  {
+    "question": "Nokta $(a, b)$, $3x + 2y = 12$ denklemi ile verilen doğrunun üzerindedir. $a = 4$ olduğunda, $b$ değeri nedir?",
+    "answer": "0"
+  },
+  {
+    "question": "Gösterildiği gibi, on iki 1'e 1 kare bir dikdörtgen oluşturuyor. Gölgelendirilmiş bölgenin toplam alanı nedir? [asy]\nsize(4cm);defaultpen(linewidth(0.75));\n\n// Doldurulmuş kısımlar\nfill((0, 4)--(0, 0)--(2, 0)--cycle, gray(0.75));\nfill((0, 4)--(3, 4)--(3, 0)--cycle, gray(0.75));\n\n// ızgara\nint j;\nfor (j = 0; j < 4; ++j) {draw((j, 0)--(j, 4));}\nfor (j = 0; j < 5; ++j) {draw((0, j)--(3, j));}\n\n// köşegenler\ndraw((0, 4)--(3, 0)); draw((0, 4)--(2, 0));\n[/asy]",
+    "answer": "10"
+  },
+  {
+    "question": "Basamakları sadece sıfır ve birlerden oluşan 450'nin en küçük pozitif katı nedir?",
+    "answer": "11,\\! 111,\\! 111,\\! 100"
+  },
+  {
+    "question": "Gösterilen tekerlek iki kez çevrilir, böylece gösterge tarafından belirtilen sayılar rastgele belirlenir (tekerlekteki her sayının eşit olasılıkla gelmesiyle). Bu şekilde belirlenen iki sayı kaydedilir. İlk sayı 4'e bölünür ve dama tahtasının sütunlarını işaretleyen kalanlardan biri olan 1, 2, 3 belirlenir. İkinci sayı 5'e bölünür ve dama tahtasının satırlarını işaretleyen kalanlardan biri olan 1, 2, 3, 4 belirlenir. Son olarak, bu sütun ve satırın kesiştiği kareye bir dama taşı yerleştirilir. Dama taşının dama tahtasının gölgeli bir karesine yerleştirilme olasılığı nedir?",
+    "answer": "\\frac{1}{2}"
+  },
+  {
+    "question": "Kesir $\\frac{4321}{5^7\\cdot2^8}$'in sonlu ondalık gösterimindeki rakamların toplamı nedir?",
+    "answer": "14"
+  },
+  {
+    "question": "$\\sin 20^\\circ \\sin 40^\\circ \\sin 60^\\circ \\sin 80^\\circ \\sin 100^\\circ \\sin 120^\\circ \\sin 140^\\circ \\sin 160^\\circ$ ifadesini bulun.",
+    "answer": "\\frac{9}{256}"
+  },
+  {
+    "question": "Sabit bir $c$ için, silindirik koordinatlarda $(r,\\theta,z),$ aşağıdaki denklemle tanımlanan şekli bulun\n\\[z = c.\\](A) Doğru\n(B) Çember\n(C) Düzlem\n(D) Küre\n(E) Silindir\n(F) Konik\n\nDoğru seçeneğin harfini girin.",
+    "answer": "\\text{(C)}"
+  },
+  {
+    "question": "Eğer $\\mathbf{a}$ ve $\\mathbf{b}$ vektörleri $\\|\\mathbf{a}\\| = 2,$ $\\|\\mathbf{b}\\| = 7,$ ve\n\\[\\mathbf{a} \\times \\mathbf{b} = \\begin{pmatrix} 3 \\\\ 2 \\\\ 6 \\end{pmatrix}\\] ise, $\\mathbf{a}$ ve $\\mathbf{b}$ arasındaki en küçük açıyı, derece cinsinden bulun.",
+    "answer": "30^\\circ"
+  },
+  {
+    "question": "$f(x) = x^3 - 49x^2 + 623x - 2015$ ile tanımlanan fonksiyonun $f$ olduğunu ve $g(x) = f(x + 5)$ olduğunu varsayalım. $g$ fonksiyonunun köklerinin toplamını hesaplayın.",
+    "answer": "34"
+  },
+  {
+    "question": "Hesaplayın\n\\[\\frac{1}{\\cos^2 10^\\circ} + \\frac{1}{\\sin^2 20^\\circ} + \\frac{1}{\\sin^2 40^\\circ}.\\]",
+    "answer": "12"
+  },
+  {
+    "question": "İç açılarından biri hariç hepsinin toplamı $1070^{\\circ}$ olan bir dışbükey çokgenin kaç kenarı vardır?",
+    "answer": "8"
+  },
+  {
+    "question": "$0<t<23$ ve $t+2$, $t$'nin $23$ modundaki tersi olacak şekilde benzersiz $\\textbf{tek}$ tam sayı $t$'yi bulun.",
+    "answer": "17"
+  },
+  {
+    "question": "Hacmi $1$ fit küp olan bir küpün toplam yüzey alanı, inç kare cinsinden, nedir?",
+    "answer": "864 \\mbox{ inches}^2"
+  },
+  {
+    "question": "$5+\\sqrt{3}$ sayısı ile onun kök eşleniğinin çarpımını hesaplayın.",
+    "answer": "22"
+  },
+  {
+    "question": "1, 3, 5, 7, $\\dots$ dizisinin 2003. terimi nedir?",
+    "answer": "4005"
+  },
+  {
+    "question": "$f(x) = 2x-3$ ve $g(x) = x+1$ fonksiyonları veriliyor. $g(f(5)-1)$ ifadesinin değeri nedir?",
+    "answer": "7"
+  },
+  {
+    "question": "\\[\\sin \\left( \\tan^{-1} (x) + \\cot^{-1} \\left( \\frac{1}{x} \\right) \\right) = \\frac{1}{3}\\] denkleminin tüm çözümlerini bulun. Tüm çözümleri virgülle ayırarak girin.",
+    "answer": "3 \\pm 2 \\sqrt{2}"
+  },
+  {
+    "question": "Bir doğru, \n\\[\\begin{pmatrix} 3 \\\\ -10 \\\\ 1 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ -9 \\\\ -2 \\end{pmatrix}.\\] ile tanımlanmıştır. Diğer bir doğru ise \n\\[\\begin{pmatrix} -5 \\\\ -3 \\\\ 6 \\end{pmatrix} + u \\begin{pmatrix} 4 \\\\ -18 \\\\ -4 \\end{pmatrix}.\\] ile tanımlanmıştır. Bu iki doğru paraleldir. Bu iki doğru arasındaki mesafeyi bulun.",
+    "answer": "7"
+  },
+  {
+    "question": "Köşeleri şu noktalar olan dikdörtgen bölgeyi düşünün: $$(5,4), (-5,4), (-5,-4), (5,-4).$$ Bu dikdörtgen bölgenin iç kısmında tam sayı koordinatlarına sahip kaç nokta bulunacaktır?",
+    "answer": "63"
+  },
+  {
+    "question": "$\\mathbf{a},$ $\\mathbf{b},$ $\\mathbf{c}$ üç vektör olsun, öyle ki\n\\[\\mathbf{a} \\times \\mathbf{b} = \\begin{pmatrix} 6 \\\\ -7 \\\\ 3 \\end{pmatrix}, \\quad \\mathbf{a} \\times \\mathbf{c} = \\begin{pmatrix} 4 \\\\ 7 \\\\ 2 \\end{pmatrix}, \\quad \\mathbf{b} \\times \\mathbf{c} = \\begin{pmatrix} 1 \\\\ -7 \\\\ 18 \\end{pmatrix}.\\] $(2 \\mathbf{b} - \\mathbf{a}) \\times (3 \\mathbf{c} + \\mathbf{a})$ ifadesini hesaplayın.",
+    "answer": "\\begin{pmatrix} -18 \\\\ -49 \\\\ 96 \\end{pmatrix}"
+  },
+  {
+    "question": "$\\textbf{Juan'ın Eski Pul Koleksiyonu}$\n\nJuan, koleksiyonundaki pulları ülkeye ve basıldıkları on yıla göre düzenler. Bir pul dükkanında ödediği fiyatlar: Brezilya ve Fransa için her biri $6$ sent, Peru için her biri $4$ sent ve İspanya için her biri $5$ senttir. (Brezilya ve Peru Güney Amerika ülkeleridir ve Fransa ve İspanya Avrupa'dadır.) [asy]\n/* AMC8 2002 #8, 9, 10 Problem */\nsize(3inch, 1.5inch);\nfor ( int y = 0; y <= 5; ++y )\n{\n\ndraw((0,y)--(18,y));\n}\ndraw((0,0)--(0,5));\ndraw((6,0)--(6,5));\ndraw((9,0)--(9,5));\ndraw((12,0)--(12,5));\ndraw((15,0)--(15,5));\ndraw((18,0)--(18,5));\n\nlabel(scale(0.8)*\"50s\", (7.5,4.5));\nlabel(scale(0.8)*\"4\", (7.5,3.5));\nlabel(scale(0.8)*\"8\", (7.5,2.5));\nlabel(scale(0.8)*\"6\", (7.5,1.5));\nlabel(scale(0.8)*\"3\", (7.5,0.5));\n\nlabel(scale(0.8)*\"60s\", (10.5,4.5));\nlabel(scale(0.8)*\"7\", (10.5,3.5));\nlabel(scale(0.8)*\"4\", (10.5,2.5));\nlabel(scale(0.8)*\"4\", (10.5,1.5));\nlabel(scale(0.8)*\"9\", (10.5,0.5));\n\nlabel(scale(0.8)*\"70s\", (13.5,4.5));\nlabel(scale(0.8)*\"12\", (13.5,3.5));\nlabel(scale(0.8)*\"12\", (13.5,2.5));\nlabel(scale(0.8)*\"6\", (13.5,1.5));\nlabel(scale(0.8)*\"13\", (13.5,0.5));\n\nlabel(scale(0.8)*\"80s\", (16.5,4.5));\nlabel(scale(0.8)*\"8\", (16.5,3.5));\nlabel(scale(0.8)*\"15\", (16.5,2.5));\nlabel(scale(0.8)*\"10\", (16.5,1.5));\nlabel(scale(0.8)*\"9\", (16.5,0.5));\n\nlabel(scale(0.8)*\"Country\", (3,4.5));\nlabel(scale(0.8)*\"Brazil\", (3,3.5));\nlabel(scale(0.8)*\"France\", (3,2.5));\nlabel(scale(0.8)*\"Peru\", (3,1.5));\nlabel(scale(0.8)*\"Spain\", (3,0.5));\n\nlabel(scale(0.9)*\"Juan's Stamp Collection\", (9,0), S);\nlabel(scale(0.9)*\"Number of Stamps by Decade\", (9,5), N);\n[/asy] $70\\text{'ler}$ pullarının ortalama fiyatı, sent cinsinden, ne kadardır? Cevabınızı en yakın onda bir sente yuvarlayın.",
+    "answer": "5.4 \\text{ cents}"
+  },
+  {
+    "question": "$ABCD$ bir yamuk olsun ve $\\overline{AD}|| \\overline{BC}$ olsun. $\\overline{AC}\\perp\\overline{CD}$, $\\overline{AC}$, $\\angle BAD$ açısını ikiye bölüyor ve $[ABCD]=42$ verildiğine göre, $[\\triangle ACD]$'yi hesaplayın.",
+    "answer": "28"
+  },
+  {
+    "question": "Eğer $\\frac{\\sqrt{2x}}{\\sqrt{3x-1}}=\\frac32$ ise, $x$ için çözüm bulun. Cevabınızı en basit kesirli biçimde ifade edin.",
+    "answer": "\\frac9{19}"
+  },
+  {
+    "question": "@ işlemi, $\\frac{m}{n}@\\frac{p}{q} = (m)(p)\\left(\\frac{q}{n}\\right)$ olarak tanımlanmıştır ve bu işlem $\\frac{p}{q}$ basit kesirleri için geçerlidir. $\\frac{7}{30}@\\frac{10}{21}$ işleminin basit hali nedir?",
+    "answer": "49"
+  },
+  {
+    "question": "Dört nokta, $A$, $B$, $C$ ve $D$, bir çemberin çevresi üzerinde rastgele ve bağımsız olarak seçiliyor. $AB$ ve $CD$ doğrularının kesişme olasılığı nedir?",
+    "answer": "\\frac{1}{3}"
+  },
+  {
+    "question": "Şekilde, merkezi $D$ olan iki çemberin yarıçapları $1$ ve $2$'dir. Taralı bölgenin toplam alanı, büyük çemberin alanının $\\frac5{12}$'si kadardır. (Küçük) $\\angle ADC$ açısının ölçüsü kaç derecedir?",
+    "answer": "120"
+  },
+  {
+    "question": "Silindirik bir beher 8 cm yüksekliğinde ve 3 cm yarıçapındadır. Yarıçapı 6 cm olan küresel bir tankı doldurmak için kaç tane böyle beher su gerekir?",
+    "answer": "4"
+  },
+  {
+    "question": "Aşağıdakini değerlendirin\n\\[\\sin (\\arcsin 0.4 + \\arcsin 0.5) \\cdot \\sin (\\arcsin 0.5 - \\arcsin 0.4).\\]",
+    "answer": "\\frac{9}{100}"
+  },
+  {
+    "question": "Bir bisiklet dakikada 20 feet hızla gidiyor. Bisikletin hızı inç/saniye cinsinden nasıl ifade edilir?",
+    "answer": "4"
+  },
+  {
+    "question": "Bir Senato komitesinde 8 Cumhuriyetçi ve 6 Demokrat var. Her iki partiden de en az bir üye içeren 5 üyeli bir alt komiteyi kaç farklı şekilde oluşturabiliriz?",
+    "answer": "1940"
+  },
+  {
+    "question": "$513^2 - 487^2$ ifadesinin değeri nedir?",
+    "answer": "26000"
+  },
+  {
+    "question": "Üç ardışık tam sayının çarpımı 120'dir. Bu çarpım, üç tam sayının ortalamasına bölündüğünde sonuç 24 olur. Üç ardışık tam sayının en büyüğü nedir?",
+    "answer": "6"
+  },
+  {
+    "question": "$\\sqrt[3]{x^2 - 4x + 4} = 16$ eşitliğini sağlayan pozitif $x$ değerini bulun.",
+    "answer": "66"
+  },
+  {
+    "question": "Aşağıdakini basitleştirin\n\\[\\cos \\left( \\frac{2 \\pi}{15} \\right) \\cos \\left (\\frac {4 \\pi}{15} \\right) \\cos \\left( \\frac{8 \\pi}{15} \\right) \\cos \\left( \\frac {16 \\pi}{15} \\right).\\]",
+    "answer": "\\frac{1}{16}"
+  },
+  {
+    "question": "Üçgen $ABC$ ikizkenardır, $AB=AC$ ve yükseklik $AM=11.$ $\\overline{AM}$ üzerinde $AD=10$ ve $\\angle BDC=3\\angle BAC$ olacak şekilde bir $D$ noktası olduğunu varsayın. Üçgen $ABC$'nin çevresini bulun.\n\n[asy]\nunitsize(0.4 cm);\n\npair A, B, C, D, M;\n\nA = (0,11);\nD = (0,1);\nB = (-11/2,0);\nC = (11/2,0);\nM = (B + C)/2;\n\ndraw(A--B--C--cycle);\ndraw(A--M);\ndraw(B--D--C);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, NW);\nlabel(\"$M$\", M, S);\n[/asy]",
+    "answer": "11 \\sqrt{5} + 11"
+  },
+  {
+    "question": "27 ardışık pozitif tam sayının toplamı $3^7$'dir. Ortanca değeri nedir?",
+    "answer": "81"
+  },
+  {
+    "question": "$-4<x^{4}+4x^{2}<21$ eşitsizliğini sağlayan $x$'in hangi gerçek değerleri vardır? Cevabınızı aralık gösterimi ile ifade ediniz.",
+    "answer": "(-\\sqrt{3}, \\sqrt{3})"
+  },
+  {
+    "question": "$x,$ $y,$ ve $z$ değişkenlerinin aşağıdaki denklemleri sağladığını varsayın:\n\\begin{align*}\nxyz &= 4, \\\\\nx^3 + y^3 + z^3 &= 4, \\\\\nxy^2 + x^2 y + xz^2 + x^2 z + yz^2 + y^2 z &= 12.\n\\end{align*} $xy + yz + zx$ değerini hesaplayın.",
+    "answer": "6"
+  },
+  {
+    "question": "Aşağıdaki tabloda, Central Lisesi öğrencilerinin bir anketinde otobüs yolcularının yüzdesi gösterilmektedir; her sınıfta 300 erkek ve 300 kız öğrenci anket edilmiştir. Hangi sınıfta erkek otobüs yolcularının sayısı, kız otobüs yolcularının sayısının $135\\%$'ine en yakındır? \\begin{tabular}{|l|c|c|}\\hline\nSınıf & Erkekler & Kızlar \\\\ \\hline\n$9^{\\mathrm{th}}$ sınıf & $41.1\\%$ & $39.4\\%$ \\\\ \\hline\n$10^{\\mathrm{th}}$ sınıf & $34.4\\%$ & $33.1\\%$ \\\\ \\hline\n$11^{\\mathrm{th}}$ sınıf & $20.6\\%$ & $13.8\\%$ \\\\ \\hline\n$12^{\\mathrm{th}}$ sınıf & $11.6\\%$ & $8.6\\%$ \\\\ \\hline\n\\end{tabular}",
+    "answer": "12"
+  },
+  {
+    "question": "Çöz\n\\[\\frac{|x^2 - 81|}{x^2 - 36x} < 0.\\]",
+    "answer": "(0,9) \\cup (9,36)"
+  },
+  {
+    "question": "Aşağıda gösterildiği gibi dikdörtgen bir alan, bir atletizm pisti ile çevrilmiştir. Pist, alanın iki kenarından ve iki yarım daireden oluşmaktadır. Pist uzunluğu 400 metredir. Alanın en büyük olası alanı, metrekare cinsinden nedir?",
+    "answer": "\\frac{20000}{\\pi}"
+  },
+  {
+    "question": "Gösterilen $\\triangle{RST}$ üçgeninde, $\\sin{R}=\\frac{2}{5}$.  $\\sin{T}$ nedir?\n\n[asy]\npair R,S,T;\nT = (0,0);\nS = (2,0);\nR = (2,sqrt(21));\ndraw(R--S--T--R);\ndraw(rightanglemark(R,S,T,10));\nlabel(\"$T$\",T,SW);\nlabel(\"$S$\",S,SE);\nlabel(\"$R$\",R,NE);\nlabel(\"$5$\",(R+T)/2,NW);\n[/asy]",
+    "answer": "\\frac{\\sqrt{21}}{5}"
+  },
+  {
+    "question": "Orijinden $y=\\frac{1}{\\sqrt{2}}\\left(x^2-3\\right)$ grafiği üzerindeki bir noktaya olan en küçük mesafe $\\sqrt{a}/b$ şeklinde ifade edilebilir, burada $a$ ve $b$ pozitif tam sayılar olup, $a$ birden büyük herhangi bir tam sayının karesi ile bölünemez. $a+b$'yi bulun.",
+    "answer": "12"
+  },
+  {
+    "question": "$f$ fonksiyonu şöyle tanımlanmıştır: \\[f(x) = \\left\\{\n\\begin{array}{cl}\n3-x & \\text{ eğer } x \\leq 3, \\\\\n-x^3+2x^2+3x & \\text{ eğer } x>3.\n\\end{array}\n\\right.\\] $f^{-1}(0)+f^{-1}(6)$ değerini hesaplayın.",
+    "answer": "0"
+  },
+  {
+    "question": "Bir nokta $P$'den düzgün bir oktahedronun beş köşesine olan mesafeler 3, 7, 8, 9 ve 11'dir. $P$'den altıncı köşeye olan mesafeyi bulun.\n\n[asy]\nimport three;\n\nsize(125);\ncurrentprojection = perspective(6,3,1);\n\ntriple A, B, C, D, E, F, P;\n\nA = (1,0,0);\nB = (-1,0,0);\nC = (0,1,0);\nD = (0,-1,0);\nE = (0,0,1);\nF = (0,0,-1);\nP = (1.2,1.5,1);\n\ndraw(A--P,red);\ndraw(B--P,red);\ndraw(C--P,red);\ndraw(D--P,red);\ndraw(E--P,red);\ndraw(F--P,red);\n\ndraw(A--C);\ndraw(A--D);\ndraw(A--E);\ndraw(A--F);\ndraw(C--E--D--F--cycle);\ndraw(D--B--C,dashed);\ndraw(B--C,dashed);\ndraw(B--D,dashed);\ndraw(B--E,dashed);\ndraw(B--F,dashed);\n\nlabel(\"$P$\", P, NE);\n[/asy]",
+    "answer": "\\sqrt{66}"
+  },
+  {
+    "question": "Kuvvetin kütle çarpı ivmeye eşit olduğu iyi bilinen bir fizik formülüdür. Jen, bir softbolu Jack'in bir beyzbolu attığı kuvvetle atmak istiyor. Eğer softbolun kütlesi $200$ g ve beyzbolun kütlesi $150$ g ise, Jen'in topunun ivmesinin Jack'in topunun ivmesine oranı nedir? Cevabı en sade haliyle bir kesir olarak verin.",
+    "answer": "\\frac 34"
+  },
+  {
+    "question": "$629_{10}$ sayısının taban 7 ve taban 8 gösterimlerinde kaç tane aynı rakam bulunur? Örneğin, $121_{3}$ ve $413_{5}$ bir ortak rakama sahip olurdu.",
+    "answer": "3"
+  },
+  {
+    "question": "Altı cadı ve on büyücü bir büyü toplantısında. Cadılar, her bir büyücüyle tokalaşmaya karar verdiler. Cadılar birbirleriyle tokalaşmadılar çünkü zaten hepsi iyi arkadaşlar ve büyücüler birbirlerinden pek hoşlanmadıkları için diğer büyücülerle tokalaşmadılar. Toplantıda kaç tokalaşma gerçekleşti?",
+    "answer": "60"
+  },
+  {
+    "question": "$f(x)$ polinomu \\[f(x)=3x^4+5x^2-9x-2\\] olan bir polinom olsun. $g(x)$, $f(x-1)$ polinomuna eşitse, $g$ polinomunun katsayılarının toplamı nedir?",
+    "answer": "-2"
+  },
+  {
+    "question": "$(6, 0)$ noktasından $y = 2x-2$ doğrusuna olan en kısa mesafe nedir? Cevabınızı en basit köklü formda ifade edin.",
+    "answer": "2\\sqrt{5}"
+  },
+  {
+    "question": "Karmaşık sayılar $\\alpha_1, \\alpha_2, \\alpha_3$ ve $\\alpha_4$, $x^4+2x^3+2=0$ denkleminin dört farklı köküdür. Aşağıdaki sırasız kümeyi belirleyin: \\[\n\\{\\alpha_1\\alpha_2 + \\alpha_3\\alpha_4, \\alpha_1\\alpha_3 + \\alpha_2\\alpha_4, \\alpha_1\\alpha_4 + \\alpha_2\\alpha_3\\}.\n\\]",
+    "answer": "\\{1\\pm\\sqrt{5},-2\\}"
+  },
+  {
+    "question": "Üç kalem ve bir jumbo silgi $\\$1.24$ tutuyor. Beş kalem ve bir jumbo silgi $\\$1.82$ tutuyor. Fiyatlara vergi dahil değildir. Bir kalemin maliyeti kaç centtir?",
+    "answer": "29"
+  },
+  {
+    "question": "$\\frac{137}{500}$ kesirinin ondalık açılımında, ondalık noktanın sağındaki son sıfır olmayan rakam nedir?",
+    "answer": "4"
+  },
+  {
+    "question": "Dikdörtgen $ABCD$'nin merkezi $O$ ve $AB/AD=k$'dir. Dikdörtgen $ABCD$'nin içinden rastgele bir nokta seçiliyor. Bu noktanın $O$'ya, dört köşeden herhangi birine olduğundan daha yakın olma olasılığı nedir?  [asy]\nsize(200);\ndraw((-250,100)--(250,100)--(250,-100)--(-250,-100)--cycle);\ndot((0,0));\nlabel(\"$O$\",(0,0),N);\nlabel(\"$A$\",(-250,100),NW); label(\"$B$\",(250,100),NE); label(\"$C$\",(250,-100),SE); label(\"$D$\",(-250,-100),SW);[/asy]",
+    "answer": "\\frac{1}{2}"
+  },
+  {
+    "question": "54 (mod 6) işleminin kalanını belirleyin.",
+    "answer": "0"
+  },
+  {
+    "question": "\\[f(n) = \\left\\{\n\\begin{array}{cl}\n\\lfloor n \\rfloor & \\text{ eğer }n \\geq 4, \\\\\n\\lceil n \\rceil & \\text{ eğer } n < 4.\n\\end{array}\n\\right.\\] fonksiyonunu göz önünde bulundurun. $f\\left(\\frac{\\pi}{3}\\right) + f(\\sqrt{45}) + f(8^{2/3})$ ifadesini bulun.",
+    "answer": "12"
+  },
+  {
+    "question": "Linda, Sherry, June ve Connie mahallelerinde dolaşarak kız izci kurabiyeleri sattılar. Linda $\\$27.47$, Sherry $\\$35.23$, June $\\$37.37$ ve Connie $\\$26.52$ kazandı. Satıştan sonra, paralarını bir araya getirip bankaya giderek madeni paraları dolara çevirdiler. Madeni paraları mümkün olduğunca banknotlara çevirdikten sonra geriye kaç sent kaldı?",
+    "answer": "59"
+  },
+  {
+    "question": "30 öğrenciden oluşan bir sınıf yakın zamanda bir sınava girdi. 20 öğrenci 80, 8 öğrenci 90 ve 2 öğrenci 100 aldıysa, bu sınavda sınıf ortalaması (aritmetik ortalama) neydi?",
+    "answer": "84"
+  },
+  {
+    "question": "Aşağıda bir sihirli kare bulunmaktadır, bu da her bir satırdaki, her bir sütundaki ve $2$ ana diyagonalindeki sayıların toplamının eşit olduğu anlamına gelir. $n$ değerini nedir?",
+    "answer": "7"
+  },
+  {
+    "question": "Jim ve Martha, dikdörtgen bir tarlanın köşesinde birlikte duruyorlar. Jim, tarlanın köşegeninden yürüyerek geçiyor. Martha ise aynı yere uzunluk ve genişlik boyunca yürüyerek ulaşıyor. Tarla 300 feet genişliğinde ve 400 feet uzunluğunda. Jim, Martha'dan kaç feet daha az yürüyor?",
+    "answer": "200"
+  },
+  {
+    "question": "$\\omega$ bir karmaşık sayı olmak üzere $\\omega^3 = 1$ olduğunu varsayalım. Aşağıdaki ifadenin tüm olası değerlerini bulun:\n\\[\\frac{1}{1 + \\omega} + \\frac{1}{1 + \\omega^2}.\\] Tüm olası değerleri virgülle ayırarak girin.",
+    "answer": "1"
+  },
+  {
+    "question": "Herhangi bir noktadan, $A$, $B$, $C$ veya $D$, başlayıp diğer üç noktayı birer kez ziyaret ettiğinizde kat edilebilecek en kısa mesafe nedir?\n\n[asy]\npair A,B,C, D;\nA = (-3,3); B = (3,0); C = (0, -4); D = (0,0);\ndraw(D--B--C--cycle); draw(D--A--B--cycle);draw(D--A--C--cycle);\nlabel(\"$A$\", A, NW);label(\"$B$\", B, E); label(\"$C$\", C, S);label(\"$D$\", D, NE);\nlabel(\"3\", D--B, S); label(\"6\", A--B, NE); label(\"6\", A--C, SW); label(\"4\", D--C, NW+N);\nlabel(\"5\", A--D, SE+NE); label(\"5\", C--B, E);\n[/asy]",
+    "answer": "13"
+  }
+]

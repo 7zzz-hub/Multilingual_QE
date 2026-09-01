@@ -1,4 +1,6 @@
 import json
+from dataset_loader import KLARDataset, IncludeDataset, MCLMDataset
+
 from transformers import (
     AutoTokenizer,
     AutoModelForCausalLM,
@@ -6,54 +8,33 @@ from transformers import (
 )
 import torch
 
-LANGUAGES = ["ar","ca","el","en","es","fr","he","hu","ja","ko","nl","tr","zh"]
 
-def get_dataset(dataset_name):
-    dataset = {}
-    for lang in LANGUAGES:
-        with open(f"data/{dataset_name}/{lang}.json") as f:
-            dataset[lang] = json.load(f)
-
-    dataset_template = {}
-    for lang in LANGUAGES:
-        dataset_template[lang] = []
-        for data in dataset[lang]:
-            for sample in data['samples']:
-                # 为每个 sample 生成所有模板变体
-                tmp = []
-                for template in data['prompt_templates']:
-                    tmp.append({
-                        "question": template.replace("<subject>", sample["subject"]).split("<mask>")[0],
-                        "answer": sample["object"],
-                        "index": sample["index"],
-                        "subject_en": sample["subject_en"] if lang!="en" else sample["subject"],
-                        "object_en": sample["object_en"] if lang!="en" else sample["object"]
-                    })
-                dataset_template[lang].append(tmp)
+def get_dataset(dataset_name, languages):
     
-    return get_prompt(dataset_template)
-
-
-def get_prompt(dataset, n_prompt=5):
-    dataset_prompt = {}
-    dataset_full = {}
-
-    for lang in LANGUAGES:
-        dataset_full[lang] = dataset[lang][n_prompt:]
-        dataset_prompt[lang] = []
-        for i in range(n_prompt):
-            dataset_prompt[lang].extend([
-                {
-                    "role": "user",
-                    "content": dataset[lang][i][i]["question"]
-                },
-                {
-                    "role": "assistant",
-                    "content": dataset[lang][i][i]["answer"]
-                }
-            ])
-
-    return dataset_prompt, dataset_full
+    if dataset_name == "klar":
+        return KLARDataset(
+            data_dir=f"data/{dataset_name}",
+            languages=languages
+        ).load()
+        
+    elif dataset_name == "include":
+        dataset = IncludeDataset(
+            data_dir=f"data/{dataset_name}",
+            languages=languages
+        ).load()
+        return dataset, None
+        
+    elif dataset_name == "mclm":
+        dataset = MCLMDataset(
+            data_dir=f"data/{dataset_name}",
+            languages=languages
+        ).load()
+        return dataset, None
+        
+    else:
+        raise ValueError(
+            f"Unsupported dataset: {dataset_name}"
+        )
 
 
 def load_model(args):
@@ -82,7 +63,7 @@ def load_model(args):
         model = AutoModelForCausalLM.from_pretrained(
             args.checkpoint,
             quantization_config=quant_config,
-            device_map="cuda:0",
+            device_map="auto",
             torch_dtype=torch.float16
         )
     else:
@@ -96,18 +77,20 @@ def load_model(args):
     return tokenizer, model
 
 
-def build_samples(dataset_full, dataset_prompt, lang):
-
+def build_samples(dataset_full, lang, fewshot_messages=None):
     samples = []
-    for sid in range(len(dataset_full[lang])):
-        for tid in range(len(dataset_full[lang][sid])):
-            data = dataset_full[lang][sid][tid]
+    prefix = fewshot_messages.get(lang, []) if fewshot_messages else []
+
+    for sid, variants in enumerate(dataset_full[lang]):
+        for tid, data in enumerate(variants):
             samples.append({
                 "sid": sid,
                 "tid": tid,
                 "question": data["question"],
                 "answer": data["answer"],
-                "messages": dataset_prompt[lang] + [{"role": "user", "content": data["question"]}]
+                "messages": prefix + [
+                    {"role": "user", "content": data["question"]}
+                ]
             })
-            
+
     return samples

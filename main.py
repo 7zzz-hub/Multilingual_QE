@@ -24,13 +24,14 @@ def parse_args():
     parser.add_argument("--batch_size", type=int, default=16)
     parser.add_argument("--save_path", default="results")
     parser.add_argument("--enable_thinking", default=False)
+    parser.add_argument("--max_new_tokens", type=int, required=True)
     
 
     return parser.parse_args()
 
 
 @torch.no_grad()
-def inference(samples, tokenizer, model, model_type, enable_thinking, batch_size):
+def inference(samples, tokenizer, model, model_type, enable_thinking, batch_size, max_new_tokens):
 
     records = {}
     for i in tqdm(
@@ -58,7 +59,7 @@ def inference(samples, tokenizer, model, model_type, enable_thinking, batch_size
 
         outputs = model.generate(
             **inputs,
-            max_new_tokens=8
+            max_new_tokens=max_new_tokens
         )
         
         input_length = inputs["input_ids"].shape[1]
@@ -137,7 +138,7 @@ def main():
 
     args = parse_args()
     languages = args.languages.split(",")
-    dataset_prompt, dataset_full = get_dataset(args.dataset_type)
+    dataset_full, dataset_prompt = get_dataset(args.dataset_type, languages)
     tokenizer, model = load_model(args)
 
     final_results = {}
@@ -145,14 +146,15 @@ def main():
 
         print(f"\nEvaluating {lang}")
 
-        samples = build_samples(dataset_full, dataset_prompt, lang)
+        samples = build_samples(dataset_full, lang, dataset_prompt)
         records = inference(
             samples,
             tokenizer,
             model,
             args.model_type,
             args.enable_thinking,
-            args.batch_size
+            args.batch_size,
+            args.max_new_tokens
         )
 
         acc = evaluate(records)

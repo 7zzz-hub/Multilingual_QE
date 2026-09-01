@@ -1,0 +1,398 @@
+[
+  {
+    "question": "Suposem que $\\sin D = 0.7$ en el diagrama següent. Quin és $DE$? [asy]\npair D,E,F;\nF = (0,0);\nD = (sqrt(51),7);\nE = (0,7);\ndraw(D--E--F--D);\ndraw(rightanglemark(D,E,F,15));\nlabel(\"$D$\",D,NE);\nlabel(\"$E$\",E,NW);\nlabel(\"$F$\",F,SW);\nlabel(\"$7$\",(E+F)/2,W);\n[/asy]",
+    "answer": "\\sqrt{51}"
+  },
+  {
+    "question": "Sigui $z = 2 + \\sqrt{2} - (3 + 3 \\sqrt{2})i$, i sigui $c = 2 - 3i$. Sigui $w$ el resultat quan $z$ es rota al voltant de $c$ per $\\frac{\\pi}{4}$ en sentit antihorari.\n\n[asy]\nunitsize(0.6 cm);\n\npair C, W, Z;\n\nZ = (2 + sqrt(2), -3 - 3*sqrt(2));\nC = (2,-3);\nW = rotate(45,C)*(Z);\n\ndraw(Z--C--W);\n\ndot(\"$c$\", C, N);\ndot(\"$w$\", W, SE);\ndot(\"$z$\", Z, S);\nlabel(\"$\\frac{\\pi}{4}$\", C + (0.6,-1));\n[/asy]\n\nTroba $w.$",
+    "answer": "6 - 5i"
+  },
+  {
+    "question": "Simplifica $\\sqrt{242}$.",
+    "answer": "11\\sqrt2"
+  },
+  {
+    "question": "De quantes maneres poden seure 8 persones al voltant d'una taula rodona si 3 de les persones -- Pierre, Rosa i Thomas -- volen seure juntes? (Es consideren iguals dues disposicions si una és una rotació de l'altra.)",
+    "answer": "720"
+  },
+  {
+    "question": "Troba el terme constant en el desenvolupament de $$\\left(10x^3-\\frac{1}{2x^2}\\right)^{5}$$",
+    "answer": "-125"
+  },
+  {
+    "question": "Si $n \\equiv 2 \\pmod{7}$, troba el residu quan $(n + 2)(n + 4)(n + 6)$ es divideix per 7.",
+    "answer": "3"
+  },
+  {
+    "question": "Un pentàgon regular es gira en sentit antihorari al voltant del seu centre. Quin és el nombre mínim de graus que s'ha de girar fins que coincideixi amb la seva posició original?",
+    "answer": "72"
+  },
+  {
+    "question": "Les coordenades d'un paral·lelogram són (5, 3), (6, 8), (7, 4) i $(x, y)$ i $x > 7$. Quin és el valor de $x + y$?",
+    "answer": "17"
+  },
+  {
+    "question": "En el triangle rectangle $ABC$ amb $\\angle B = 90^\\circ$, tenim $\\sin A = 2\\cos A$. Quin és el valor de $\\tan A$?",
+    "answer": "2"
+  },
+  {
+    "question": "El gràfic de $f(x)=\\frac{2x}{x^2-5x-14}$ té asímptotes verticals $x=a$ i $x=b$, i una asímptota horitzontal $y=c$. Troba $a+b+c$.",
+    "answer": "5"
+  },
+  {
+    "question": "Calcula $99^2+99+1$ mentalment.",
+    "answer": "9901"
+  },
+  {
+    "question": "Troba el nombre real positiu més petit $C$ per al qual\n\\[\\left\\| \\begin{pmatrix} 2 & 3 \\\\ 0 & -2 \\end{pmatrix} \\bold{v} \\right\\| \\le C \\|\\bold{v}\\|\\]per a tots els vectors bidimensionals $\\bold{v}.$\n\nNota que per a un vector bidimensional $\\mathbf{a},$ $\\|\\mathbf{a}\\|$ és la magnitud de $\\mathbf{a}.$",
+    "answer": "4"
+  },
+  {
+    "question": "Què és $1^{(2^{235423523})}$?",
+    "answer": "1"
+  },
+  {
+    "question": "Sigui $z$ un nombre complex tal que $z^5 = 1$ i $z \\neq 1.$  Calculeu\n\\[z + \\frac{1}{z} + z^2 + \\frac{1}{z^2}.\\]",
+    "answer": "-1"
+  },
+  {
+    "question": "Calcula $58_9 - 18_9.$ Expressa la teva resposta en base $9.$",
+    "answer": "40_9"
+  },
+  {
+    "question": "Simplifica\n\\[\\frac{\\sec x}{\\sin x} - \\frac{\\sin x}{\\cos x}.\\]",
+    "answer": "\\cot x"
+  },
+  {
+    "question": "Deu treeks pesen tant com tres squigs i un goolee. Dos treeks i un goolee són iguals en pes a un squig. El pes combinat de quants treeks és igual al pes d'un squig?",
+    "answer": "3"
+  },
+  {
+    "question": "El producte de $3t^2+5t+a$ i $4t^2+bt-2$ és $12t^4+26t^3-8t^2-16t+6$. Quin és el valor de $a+b$?",
+    "answer": "-1"
+  },
+  {
+    "question": "Un dipòsit cilíndric dret amb bases circulars s'està omplint d'aigua a una velocitat de $20\\pi$ metres cúbics per hora. A mesura que el dipòsit s'omple, el nivell de l'aigua puja quatre metres per hora. Quin és el radi del dipòsit, en metres? Expressa la teva resposta en la forma radical més simple.",
+    "answer": "\\sqrt{5}"
+  },
+  {
+    "question": "Considera la funció \\[ f(x) =\n\\begin{cases}\nax^2 & \\text{si } x \\geq a,\\\\\nax +2a& \\text{si } x <a,\n\\end{cases}\n\\]on $a$ és algun nombre.\n\nQuin és el valor més gran de $a$ tal que el gràfic de $y=f(x)$ intersecta cada línia horitzontal almenys una vegada?",
+    "answer": "2"
+  },
+  {
+    "question": "Per a quin valor de $c$ el cercle amb l'equació $x^2 - 10x + y^2 + 6y + c = 0$ tindrà un radi de longitud 1?",
+    "answer": "33"
+  },
+  {
+    "question": "Sigui $\\lambda$ una constant, $0 \\le \\lambda \\le 4,$ i sigui $f : [0,1] \\to [0,1]$ definida per\n\\[f(x) = \\lambda x(1 - x).\\]Troba els valors de $\\lambda,$ $0 \\le \\lambda \\le 4,$ per als quals existeix un $x \\in [0,1]$ tal que $f(x) \\neq x$ però $f(f(x)) = x.$",
+    "answer": "(3,4]"
+  },
+  {
+    "question": "Troba la mesura en graus de l'angle positiu més petit $\\theta$ per al qual\n\\[\\tan \\theta = \\frac{\\cos 5^\\circ \\cos 20^\\circ + \\cos 35^\\circ \\cos 50^\\circ - \\sin 5^\\circ \\sin 20^\\circ - \\sin 35^\\circ \\sin 50^\\circ}{\\sin 5^\\circ \\cos 20^\\circ - \\sin 35^\\circ \\cos 50^\\circ + \\cos 5^\\circ \\sin 20^\\circ - \\cos 35^\\circ \\sin 50^\\circ}.\\]",
+    "answer": "120^\\circ"
+  },
+  {
+    "question": "Determina el nombre de maneres d'ordenar les lletres de la paraula ELLIPSE.",
+    "answer": "1260"
+  },
+  {
+    "question": "Quants zeros hi ha al final de $42!$ (42 factorial)?  (Recordatori: El nombre $n!$ és el producte dels enters de 1 a $n$.  Per exemple, $5!=5\\cdot 4\\cdot3\\cdot2\\cdot 1= 120$.)",
+    "answer": "9"
+  },
+  {
+    "question": "Troba el valor màxim de\n\\[f(x,y) = x \\sqrt{1 - y^2} + y \\sqrt{1 - x^2},\\] on $-1 \\le x,$ $y \\le 1.$",
+    "answer": "1"
+  },
+  {
+    "question": "Els punts $O,$ $A,$ i $B$ satisfan $\\overrightarrow{OA} = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix}$ i $\\overrightarrow{OB} = \\begin{pmatrix} -3 \\\\ -2 \\\\ 1 \\end{pmatrix}.$ Troba l'àrea del triangle $OAB.$",
+    "answer": "3 \\sqrt{5}"
+  },
+  {
+    "question": "Sigui $z$ un nombre complex tal que\n\\[z + \\frac{1}{z} = \\frac{1 + \\sqrt{5}}{2}.\\] Trobeu\n\\[z^{85} + \\frac{1}{z^{85}}.\\]",
+    "answer": "-2"
+  },
+  {
+    "question": "Les mediatrius $AD$, $BE$ i $CF$ del triangle $ABC$ es tallen al baricentre $G$. La recta que passa per $G$ i és paral·lela a $BC$ talla $AB$ i $AC$ en $M$ i $N$, respectivament. Si l'àrea del triangle $ABC$ és 144, troba l'àrea del triangle $ENG$.",
+    "answer": "8"
+  },
+  {
+    "question": "Una prestatgeria té 3 prestatges amb un total de 24 llibres. El prestatge superior té 8 llibres de misteri. El prestatge del mig té 10 llibres de matemàtiques. El prestatge inferior té 6 llibres de ciència. Ara es treuen dos llibres de cada prestatge. Quina fracció dels llibres que queden als tres prestatges són llibres de matemàtiques? Expressa la teva resposta com una fracció comuna.",
+    "answer": "\\frac{4}{9}"
+  },
+  {
+    "question": "El volum d'un con es dóna per la fórmula $V = \\frac{1}{3}Bh$, on $B$ és l'àrea de la base i $h$ és l'altura. L'àrea de la base d'un con és de 30 unitats quadrades, i la seva altura és de 6.5 unitats. Quantes unitats cúbiques té el seu volum?",
+    "answer": "65"
+  },
+  {
+    "question": "Si el quart terme d'una seqüència aritmètica és $200$ i el vuitè terme és $500$, quin és el sisè terme?",
+    "answer": "350"
+  },
+  {
+    "question": "Converteix $\\frac{21}{2^2 \\cdot 5^7}$ a un decimal finit.",
+    "answer": ".0000672"
+  },
+  {
+    "question": "Quants nombres enters positius de dues xifres són factors tant de 100 com de 150?",
+    "answer": "3"
+  },
+  {
+    "question": "Per a quants enters positius $n>1$ és cert que $2^{24}$ és una potència perfecta $n^{\\text{th}}$?",
+    "answer": "7"
+  },
+  {
+    "question": "La Hillary té onze monedes, totes dímecs i níquels. En total, les monedes valen 75 cèntims. Quants níquels té?",
+    "answer": "7"
+  },
+  {
+    "question": "En Paul i en Jesse trien cadascun un nombre a l'atzar dels sis primers nombres primers. Quina és la probabilitat que la suma dels nombres que trien sigui parell?",
+    "answer": "\\frac{13}{18}"
+  },
+  {
+    "question": "El punt $(a, b)$ es troba a la recta amb l'equació $3x + 2y = 12.$ Quan $a = 4$, quin és el valor de $b$?",
+    "answer": "0"
+  },
+  {
+    "question": "Dotze quadrats de 1 per 1 formen un rectangle, com es mostra. Quina és l'àrea total de la regió ombrejada? [asy]\nsize(4cm);defaultpen(linewidth(0.75));\n\n// Parts omplertes\nfill((0, 4)--(0, 0)--(2, 0)--cycle, gray(0.75));\nfill((0, 4)--(3, 4)--(3, 0)--cycle, gray(0.75));\n\n// quadrícula\nint j;\nfor (j = 0; j < 4; ++j) {draw((j, 0)--(j, 4));}\nfor (j = 0; j < 5; ++j) {draw((0, j)--(3, j));}\n\n//diagonals\ndraw((0, 4)--(3, 0)); draw((0, 4)--(2, 0));\n[/asy]",
+    "answer": "10"
+  },
+  {
+    "question": "Quin és el múltiple positiu més petit de 450 les xifres del qual són totes zeros i uns?",
+    "answer": "11,\\! 111,\\! 111,\\! 100"
+  },
+  {
+    "question": "La roda mostrada es fa girar dues vegades, de manera que els números indicats pel punter es determinen aleatòriament (amb cada número de la roda sent igualment probable). Els dos números determinats d'aquesta manera es registren. El primer número es divideix per 4, determinant un dels residus 1, 2, 3 que marquen les columnes del tauler d'escacs mostrat. El segon número es divideix per 5, determinant un dels residus 1, 2, 3, 4 que marquen les files del tauler d'escacs. Finalment, es col·loca una fitxa a la casella on aquesta columna i fila es troben. Quina és la probabilitat que la fitxa es col·loqui en una casella ombrejada del tauler d'escacs?",
+    "answer": "\\frac{1}{2}"
+  },
+  {
+    "question": "Quina és la suma de les xifres en la representació decimal finita de la fracció $\\frac{4321}{5^7\\cdot2^8}$?",
+    "answer": "14"
+  },
+  {
+    "question": "Troba $\\sin 20^\\circ \\sin 40^\\circ \\sin 60^\\circ \\sin 80^\\circ \\sin 100^\\circ \\sin 120^\\circ \\sin 140^\\circ \\sin 160^\\circ.$",
+    "answer": "\\frac{9}{256}"
+  },
+  {
+    "question": "Per a una constant $c,$ en coordenades cilíndriques $(r,\\theta,z),$ troba la forma descrita per l'equació\n\\[z = c.\\](A) Línia\n(B) Cercle\n(C) Pla\n(D) Esfera\n(E) Cilindre\n(F) Con\n\nIntrodueix la lletra de l'opció correcta.",
+    "answer": "\\text{(C)}"
+  },
+  {
+    "question": "Si $\\mathbf{a}$ i $\\mathbf{b}$ són vectors tals que $\\|\\mathbf{a}\\| = 2,$ $\\|\\mathbf{b}\\| = 7,$ i\n\\[\\mathbf{a} \\times \\mathbf{b} = \\begin{pmatrix} 3 \\\\ 2 \\\\ 6 \\end{pmatrix},\\] troba l'angle més petit possible entre $\\mathbf{a}$ i $\\mathbf{b},$ en graus.",
+    "answer": "30^\\circ"
+  },
+  {
+    "question": "Sigui $f$ la funció definida per $f(x) = x^3 - 49x^2 + 623x - 2015,$ i sigui $g(x) = f(x + 5).$ Calcula la suma de les arrels de $g.$",
+    "answer": "34"
+  },
+  {
+    "question": "Calcula\n\\[\\frac{1}{\\cos^2 10^\\circ} + \\frac{1}{\\sin^2 20^\\circ} + \\frac{1}{\\sin^2 40^\\circ}.\\]",
+    "answer": "12"
+  },
+  {
+    "question": "Quants costats tindria un polígon convex si la suma de tots els seus angles interiors excepte un és $1070^{\\circ}$?",
+    "answer": "8"
+  },
+  {
+    "question": "Troba l'enter $\\textbf{senar}$ únic $t$ tal que $0<t<23$ i $t+2$ és l'invers de $t$ mòdul $23$.",
+    "answer": "17"
+  },
+  {
+    "question": "Quina és l'àrea total de la superfície, en polzades quadrades, d'un cub amb un volum d'$1$ peu cúbic?",
+    "answer": "864 \\mbox{ inches}^2"
+  },
+  {
+    "question": "Calcula el producte del nombre $5+\\sqrt{3}$ i el seu conjugat radical.",
+    "answer": "22"
+  },
+  {
+    "question": "Quin és el terme 2003 de la seqüència de nombres senars 1, 3, 5, 7, $\\dots$?",
+    "answer": "4005"
+  },
+  {
+    "question": "Sigui $f(x) = 2x-3$ i $g(x) = x+1$. Quin és el valor de $g(f(5)-1)$?",
+    "answer": "7"
+  },
+  {
+    "question": "Troba totes les solucions de\n\\[\\sin \\left( \\tan^{-1} (x) + \\cot^{-1} \\left( \\frac{1}{x} \\right) \\right) = \\frac{1}{3}.\\]Introdueix totes les solucions, separades per comes.",
+    "answer": "3 \\pm 2 \\sqrt{2}"
+  },
+  {
+    "question": "Una línia està definida per\n\\[\\begin{pmatrix} 3 \\\\ -10 \\\\ 1 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ -9 \\\\ -2 \\end{pmatrix}.\\]Una altra línia està definida per\n\\[\\begin{pmatrix} -5 \\\\ -3 \\\\ 6 \\end{pmatrix} + u \\begin{pmatrix} 4 \\\\ -18 \\\\ -4 \\end{pmatrix}.\\]Aquestes dues línies són paral·leles. Troba la distància entre aquestes dues línies.",
+    "answer": "7"
+  },
+  {
+    "question": "Considera la regió rectangular amb els següents punts com a vèrtexs: $$(5,4), (-5,4), (-5,-4), (5,-4).$$ Quants punts amb coordenades enters estaran estrictament a l'interior d'aquesta regió rectangular?",
+    "answer": "63"
+  },
+  {
+    "question": "Sigui $\\mathbf{a},$ $\\mathbf{b},$ $\\mathbf{c}$ tres vectors tals que\n\\[\\mathbf{a} \\times \\mathbf{b} = \\begin{pmatrix} 6 \\\\ -7 \\\\ 3 \\end{pmatrix}, \\quad \\mathbf{a} \\times \\mathbf{c} = \\begin{pmatrix} 4 \\\\ 7 \\\\ 2 \\end{pmatrix}, \\quad \\mathbf{b} \\times \\mathbf{c} = \\begin{pmatrix} 1 \\\\ -7 \\\\ 18 \\end{pmatrix}.\\]Calcula $(2 \\mathbf{b} - \\mathbf{a}) \\times (3 \\mathbf{c} + \\mathbf{a}).$",
+    "answer": "\\begin{pmatrix} -18 \\\\ -49 \\\\ 96 \\end{pmatrix}"
+  },
+  {
+    "question": "$\\textbf{Els antics terrenys de segell de Juan}$\n\nEn Juan organitza els segells de la seva col·lecció per país i per dècada en què van ser emesos. Els preus que va pagar per ells en una botiga de segells van ser: Brasil i França, $6$ cèntims cadascun, Perú $4$ cèntims cadascun, i Espanya $5$ cèntims cadascun. (Brasil i Perú són països sud-americans i França i Espanya són a Europa.) [asy]\n/* AMC8 2002 #8, 9, 10 Problem */\nsize(3inch, 1.5inch);\nfor ( int y = 0; y <= 5; ++y )\n{\n\ndraw((0,y)--(18,y));\n}\ndraw((0,0)--(0,5));\ndraw((6,0)--(6,5));\ndraw((9,0)--(9,5));\ndraw((12,0)--(12,5));\ndraw((15,0)--(15,5));\ndraw((18,0)--(18,5));\n\nlabel(scale(0.8)*\"50s\", (7.5,4.5));\nlabel(scale(0.8)*\"4\", (7.5,3.5));\nlabel(scale(0.8)*\"8\", (7.5,2.5));\nlabel(scale(0.8)*\"6\", (7.5,1.5));\nlabel(scale(0.8)*\"3\", (7.5,0.5));\n\nlabel(scale(0.8)*\"60s\", (10.5,4.5));\nlabel(scale(0.8)*\"7\", (10.5,3.5));\nlabel(scale(0.8)*\"4\", (10.5,2.5));\nlabel(scale(0.8)*\"4\", (10.5,1.5));\nlabel(scale(0.8)*\"9\", (10.5,0.5));\n\nlabel(scale(0.8)*\"70s\", (13.5,4.5));\nlabel(scale(0.8)*\"12\", (13.5,3.5));\nlabel(scale(0.8)*\"12\", (13.5,2.5));\nlabel(scale(0.8)*\"6\", (13.5,1.5));\nlabel(scale(0.8)*\"13\", (13.5,0.5));\n\nlabel(scale(0.8)*\"80s\", (16.5,4.5));\nlabel(scale(0.8)*\"8\", (16.5,3.5));\nlabel(scale(0.8)*\"15\", (16.5,2.5));\nlabel(scale(0.8)*\"10\", (16.5,1.5));\nlabel(scale(0.8)*\"9\", (16.5,0.5));\n\nlabel(scale(0.8)*\"Country\", (3,4.5));\nlabel(scale(0.8)*\"Brazil\", (3,3.5));\nlabel(scale(0.8)*\"France\", (3,2.5));\nlabel(scale(0.8)*\"Peru\", (3,1.5));\nlabel(scale(0.8)*\"Spain\", (3,0.5));\n\nlabel(scale(0.9)*\"Juan's Stamp Collection\", (9,0), S);\nlabel(scale(0.9)*\"Number of Stamps by Decade\", (9,5), N);\n[/asy] Quin va ser el preu mitjà, en cèntims, dels seus segells dels $70\\text{'s}$? Arrodoneix la teva resposta al dècim de cèntim més proper.",
+    "answer": "5.4 \\text{ cents}"
+  },
+  {
+    "question": "Suposem que $ABCD$ és un trapezi en el qual $\\overline{AD}|| \\overline{BC}$. Donat que $\\overline{AC}\\perp\\overline{CD}$, $\\overline{AC}$ biseca l'angle $\\angle BAD$, i $[ABCD]=42$, calcula $[\\triangle ACD]$.",
+    "answer": "28"
+  },
+  {
+    "question": "Si $\\frac{\\sqrt{2x}}{\\sqrt{3x-1}}=\\frac32$, resol per $x$. Expressa la teva resposta en la forma fraccional més simple.",
+    "answer": "\\frac9{19}"
+  },
+  {
+    "question": "L'operació @ es defineix com $\\frac{m}{n}@\\frac{p}{q} = (m)(p)\\left(\\frac{q}{n}\\right)$ per a fraccions simplificades $\\frac{p}{q}$. Quin és el valor simplificat de $\\frac{7}{30}@\\frac{10}{21}$?",
+    "answer": "49"
+  },
+  {
+    "question": "Quatre punts, $A$, $B$, $C$ i $D$, són escollits aleatòriament i de manera independent sobre la circumferència d'un cercle. Quina és la probabilitat que els segments $AB$ i $CD$ s'intersequin?",
+    "answer": "\\frac{1}{3}"
+  },
+  {
+    "question": "En el diagrama, dos cercles, cadascun amb centre $D$, tenen radis de $1$ i $2$. L'àrea total de la regió ombrejada és $\\frac5{12}$ de l'àrea del cercle més gran. Quants graus té la mesura de (l'angle més petit) $\\angle ADC$?",
+    "answer": "120"
+  },
+  {
+    "question": "Un vas cilíndric té una alçada de 8 cm i un radi de 3 cm. Quants d'aquests vasos d'aigua es necessitaran per omplir un dipòsit esfèric de radi 6 cm?",
+    "answer": "4"
+  },
+  {
+    "question": "Avaluar\n\\[\\sin (\\arcsin 0.4 + \\arcsin 0.5) \\cdot \\sin (\\arcsin 0.5 - \\arcsin 0.4).\\]",
+    "answer": "\\frac{9}{100}"
+  },
+  {
+    "question": "Una bicicleta viatja a 20 peus per minut. Quina és la velocitat de la bicicleta expressada en polzades per segon?",
+    "answer": "4"
+  },
+  {
+    "question": "Un comitè del Senat té 8 republicans i 6 demòcrates. De quantes maneres podem formar un subcomitè de 5 membres que tingui almenys un membre de cada partit?",
+    "answer": "1940"
+  },
+  {
+    "question": "Quin és el valor de $513^2 - 487^2$?",
+    "answer": "26000"
+  },
+  {
+    "question": "El producte de tres enters consecutius és 120. Aquest producte dividit per la mitjana dels tres enters és 24. Quin és el més gran dels tres enters consecutius?",
+    "answer": "6"
+  },
+  {
+    "question": "Resol el valor positiu de $x$ tal que $\\sqrt[3]{x^2 - 4x + 4} = 16$.",
+    "answer": "66"
+  },
+  {
+    "question": "Simplifica\n\\[\\cos \\left( \\frac{2 \\pi}{15} \\right) \\cos \\left (\\frac {4 \\pi}{15} \\right) \\cos \\left( \\frac{8 \\pi}{15} \\right) \\cos \\left( \\frac {16 \\pi}{15} \\right).\\]",
+    "answer": "\\frac{1}{16}"
+  },
+  {
+    "question": "El triangle $ABC$ és isòsceles, amb $AB=AC$ i l'altura $AM=11.$ Suposem que hi ha un punt $D$ a $\\overline{AM}$ amb $AD=10$ i $\\angle BDC=3\\angle BAC.$ Trobeu el perímetre del triangle $ABC.$\n\n[asy]\nunitsize(0.4 cm);\n\npair A, B, C, D, M;\n\nA = (0,11);\nD = (0,1);\nB = (-11/2,0);\nC = (11/2,0);\nM = (B + C)/2;\n\ndraw(A--B--C--cycle);\ndraw(A--M);\ndraw(B--D--C);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, NW);\nlabel(\"$M$\", M, S);\n[/asy]",
+    "answer": "11 \\sqrt{5} + 11"
+  },
+  {
+    "question": "La suma de 27 enters positius consecutius és $3^7$. Quin és el seu valor mitjà?",
+    "answer": "81"
+  },
+  {
+    "question": "Per a quins valors reals de $x$ es compleix $-4<x^{4}+4x^{2}<21$? Expressa la teva resposta en notació d'intervals.",
+    "answer": "(-\\sqrt{3}, \\sqrt{3})"
+  },
+  {
+    "question": "Suposem que $x,$ $y,$ i $z$ satisfan les equacions\n\\begin{align*}\nxyz &= 4, \\\\\nx^3 + y^3 + z^3 &= 4, \\\\\nxy^2 + x^2 y + xz^2 + x^2 z + yz^2 + y^2 z &= 12.\n\\end{align*}Calculeu el valor de $xy + yz + zx.$",
+    "answer": "6"
+  },
+  {
+    "question": "Les dades de la taula següent mostren el percentatge d'usuaris d'autobús en una enquesta d'estudiants de Central H.S.; es van enquestar 300 homes i 300 dones a cada curs. Per a quin curs el nombre d'homes que utilitzen l'autobús és més proper al $135\\%$ del nombre de dones que utilitzen l'autobús? \\begin{tabular}{|l|c|c|}\\hline\nCurs & Homes & Dones \\\\ \\hline\n$9^{\\mathrm{è}}$ curs & $41.1\\%$ & $39.4\\%$ \\\\ \\hline\n$10^{\\mathrm{è}}$ curs & $34.4\\%$ & $33.1\\%$ \\\\ \\hline\n$11^{\\mathrm{è}}$ curs & $20.6\\%$ & $13.8\\%$ \\\\ \\hline\n$12^{\\mathrm{è}}$ curs & $11.6\\%$ & $8.6\\%$ \\\\ \\hline\n\\end{tabular}",
+    "answer": "12"
+  },
+  {
+    "question": "Resol\n\\[\\frac{|x^2 - 81|}{x^2 - 36x} < 0.\\]",
+    "answer": "(0,9) \\cup (9,36)"
+  },
+  {
+    "question": "Un camp rectangular està tancat en una pista atlètica, com es mostra a continuació. La pista consta de dues vores del camp i dos semicercles. La longitud de la pista és de 400 metres. Quina és la màxima àrea possible del camp, en metres quadrats?\n\n[asy]\nunitsize(1 cm);\n\nfilldraw((0,0)--(3,0)--(3,2)--(0,2)--cycle,lightgreen);\ndraw((0,0)--(3,0),linewidth(2*bp));\ndraw((0,2)--(3,2),linewidth(2*bp));\ndraw(arc((3,1),1,-90,90),linewidth(2*bp));\ndraw(arc((0,1),1,90,270),linewidth(2*bp));\n[/asy]",
+    "answer": "\\frac{20000}{\\pi}"
+  },
+  {
+    "question": "En $\\triangle{RST}$, mostrat, $\\sin{R}=\\frac{2}{5}$. Quin és $\\sin{T}$?\n\n[asy]\npair R,S,T;\nT = (0,0);\nS = (2,0);\nR = (2,sqrt(21));\ndraw(R--S--T--R);\ndraw(rightanglemark(R,S,T,10));\nlabel(\"$T$\",T,SW);\nlabel(\"$S$\",S,SE);\nlabel(\"$R$\",R,NE);\nlabel(\"$5$\",(R+T)/2,NW);\n[/asy]",
+    "answer": "\\frac{\\sqrt{21}}{5}"
+  },
+  {
+    "question": "La distància més petita entre l'origen i un punt en el gràfic de $y=\\frac{1}{\\sqrt{2}}\\left(x^2-3\\right)$ es pot expressar com $\\sqrt{a}/b$, on $a$ i $b$ són enters positius tal que $a$ no és divisible pel quadrat de cap enter més gran que u. Troba $a+b$.",
+    "answer": "12"
+  },
+  {
+    "question": "Sigui $f$ definida per  \\[f(x) = \\left\\{\n\\begin{array}{cl}\n3-x & \\text{ si } x \\leq 3, \\\\\n-x^3+2x^2+3x & \\text{ si } x>3.\n\\end{array}\n\\right.\\]Calculeu $f^{-1}(0)+f^{-1}(6)$.",
+    "answer": "0"
+  },
+  {
+    "question": "Les distàncies des d'un punt $P$ fins a cinc dels vèrtexs d'un octaedre regular són 3, 7, 8, 9 i 11. Troba la distància des de $P$ fins al sisè vèrtex.\n\n[asy]\nimport three;\n\nsize(125);\ncurrentprojection = perspective(6,3,1);\n\ntriple A, B, C, D, E, F, P;\n\nA = (1,0,0);\nB = (-1,0,0);\nC = (0,1,0);\nD = (0,-1,0);\nE = (0,0,1);\nF = (0,0,-1);\nP = (1.2,1.5,1);\n\ndraw(A--P,red);\ndraw(B--P,red);\ndraw(C--P,red);\ndraw(D--P,red);\ndraw(E--P,red);\ndraw(F--P,red);\n\ndraw(A--C);\ndraw(A--D);\ndraw(A--E);\ndraw(A--F);\ndraw(C--E--D--F--cycle);\ndraw(D--B--C,dashed);\ndraw(B--C,dashed);\ndraw(B--D,dashed);\ndraw(B--E,dashed);\ndraw(B--F,dashed);\n\nlabel(\"$P$\", P, NE);\n[/asy]",
+    "answer": "\\sqrt{66}"
+  },
+  {
+    "question": "És una fórmula de física ben coneguda que la força és igual a la massa multiplicada per l'acceleració. La Jen vol llançar una pilota de softbol amb la mateixa força que en Jack llança una pilota de beisbol. Si la pilota de softbol té una massa de $200$ g i la pilota de beisbol té una massa de $150$ g, quina és la proporció de l'acceleració de la pilota de la Jen respecte a la d'en Jack? Respon com una fracció en la seva forma més simple.",
+    "answer": "\\frac 34"
+  },
+  {
+    "question": "Quants dels mateixos dígits es troben en les representacions en base 7 i base 8 de $629_{10}$? Per exemple, $121_{3}$ i $413_{5}$ tindrien un dígit en comú.",
+    "answer": "3"
+  },
+  {
+    "question": "Sis bruixes i deu bruixots són en una trobada arcana. Les bruixes han decidit donar-se la mà amb cadascun dels bruixots. Cap de les bruixes es va molestar a donar-se la mà entre elles, ja que ja són totes bones amigues, i els bruixots es detesten entre ells i no es van donar la mà amb altres bruixots. Quantes encaixades de mans van tenir lloc a la trobada?",
+    "answer": "60"
+  },
+  {
+    "question": "Sigui $f(x)$ el polinomi \\[f(x)=3x^4+5x^2-9x-2.\\] Si $g(x)$ és igual al polinomi $f(x-1)$, quina és la suma dels coeficients de $g$?",
+    "answer": "-2"
+  },
+  {
+    "question": "Quina és la distància més curta des del punt $(6, 0)$ fins a la recta $y = 2x-2$? Expressa la teva resposta en la forma radical més simple.",
+    "answer": "2\\sqrt{5}"
+  },
+  {
+    "question": "Els nombres complexos $\\alpha_1, \\alpha_2, \\alpha_3$, i $\\alpha_4$ són les quatre arrels distintes de l'equació $x^4+2x^3+2=0$. Determina el conjunt no ordenat \\[\n\\{\\alpha_1\\alpha_2 + \\alpha_3\\alpha_4, \\alpha_1\\alpha_3 + \\alpha_2\\alpha_4, \\alpha_1\\alpha_4 + \\alpha_2\\alpha_3\\}.\n\\]",
+    "answer": "\\{1\\pm\\sqrt{5},-2\\}"
+  },
+  {
+    "question": "Tres llapis i una goma d'esborrar gran costen $\\$1.24$. Cinc llapis i una goma d'esborrar gran costen $\\$1.82$. Cap preu inclou impostos. En cèntims, quin és el cost d'un llapis?",
+    "answer": "29"
+  },
+  {
+    "question": "Quina és l'última xifra diferent de zero a la dreta del punt decimal en l'expansió decimal de $\\frac{137}{500}$?",
+    "answer": "4"
+  },
+  {
+    "question": "El rectangle $ABCD$ té el centre $O$ i $AB/AD=k$. Es tria un punt a l'atzar de l'interior del rectangle $ABCD$. Quina és la probabilitat que estigui més a prop d'$O$ que de qualsevol dels quatre vèrtexs?  [asy]\nsize(200);\ndraw((-250,100)--(250,100)--(250,-100)--(-250,-100)--cycle);\ndot((0,0));\nlabel(\"$O$\",(0,0),N);\nlabel(\"$A$\",(-250,100),NW); label(\"$B$\",(250,100),NE); label(\"$C$\",(250,-100),SE); label(\"$D$\",(-250,-100),SW);[/asy]",
+    "answer": "\\frac{1}{2}"
+  },
+  {
+    "question": "Determina el residu de 54 (mod 6).",
+    "answer": "0"
+  },
+  {
+    "question": "Sigui \\[f(n) = \\left\\{\n\\begin{array}{cl}\n\\lfloor n \\rfloor & \\text{ si }n \\geq 4, \\\\\n\\lceil n \\rceil & \\text{ si } n < 4.\n\\end{array}\n\\right.\\]Troba $f\\left(\\frac{\\pi}{3}\\right) + f(\\sqrt{45}) + f(8^{2/3})$.",
+    "answer": "12"
+  },
+  {
+    "question": "Linda, Sherry, June i Connie van caminar pels seus barris venent galetes de les girl scouts. Linda va guanyar $\\$27.47$, Sherry va guanyar $\\$35.23$, June va guanyar $\\$37.37$ i Connie va guanyar $\\$26.52$. Després de la venda, van ajuntar els seus diners i van anar al banc per convertir les monedes en bitllets. Quants diners, en cèntims, van quedar després de convertir tantes monedes en bitllets com van poder?",
+    "answer": "59"
+  },
+  {
+    "question": "Una classe de 30 estudiants va fer recentment un examen. Si 20 estudiants van obtenir una puntuació de 80, 8 estudiants van obtenir una puntuació de 90, i 2 estudiants van obtenir una puntuació de 100, quina va ser la mitjana de la classe (la mitjana aritmètica) en aquest examen?",
+    "answer": "84"
+  },
+  {
+    "question": "A continuació es mostra un quadrat màgic, el que significa que la suma dels números de cada fila, de cada columna i de cadascuna de les $2$ diagonals principals és igual. Quin és el valor de $n$?\n\n[asy]size(125);\nfor(int i = 0; i<4; ++i)\n{\n\ndraw((0,i)--(3,i),linewidth(1));\n}\n\nfor(int j = 0; j<4; ++j)\n{\n\ndraw((j,0)--(j,3),linewidth(1));\n}\n\nlabel(\"$n-3$\",(.5,.5));\nlabel(\"3\",(.5,1.5));\nlabel(\"$n+1$\",(.5,2.5));\n\nlabel(\"$n+2$\",(1.5,.5));\nlabel(\"$2n-9$\",(1.5,1.5));\nlabel(\"$1$\",(1.5,2.5));\n\nlabel(\"$2$\",(2.5,.5));\nlabel(\"$n$\",(2.5,1.5));\nlabel(\"$n-1$\",(2.5,2.5));\n[/asy]",
+    "answer": "7"
+  },
+  {
+    "question": "En Jim i la Martha estan junts a la cantonada d'un camp rectangular. En Jim camina en diagonal a través del camp. La Martha arriba al mateix lloc caminant al llarg de la seva longitud i amplada. El camp fa 300 peus d'ample i 400 peus de llarg. Quants peus menys que la Martha camina en Jim?",
+    "answer": "200"
+  },
+  {
+    "question": "Sigui $\\omega$ un nombre complex tal que $\\omega^3 = 1.$ Troba tots els valors possibles de\n\\[\\frac{1}{1 + \\omega} + \\frac{1}{1 + \\omega^2}.\\]Introdueix tots els valors possibles, separats per comes.",
+    "answer": "1"
+  },
+  {
+    "question": "Quina és la distància més curta que es pot recórrer si comences en qualsevol punt, $A$, $B$, $C$ o $D$, i visites els altres tres punts una vegada?\n\n[asy]\npair A,B,C, D;\nA = (-3,3); B = (3,0); C = (0, -4); D = (0,0);\ndraw(D--B--C--cycle); draw(D--A--B--cycle);draw(D--A--C--cycle);\nlabel(\"$A$\", A, NW);label(\"$B$\", B, E); label(\"$C$\", C, S);label(\"$D$\", D, NE);\nlabel(\"3\", D--B, S); label(\"6\", A--B, NE); label(\"6\", A--C, SW); label(\"4\", D--C, NW+N);\nlabel(\"5\", A--D, SE+NE); label(\"5\", C--B, E);\n[/asy]",
+    "answer": "13"
+  }
+]

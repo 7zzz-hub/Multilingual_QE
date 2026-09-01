@@ -1,0 +1,398 @@
+[
+  {
+    "question": "아래 도형에서 $\\sin D = 0.7$라고 가정할 때, $DE$는 얼마입니까? [asy]\npair D,E,F;\nF = (0,0);\nD = (sqrt(51),7);\nE = (0,7);\ndraw(D--E--F--D);\ndraw(rightanglemark(D,E,F,15));\nlabel(\"$D$\",D,NE);\nlabel(\"$E$\",E,NW);\nlabel(\"$F$\",F,SW);\nlabel(\"$7$\",(E+F)/2,W);\n[/asy]",
+    "answer": "\\sqrt{51}"
+  },
+  {
+    "question": "$z = 2 + \\sqrt{2} - (3 + 3 \\sqrt{2})i$이고, $c = 2 - 3i$라고 하자. $w$는 $z$가 $c$를 중심으로 반시계 방향으로 $\\frac{\\pi}{4}$만큼 회전했을 때의 결과라고 하자.\n\n[asy]\nunitsize(0.6 cm);\n\npair C, W, Z;\n\nZ = (2 + sqrt(2), -3 - 3*sqrt(2));\nC = (2,-3);\nW = rotate(45,C)*(Z);\n\ndraw(Z--C--W);\n\ndot(\"$c$\", C, N);\ndot(\"$w$\", W, SE);\ndot(\"$z$\", Z, S);\nlabel(\"$\\frac{\\pi}{4}$\", C + (0.6,-1));\n[/asy]\n\n$w$를 구하시오.",
+    "answer": "6 - 5i"
+  },
+  {
+    "question": "$\\sqrt{242}$를 간단히 하세요.",
+    "answer": "11\\sqrt2"
+  },
+  {
+    "question": "8명이 둥근 테이블에 앉을 때, 피에르, 로사, 토마스 3명이 모두 함께 앉고 싶어할 경우 몇 가지 방법이 있을까요? (하나의 배치가 다른 배치의 회전인 경우 두 배치는 동일한 것으로 간주됩니다.)",
+    "answer": "720"
+  },
+  {
+    "question": "$$\\left(10x^3-\\frac{1}{2x^2}\\right)^{5}$$의 전개식에서 상수항을 찾으시오.",
+    "answer": "-125"
+  },
+  {
+    "question": "$n \\equiv 2 \\pmod{7}$일 때, $(n + 2)(n + 4)(n + 6)$을 7로 나눈 나머지를 구하시오.",
+    "answer": "3"
+  },
+  {
+    "question": "정오각형이 중심을 기준으로 반시계 방향으로 회전합니다. 원래 위치와 일치할 때까지 회전해야 하는 최소 각도는 몇 도입니까?",
+    "answer": "72"
+  },
+  {
+    "question": "평행사변형의 좌표가 (5, 3), (6, 8), (7, 4) 그리고 $(x, y)$이며 $x > 7$일 때, $x + y$의 값은 얼마입니까?",
+    "answer": "17"
+  },
+  {
+    "question": "직각삼각형 $ABC$에서 $\\angle B = 90^\\circ$일 때, $\\sin A = 2\\cos A$입니다. $\\tan A$는 무엇입니까?",
+    "answer": "2"
+  },
+  {
+    "question": "함수 $f(x)=\\frac{2x}{x^2-5x-14}$의 그래프는 수직 점근선 $x=a$와 $x=b$, 그리고 수평 점근선 $y=c$를 가집니다. $a+b+c$를 구하세요.",
+    "answer": "5"
+  },
+  {
+    "question": "$99^2+99+1$을 머릿속으로 계산하세요.",
+    "answer": "9901"
+  },
+  {
+    "question": "모든 2차원 벡터 $\\bold{v}$에 대해\n\\[\\left\\| \\begin{pmatrix} 2 & 3 \\\\ 0 & -2 \\end{pmatrix} \\bold{v} \\right\\| \\le C \\|\\bold{v}\\|\\]를 만족하는 가장 작은 양의 실수 $C$를 찾으시오.\n\n여기서 2차원 벡터 $\\mathbf{a}$에 대해, $\\|\\mathbf{a}\\|$는 $\\mathbf{a}$의 크기입니다.",
+    "answer": "4"
+  },
+  {
+    "question": "$1^{(2^{235423523})}$는 무엇입니까?",
+    "answer": "1"
+  },
+  {
+    "question": "복소수 $z$가 $z^5 = 1$이고 $z \\neq 1$일 때, 다음을 계산하시오.\n\\[z + \\frac{1}{z} + z^2 + \\frac{1}{z^2}.\\]",
+    "answer": "-1"
+  },
+  {
+    "question": "$58_9 - 18_9$를 계산하세요. 답을 $9$진수로 표현하세요.",
+    "answer": "40_9"
+  },
+  {
+    "question": "다음을 간단히 하시오\n\\[\\frac{\\sec x}{\\sin x} - \\frac{\\sin x}{\\cos x}.\\]",
+    "answer": "\\cot x"
+  },
+  {
+    "question": "열 개의 트릭은 세 개의 스퀴그와 한 개의 굴리와 같은 무게입니다. 두 개의 트릭과 한 개의 굴리는 한 개의 스퀴그와 같은 무게입니다. 몇 개의 트릭의 무게가 한 개의 스퀴그의 무게와 같습니까?",
+    "answer": "3"
+  },
+  {
+    "question": "$3t^2+5t+a$와 $4t^2+bt-2$의 곱이 $12t^4+26t^3-8t^2-16t+6$일 때, $a+b$는 얼마입니까?",
+    "answer": "-1"
+  },
+  {
+    "question": "원기둥 모양의 탱크가 시간당 $20\\pi$ 세제곱미터의 속도로 물이 채워지고 있습니다. 탱크가 채워지면서 물의 높이는 시간당 4미터씩 상승합니다. 탱크의 반지름은 몇 미터입니까? 답을 가장 간단한 근호 형태로 표현하세요.",
+    "answer": "\\sqrt{5}"
+  },
+  {
+    "question": "함수 \\[ f(x) =\n\\begin{cases}\nax^2 & \\text{if } x \\geq a,\\\\\nax +2a& \\text{if } x <a,\n\\end{cases}\n\\]를 고려하자. 여기서 $a$는 어떤 수이다.\n\n$y=f(x)$의 그래프가 모든 수평선을 적어도 한 번씩 교차하도록 하는 $a$의 최대값은 얼마인가?",
+    "answer": "2"
+  },
+  {
+    "question": "반지름의 길이가 1인 원의 방정식 $x^2 - 10x + y^2 + 6y + c = 0$에서 $c$의 값은 얼마입니까?",
+    "answer": "33"
+  },
+  {
+    "question": "$\\lambda$가 상수이고, $0 \\le \\lambda \\le 4$라고 하자. 함수 $f : [0,1] \\to [0,1]$는 다음과 같이 정의된다:\n\\[f(x) = \\lambda x(1 - x).\\] $f(x) \\neq x$이지만 $f(f(x)) = x$인 $x \\in [0,1]$가 존재하는 $\\lambda$의 값을 찾아라. 여기서 $0 \\le \\lambda \\le 4$이다.",
+    "answer": "(3,4]"
+  },
+  {
+    "question": "$\\theta$에 대해 다음을 만족하는 최소 양의 각도의 도 단위 값을 구하시오.\n\\[\\tan \\theta = \\frac{\\cos 5^\\circ \\cos 20^\\circ + \\cos 35^\\circ \\cos 50^\\circ - \\sin 5^\\circ \\sin 20^\\circ - \\sin 35^\\circ \\sin 50^\\circ}{\\sin 5^\\circ \\cos 20^\\circ - \\sin 35^\\circ \\cos 50^\\circ + \\cos 5^\\circ \\sin 20^\\circ - \\cos 35^\\circ \\sin 50^\\circ}.\\]",
+    "answer": "120^\\circ"
+  },
+  {
+    "question": "ELLIPSE라는 단어의 문자들을 배열하는 방법의 수를 구하시오.",
+    "answer": "1260"
+  },
+  {
+    "question": "$42!$ (42 팩토리얼)의 끝에 있는 0의 개수는 몇 개입니까? (참고: 숫자 $n!$은 1부터 $n$까지의 정수의 곱입니다. 예를 들어, $5!=5\\cdot 4\\cdot3\\cdot2\\cdot 1= 120$입니다.)",
+    "answer": "9"
+  },
+  {
+    "question": "\\[f(x,y) = x \\sqrt{1 - y^2} + y \\sqrt{1 - x^2}\\]의 최대값을 구하시오. 여기서 $-1 \\le x,$ $y \\le 1$이다.",
+    "answer": "1"
+  },
+  {
+    "question": "점 $O,$ $A,$ $B$는 $\\overrightarrow{OA} = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix}$ 및 $\\overrightarrow{OB} = \\begin{pmatrix} -3 \\\\ -2 \\\\ 1 \\end{pmatrix}$를 만족합니다. 삼각형 $OAB$의 넓이를 구하세요.",
+    "answer": "3 \\sqrt{5}"
+  },
+  {
+    "question": "복소수 $z$가 다음과 같다고 하자.\n\\[z + \\frac{1}{z} = \\frac{1 + \\sqrt{5}}{2}.\\] 다음을 구하시오.\n\\[z^{85} + \\frac{1}{z^{85}}.\\]",
+    "answer": "-2"
+  },
+  {
+    "question": "삼각형 $ABC$의 중선 $AD$, $BE$, $CF$는 무게중심 $G$에서 만납니다. $G$를 지나면서 $BC$와 평행한 직선이 각각 $AB$와 $AC$에서 $M$과 $N$에 교차합니다. 삼각형 $ABC$의 넓이가 144일 때, 삼각형 $ENG$의 넓이를 구하세요.",
+    "answer": "8"
+  },
+  {
+    "question": "책장에는 총 24권의 책이 있는 3개의 선반이 있습니다. 맨 위 선반에는 8권의 추리 소설이 있습니다. 중간 선반에는 10권의 수학 책이 있습니다. 맨 아래 선반에는 6권의 과학 책이 있습니다. 이제 각 선반에서 두 권의 책이 제거되었습니다. 세 선반에 남아 있는 책 중 수학 책의 비율은 얼마입니까? 답을 기약분수로 표현하세요.",
+    "answer": "\\frac{4}{9}"
+  },
+  {
+    "question": "원뿔의 부피는 공식 $V = \\frac{1}{3}Bh$로 주어지며, 여기서 $B$는 밑면의 면적이고 $h$는 높이입니다. 원뿔의 밑면의 면적이 30 제곱 단위이고, 높이가 6.5 단위일 때, 그 부피는 몇 입방 단위입니까?",
+    "answer": "65"
+  },
+  {
+    "question": "등차수열의 네 번째 항이 $200$이고 여덟 번째 항이 $500$일 때, 여섯 번째 항은 무엇입니까?",
+    "answer": "350"
+  },
+  {
+    "question": "$\\frac{21}{2^2 \\cdot 5^7}$을 유한 소수로 변환하세요.",
+    "answer": ".0000672"
+  },
+  {
+    "question": "100과 150의 공약수인 두 자리 양의 정수는 몇 개입니까?",
+    "answer": "3"
+  },
+  {
+    "question": "양의 정수 $n>1$에 대해 $2^{24}$이 완전한 $n^{\\text{th}}$ 제곱인 경우는 몇 개입니까?",
+    "answer": "7"
+  },
+  {
+    "question": "힐러리는 11개의 동전을 가지고 있으며, 모두 10센트짜리와 5센트짜리입니다. 이 동전들은 총 75센트의 가치가 있습니다. 그녀는 5센트짜리 동전을 몇 개 가지고 있습니까?",
+    "answer": "7"
+  },
+  {
+    "question": "폴과 제시는 각각 처음 여섯 개의 소수 중에서 무작위로 숫자를 선택합니다. 그들이 선택한 숫자의 합이 짝수일 확률은 얼마입니까?",
+    "answer": "\\frac{13}{18}"
+  },
+  {
+    "question": "점 $(a, b)$는 $3x + 2y = 12$라는 방정식을 가진 직선 위에 있습니다. $a = 4$일 때, $b$의 값은 얼마입니까?",
+    "answer": "0"
+  },
+  {
+    "question": "열두 개의 1 x 1 정사각형이 직사각형을 형성하고 있습니다. 그림과 같이 음영 처리된 부분의 총 면적은 얼마입니까? [asy]\nsize(4cm);defaultpen(linewidth(0.75));\n\n// 채워진 부분\nfill((0, 4)--(0, 0)--(2, 0)--cycle, gray(0.75));\nfill((0, 4)--(3, 4)--(3, 0)--cycle, gray(0.75));\n\n// 격자\nint j;\nfor (j = 0; j < 4; ++j) {draw((j, 0)--(j, 4));}\nfor (j = 0; j < 5; ++j) {draw((0, j)--(3, j));}\n\n// 대각선\ndraw((0, 4)--(3, 0)); draw((0, 4)--(2, 0));\n[/asy]",
+    "answer": "10"
+  },
+  {
+    "question": "450의 양의 배수 중에서 모든 자릿수가 0과 1로만 이루어진 가장 작은 수는 무엇입니까?",
+    "answer": "11,\\! 111,\\! 111,\\! 100"
+  },
+  {
+    "question": "보여진 바퀴가 두 번 회전하여, 포인터가 가리키는 숫자가 무작위로 결정됩니다 (바퀴의 각 숫자가 동일한 확률로 선택됨). 이렇게 결정된 두 숫자가 기록됩니다. 첫 번째 숫자는 4로 나누어져, 체커보드의 열을 표시하는 나머지 1, 2, 3 중 하나를 결정합니다. 두 번째 숫자는 5로 나누어져, 체커보드의 행을 표시하는 나머지 1, 2, 3, 4 중 하나를 결정합니다. 마지막으로, 이 열과 행이 만나는 사각형에 체커가 놓입니다. 체커가 체커보드의 음영이 있는 사각형에 놓일 확률은 얼마입니까?",
+    "answer": "\\frac{1}{2}"
+  },
+  {
+    "question": "분수 $\\frac{4321}{5^7\\cdot2^8}$의 유한 소수 표현에서 각 자리 숫자의 합은 얼마입니까?",
+    "answer": "14"
+  },
+  {
+    "question": "$\\sin 20^\\circ \\sin 40^\\circ \\sin 60^\\circ \\sin 80^\\circ \\sin 100^\\circ \\sin 120^\\circ \\sin 140^\\circ \\sin 160^\\circ$의 값을 구하시오.",
+    "answer": "\\frac{9}{256}"
+  },
+  {
+    "question": "상수 $c$에 대해, 원통 좌표계 $(r,\\theta,z)$에서 다음 방정식으로 설명되는 형태를 찾으시오.\n\\[z = c.\\](A) 직선\n(B) 원\n(C) 평면\n(D) 구\n(E) 원기둥\n(F) 원뿔\n\n정답의 문자를 입력하시오.",
+    "answer": "\\text{(C)}"
+  },
+  {
+    "question": "벡터 $\\mathbf{a}$와 $\\mathbf{b}$가 $\\|\\mathbf{a}\\| = 2,$ $\\|\\mathbf{b}\\| = 7,$ 그리고\n\\[\\mathbf{a} \\times \\mathbf{b} = \\begin{pmatrix} 3 \\\\ 2 \\\\ 6 \\end{pmatrix}\\]일 때, $\\mathbf{a}$와 $\\mathbf{b}$ 사이의 가능한 가장 작은 각도를 도 단위로 구하세요.",
+    "answer": "30^\\circ"
+  },
+  {
+    "question": "함수 $f$가 $f(x) = x^3 - 49x^2 + 623x - 2015$로 정의되고, $g(x) = f(x + 5)$일 때, $g$의 근의 합을 구하시오.",
+    "answer": "34"
+  },
+  {
+    "question": "\\[\\frac{1}{\\cos^2 10^\\circ} + \\frac{1}{\\sin^2 20^\\circ} + \\frac{1}{\\sin^2 40^\\circ}\\]를 계산하세요.",
+    "answer": "12"
+  },
+  {
+    "question": "내각 중 하나를 제외한 모든 내각의 합이 $1070^{\\circ}$인 볼록 다각형은 몇 개의 변을 가질까요?",
+    "answer": "8"
+  },
+  {
+    "question": "$0<t<23$이고 $t+2$가 $t$의 모듈로 $23$의 역수인 유일한 $\\textbf{홀수}$ 정수 $t$를 찾으시오.",
+    "answer": "17"
+  },
+  {
+    "question": "부피가 $1$ 세제곱 피트인 정육면체의 전체 표면적은 몇 제곱 인치입니까?",
+    "answer": "864 \\mbox{ inches}^2"
+  },
+  {
+    "question": "$5+\\sqrt{3}$의 수와 그 근호 공액의 곱을 계산하세요.",
+    "answer": "22"
+  },
+  {
+    "question": "1, 3, 5, 7, $\\dots$의 홀수 수열에서 2003번째 항은 무엇입니까?",
+    "answer": "4005"
+  },
+  {
+    "question": "$f(x) = 2x-3$이고 $g(x) = x+1$일 때, $g(f(5)-1)$의 값은 얼마입니까?",
+    "answer": "7"
+  },
+  {
+    "question": "\\[\\sin \\left( \\tan^{-1} (x) + \\cot^{-1} \\left( \\frac{1}{x} \\right) \\right) = \\frac{1}{3}\\]의 모든 해를 찾으시오. 모든 해를 쉼표로 구분하여 입력하시오.",
+    "answer": "3 \\pm 2 \\sqrt{2}"
+  },
+  {
+    "question": "한 직선은 다음과 같이 정의됩니다.\n\\[\\begin{pmatrix} 3 \\\\ -10 \\\\ 1 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ -9 \\\\ -2 \\end{pmatrix}.\\]또 다른 직선은 다음과 같이 정의됩니다.\n\\[\\begin{pmatrix} -5 \\\\ -3 \\\\ 6 \\end{pmatrix} + u \\begin{pmatrix} 4 \\\\ -18 \\\\ -4 \\end{pmatrix}.\\]이 두 직선은 평행합니다. 이 두 직선 사이의 거리를 구하세요.",
+    "answer": "7"
+  },
+  {
+    "question": "꼭짓점으로 다음과 같은 점을 갖는 직사각형 영역을 고려하세요: $$(5,4), (-5,4), (-5,-4), (5,-4).$$ 이 직사각형 영역의 내부에 엄격히 포함되는 정수 좌표를 가진 점은 몇 개입니까?",
+    "answer": "63"
+  },
+  {
+    "question": "벡터 $\\mathbf{a},$ $\\mathbf{b},$ $\\mathbf{c}$가 다음과 같다고 하자.\n\\[\\mathbf{a} \\times \\mathbf{b} = \\begin{pmatrix} 6 \\\\ -7 \\\\ 3 \\end{pmatrix}, \\quad \\mathbf{a} \\times \\mathbf{c} = \\begin{pmatrix} 4 \\\\ 7 \\\\ 2 \\end{pmatrix}, \\quad \\mathbf{b} \\times \\mathbf{c} = \\begin{pmatrix} 1 \\\\ -7 \\\\ 18 \\end{pmatrix}.\\]$(2 \\mathbf{b} - \\mathbf{a}) \\times (3 \\mathbf{c} + \\mathbf{a})$를 계산하시오.",
+    "answer": "\\begin{pmatrix} -18 \\\\ -49 \\\\ 96 \\end{pmatrix}"
+  },
+  {
+    "question": "$\\textbf{Juan의 옛 우표 수집 장소}$\n\nJuan은 자신의 우표 수집품을 국가별로, 그리고 발행된 10년 단위로 정리합니다. 그가 우표 가게에서 지불한 가격은 다음과 같습니다: 브라질과 프랑스는 각각 $6$ 센트, 페루는 각각 $4$ 센트, 스페인은 각각 $5$ 센트입니다. (브라질과 페루는 남미 국가이고, 프랑스와 스페인은 유럽에 있습니다.) [asy]\n/* AMC8 2002 #8, 9, 10 문제 */\nsize(3inch, 1.5inch);\nfor ( int y = 0; y <= 5; ++y )\n{\n\ndraw((0,y)--(18,y));\n}\ndraw((0,0)--(0,5));\ndraw((6,0)--(6,5));\ndraw((9,0)--(9,5));\ndraw((12,0)--(12,5));\ndraw((15,0)--(15,5));\ndraw((18,0)--(18,5));\n\nlabel(scale(0.8)*\"50s\", (7.5,4.5));\nlabel(scale(0.8)*\"4\", (7.5,3.5));\nlabel(scale(0.8)*\"8\", (7.5,2.5));\nlabel(scale(0.8)*\"6\", (7.5,1.5));\nlabel(scale(0.8)*\"3\", (7.5,0.5));\n\nlabel(scale(0.8)*\"60s\", (10.5,4.5));\nlabel(scale(0.8)*\"7\", (10.5,3.5));\nlabel(scale(0.8)*\"4\", (10.5,2.5));\nlabel(scale(0.8)*\"4\", (10.5,1.5));\nlabel(scale(0.8)*\"9\", (10.5,0.5));\n\nlabel(scale(0.8)*\"70s\", (13.5,4.5));\nlabel(scale(0.8)*\"12\", (13.5,3.5));\nlabel(scale(0.8)*\"12\", (13.5,2.5));\nlabel(scale(0.8)*\"6\", (13.5,1.5));\nlabel(scale(0.8)*\"13\", (13.5,0.5));\n\nlabel(scale(0.8)*\"80s\", (16.5,4.5));\nlabel(scale(0.8)*\"8\", (16.5,3.5));\nlabel(scale(0.8)*\"15\", (16.5,2.5));\nlabel(scale(0.8)*\"10\", (16.5,1.5));\nlabel(scale(0.8)*\"9\", (16.5,0.5));\n\nlabel(scale(0.8)*\"Country\", (3,4.5));\nlabel(scale(0.8)*\"Brazil\", (3,3.5));\nlabel(scale(0.8)*\"France\", (3,2.5));\nlabel(scale(0.8)*\"Peru\", (3,1.5));\nlabel(scale(0.8)*\"Spain\", (3,0.5));\n\nlabel(scale(0.9)*\"Juan's Stamp Collection\", (9,0), S);\nlabel(scale(0.9)*\"Number of Stamps by Decade\", (9,5), N);\n[/asy] 그의 $70\\text{'s}$ 우표의 평균 가격은 몇 센트였습니까? 답을 소수점 첫째 자리까지 반올림하세요.",
+    "answer": "5.4 \\text{ cents}"
+  },
+  {
+    "question": "$ABCD$가 사다리꼴이고 $\\overline{AD}|| \\overline{BC}$라고 가정하자. $\\overline{AC}\\perp\\overline{CD}$, $\\overline{AC}$가 각 $\\angle BAD$를 이등분하며, $[ABCD]=42$가 주어졌을 때, $[\\triangle ACD]$를 계산하시오.",
+    "answer": "28"
+  },
+  {
+    "question": "$\\frac{\\sqrt{2x}}{\\sqrt{3x-1}}=\\frac32$일 때, $x$를 구하세요. 답을 가장 간단한 분수 형태로 표현하세요.",
+    "answer": "\\frac9{19}"
+  },
+  {
+    "question": "연산 @는 $\\frac{m}{n}@\\frac{p}{q} = (m)(p)\\left(\\frac{q}{n}\\right)$로 정의됩니다. 여기서 $\\frac{p}{q}$는 기약분수입니다. $\\frac{7}{30}@\\frac{10}{21}$의 기약분수 값은 무엇입니까?",
+    "answer": "49"
+  },
+  {
+    "question": "원 위에 네 점 $A$, $B$, $C$, $D$가 무작위로 독립적으로 선택됩니다. 선분 $AB$와 $CD$가 교차할 확률은 얼마입니까?",
+    "answer": "\\frac{1}{3}"
+  },
+  {
+    "question": "도형에서 중심이 $D$인 두 개의 원이 있으며, 반지름은 각각 $1$과 $2$입니다. 음영이 있는 영역의 전체 면적은 큰 원의 면적의 $\\frac5{12}$입니다. (작은) $\\angle ADC$의 각도는 몇 도입니까?",
+    "answer": "120"
+  },
+  {
+    "question": "높이가 8 cm이고 반지름이 3 cm인 원통형 비커가 있습니다. 반지름이 6 cm인 구형 탱크를 채우려면 몇 개의 비커가 필요합니까?",
+    "answer": "4"
+  },
+  {
+    "question": "\\[\\sin (\\arcsin 0.4 + \\arcsin 0.5) \\cdot \\sin (\\arcsin 0.5 - \\arcsin 0.4)\\]를 계산하세요.",
+    "answer": "\\frac{9}{100}"
+  },
+  {
+    "question": "자전거가 분당 20피트의 속도로 이동하고 있습니다. 자전거의 속도를 초당 인치로 표현하면 얼마입니까?",
+    "answer": "4"
+  },
+  {
+    "question": "상원 위원회에는 8명의 공화당원과 6명의 민주당원이 있습니다. 각 당에서 적어도 한 명의 구성원이 포함된 5명의 하위 위원회를 구성하는 방법은 몇 가지입니까?",
+    "answer": "1940"
+  },
+  {
+    "question": "$513^2 - 487^2$의 값은 얼마입니까?",
+    "answer": "26000"
+  },
+  {
+    "question": "세 연속 정수의 곱이 120입니다. 그 곱을 세 정수의 평균으로 나눈 값은 24입니다. 세 연속 정수 중 가장 큰 수는 무엇입니까?",
+    "answer": "6"
+  },
+  {
+    "question": "양수 $x$에 대해 $\\sqrt[3]{x^2 - 4x + 4} = 16$을 만족하는 값을 구하세요.",
+    "answer": "66"
+  },
+  {
+    "question": "다음을 간단히 하시오\n\\[\\cos \\left( \\frac{2 \\pi}{15} \\right) \\cos \\left (\\frac {4 \\pi}{15} \\right) \\cos \\left( \\frac{8 \\pi}{15} \\right) \\cos \\left( \\frac {16 \\pi}{15} \\right).\\]",
+    "answer": "\\frac{1}{16}"
+  },
+  {
+    "question": "삼각형 $ABC$는 이등변 삼각형이며, $AB=AC$이고 높이 $AM=11$입니다. $\\overline{AM}$ 위에 점 $D$가 있고 $AD=10$이며 $\\angle BDC=3\\angle BAC$일 때, 삼각형 $ABC$의 둘레를 구하세요.\n\n[asy]\nunitsize(0.4 cm);\n\npair A, B, C, D, M;\n\nA = (0,11);\nD = (0,1);\nB = (-11/2,0);\nC = (11/2,0);\nM = (B + C)/2;\n\ndraw(A--B--C--cycle);\ndraw(A--M);\ndraw(B--D--C);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, NW);\nlabel(\"$M$\", M, S);\n[/asy]",
+    "answer": "11 \\sqrt{5} + 11"
+  },
+  {
+    "question": "27개의 연속된 양의 정수의 합이 $3^7$입니다. 이들의 중앙값은 무엇입니까?",
+    "answer": "81"
+  },
+  {
+    "question": "어떤 실수 $x$에 대해 $-4<x^{4}+4x^{2}<21$이 만족됩니까? 답을 구간 표기법으로 표현하세요.",
+    "answer": "(-\\sqrt{3}, \\sqrt{3})"
+  },
+  {
+    "question": "$x,$ $y,$ $z$가 다음의 방정식을 만족한다고 가정하자.\n\\begin{align*}\nxyz &= 4, \\\\\nx^3 + y^3 + z^3 &= 4, \\\\\nxy^2 + x^2 y + xz^2 + x^2 z + yz^2 + y^2 z &= 12.\n\\end{align*} $xy + yz + zx$의 값을 계산하시오.",
+    "answer": "6"
+  },
+  {
+    "question": "아래 표의 데이터는 Central H.S. 학생들에 대한 설문 조사에서 버스를 타는 학생들의 비율을 보여줍니다. 각 학년에서 300명의 남학생과 300명의 여학생이 조사되었습니다. 남학생 버스 이용자 수가 여학생 버스 이용자 수의 $135\\%$에 가장 가까운 학년은 어느 학년입니까? \\begin{tabular}{|l|c|c|}\\hline 학년 & 남학생 & 여학생 \\\\ \\hline $9^{\\mathrm{th}}$ 학년 & $41.1\\%$ & $39.4\\%$ \\\\ \\hline $10^{\\mathrm{th}}$ 학년 & $34.4\\%$ & $33.1\\%$ \\\\ \\hline $11^{\\mathrm{th}}$ 학년 & $20.6\\%$ & $13.8\\%$ \\\\ \\hline $12^{\\mathrm{th}}$ 학년 & $11.6\\%$ & $8.6\\%$ \\\\ \\hline \\end{tabular}",
+    "answer": "12"
+  },
+  {
+    "question": "\\[\\frac{|x^2 - 81|}{x^2 - 36x} < 0\\]을(를) 푸세요.",
+    "answer": "(0,9) \\cup (9,36)"
+  },
+  {
+    "question": "아래에 표시된 것처럼 직사각형 필드는 운동 트랙으로 둘러싸여 있습니다. 트랙은 필드의 두 변과 두 개의 반원으로 구성되어 있습니다. 트랙의 길이는 400미터입니다. 필드의 가능한 최대 면적은 몇 제곱미터입니까?",
+    "answer": "\\frac{20000}{\\pi}"
+  },
+  {
+    "question": "$\\triangle{RST}$에서, $\\sin{R}=\\frac{2}{5}$입니다. $\\sin{T}$는 무엇입니까?\n\n[asy]\npair R,S,T;\nT = (0,0);\nS = (2,0);\nR = (2,sqrt(21));\ndraw(R--S--T--R);\ndraw(rightanglemark(R,S,T,10));\nlabel(\"$T$\",T,SW);\nlabel(\"$S$\",S,SE);\nlabel(\"$R$\",R,NE);\nlabel(\"$5$\",(R+T)/2,NW);\n[/asy]",
+    "answer": "\\frac{\\sqrt{21}}{5}"
+  },
+  {
+    "question": "원점과 그래프 $y=\\frac{1}{\\sqrt{2}}\\left(x^2-3\\right)$ 위의 한 점 사이의 가장 짧은 거리는 $\\sqrt{a}/b$로 표현될 수 있습니다. 여기서 $a$와 $b$는 양의 정수이며, $a$는 1보다 큰 정수의 제곱으로 나누어지지 않습니다. $a+b$를 구하세요.",
+    "answer": "12"
+  },
+  {
+    "question": "$f$가 다음과 같이 정의되어 있을 때, \\[f(x) = \\left\\{\n\\begin{array}{cl}\n3-x & \\text{ if } x \\leq 3, \\\\\n-x^3+2x^2+3x & \\text{ if } x>3.\n\\end{array}\n\\right.\\] $f^{-1}(0)+f^{-1}(6)$을 계산하시오.",
+    "answer": "0"
+  },
+  {
+    "question": "정사면체의 다섯 개 꼭짓점에서 점 $P$까지의 거리가 각각 3, 7, 8, 9, 11일 때, $P$에서 여섯 번째 꼭짓점까지의 거리를 구하시오.\n\n[asy]\nimport three;\n\nsize(125);\ncurrentprojection = perspective(6,3,1);\n\ntriple A, B, C, D, E, F, P;\n\nA = (1,0,0);\nB = (-1,0,0);\nC = (0,1,0);\nD = (0,-1,0);\nE = (0,0,1);\nF = (0,0,-1);\nP = (1.2,1.5,1);\n\ndraw(A--P,red);\ndraw(B--P,red);\ndraw(C--P,red);\ndraw(D--P,red);\ndraw(E--P,red);\ndraw(F--P,red);\n\ndraw(A--C);\ndraw(A--D);\ndraw(A--E);\ndraw(A--F);\ndraw(C--E--D--F--cycle);\ndraw(D--B--C,dashed);\ndraw(B--C,dashed);\ndraw(B--D,dashed);\ndraw(B--E,dashed);\ndraw(B--F,dashed);\n\nlabel(\"$P$\", P, NE);\n[/asy]",
+    "answer": "\\sqrt{66}"
+  },
+  {
+    "question": "힘은 질량과 가속도의 곱이라는 것은 잘 알려진 물리 공식입니다. 젠은 잭이 야구공을 던지는 것과 같은 힘으로 소프트볼을 던지고 싶어합니다. 소프트볼의 질량이 $200$ g이고 야구공의 질량이 $150$ g일 때, 젠의 공의 가속도와 잭의 공의 가속도의 비율은 얼마입니까? 답은 기약분수로 나타내세요.",
+    "answer": "\\frac 34"
+  },
+  {
+    "question": "$629_{10}$의 7진법과 8진법 표현에서 같은 숫자가 몇 개나 발견됩니까? 예를 들어, $121_{3}$과 $413_{5}$는 공통으로 하나의 숫자를 가집니다.",
+    "answer": "3"
+  },
+  {
+    "question": "여섯 명의 마녀와 열 명의 마법사가 신비로운 모임에 있습니다. 마녀들은 각 마법사와 악수를 하기로 결정했습니다. 마녀들은 이미 모두 좋은 친구들이기 때문에 서로 악수하지 않았고, 마법사들은 서로를 싫어해서 다른 마법사들과 악수하지 않았습니다. 이 모임에서 몇 번의 악수가 이루어졌습니까?",
+    "answer": "60"
+  },
+  {
+    "question": "$f(x)$를 다항식 \\[f(x)=3x^4+5x^2-9x-2\\]라고 하자. $g(x)$가 다항식 $f(x-1)$과 같을 때, $g$의 계수의 합은 얼마인가?",
+    "answer": "-2"
+  },
+  {
+    "question": "점 $(6, 0)$에서 직선 $y = 2x-2$까지의 최단 거리는 얼마입니까? 답을 가장 간단한 근호 형태로 표현하세요.",
+    "answer": "2\\sqrt{5}"
+  },
+  {
+    "question": "복소수 $\\alpha_1, \\alpha_2, \\alpha_3$, 그리고 $\\alpha_4$는 방정식 $x^4+2x^3+2=0$의 네 개의 서로 다른 근입니다. 다음의 무순서 집합을 구하세요. \\[\n\\{\\alpha_1\\alpha_2 + \\alpha_3\\alpha_4, \\alpha_1\\alpha_3 + \\alpha_2\\alpha_4, \\alpha_1\\alpha_4 + \\alpha_2\\alpha_3\\}.\n\\]",
+    "answer": "\\{1\\pm\\sqrt{5},-2\\}"
+  },
+  {
+    "question": "연필 세 자루와 점보 지우개 하나의 가격은 $\\$1.24$입니다. 연필 다섯 자루와 점보 지우개 하나의 가격은 $\\$1.82$입니다. 모든 가격은 세금을 포함하지 않습니다. 연필 한 자루의 가격은 몇 센트입니까?",
+    "answer": "29"
+  },
+  {
+    "question": "$\\frac{137}{500}$의 소수 전개에서 소수점 오른쪽에 있는 마지막 0이 아닌 숫자는 무엇입니까?",
+    "answer": "4"
+  },
+  {
+    "question": "직사각형 $ABCD$의 중심이 $O$이고 $AB/AD=k$입니다. 직사각형 $ABCD$의 내부에서 임의의 점을 선택합니다. 이 점이 네 개의 꼭짓점 중 어느 것보다도 $O$에 더 가까울 확률은 얼마입니까?  [asy]\nsize(200);\ndraw((-250,100)--(250,100)--(250,-100)--(-250,-100)--cycle);\ndot((0,0));\nlabel(\"$O$\",(0,0),N);\nlabel(\"$A$\",(-250,100),NW); label(\"$B$\",(250,100),NE); label(\"$C$\",(250,-100),SE); label(\"$D$\",(-250,-100),SW);[/asy]",
+    "answer": "\\frac{1}{2}"
+  },
+  {
+    "question": "54를 6으로 나눈 나머지를 구하시오.",
+    "answer": "0"
+  },
+  {
+    "question": "\\[f(n) = \\left\\{\n\\begin{array}{cl}\n\\lfloor n \\rfloor & \\text{ if }n \\geq 4, \\\\\n\\lceil n \\rceil & \\text{ if } n < 4.\n\\end{array}\n\\right.\\]일 때, $f\\left(\\frac{\\pi}{3}\\right) + f(\\sqrt{45}) + f(8^{2/3})$를 구하시오.",
+    "answer": "12"
+  },
+  {
+    "question": "린다, 쉐리, 준, 그리고 코니는 그들의 동네를 돌아다니며 걸스카우트 쿠키를 팔았습니다. 린다는 $\\$27.47$를 벌었고, 쉐리는 $\\$35.23$를 벌었으며, 준은 $\\$37.37$를 벌었고, 코니는 $\\$26.52$를 벌었습니다. 판매 후, 그들은 돈을 모아 은행에 가서 동전을 달러로 바꾸었습니다. 가능한 많은 동전을 지폐로 바꾼 후, 몇 센트가 남았습니까?",
+    "answer": "59"
+  },
+  {
+    "question": "30명의 학생으로 구성된 한 학급이 최근 시험을 보았습니다. 20명의 학생이 80점을, 8명의 학생이 90점을, 2명의 학생이 100점을 받았다면, 이 시험의 학급 평균(평균)은 얼마입니까?",
+    "answer": "84"
+  },
+  {
+    "question": "아래는 마방진입니다. 각 행, 각 열, 그리고 두 개의 주 대각선의 숫자 합이 모두 같습니다. $n$의 값은 얼마입니까?\n\n[asy]size(125);\nfor(int i = 0; i<4; ++i)\n{\n\ndraw((0,i)--(3,i),linewidth(1));\n}\n\nfor(int j = 0; j<4; ++j)\n{\n\ndraw((j,0)--(j,3),linewidth(1));\n}\n\nlabel(\"$n-3$\",(.5,.5));\nlabel(\"3\",(.5,1.5));\nlabel(\"$n+1$\",(.5,2.5));\n\nlabel(\"$n+2$\",(1.5,.5));\nlabel(\"$2n-9$\",(1.5,1.5));\nlabel(\"$1$\",(1.5,2.5));\n\nlabel(\"$2$\",(2.5,.5));\nlabel(\"$n$\",(2.5,1.5));\nlabel(\"$n-1$\",(2.5,2.5));\n[/asy]",
+    "answer": "7"
+  },
+  {
+    "question": "짐과 마사는 직사각형 필드의 모퉁이에 함께 서 있습니다. 짐은 필드를 대각선으로 가로질러 걷습니다. 마사는 길이와 너비를 따라 걸어서 같은 위치에 도착합니다. 필드는 폭이 300피트이고 길이가 400피트입니다. 짐이 마사보다 몇 피트 덜 걷나요?",
+    "answer": "200"
+  },
+  {
+    "question": "복소수 $\\omega$가 $\\omega^3 = 1$을 만족한다고 하자. 다음 식의 가능한 모든 값을 구하시오.\n\\[\\frac{1}{1 + \\omega} + \\frac{1}{1 + \\omega^2}.\\] 가능한 모든 값을 쉼표로 구분하여 입력하시오.",
+    "answer": "1"
+  },
+  {
+    "question": "어떤 점 $A$, $B$, $C$, 또는 $D$에서 시작하여 나머지 세 점을 한 번씩 방문할 때 이동할 수 있는 가장 짧은 거리는 얼마입니까?\n\n[asy]\npair A,B,C, D;\nA = (-3,3); B = (3,0); C = (0, -4); D = (0,0);\ndraw(D--B--C--cycle); draw(D--A--B--cycle);draw(D--A--C--cycle);\nlabel(\"$A$\", A, NW);label(\"$B$\", B, E); label(\"$C$\", C, S);label(\"$D$\", D, NE);\nlabel(\"3\", D--B, S); label(\"6\", A--B, NE); label(\"6\", A--C, SW); label(\"4\", D--C, NW+N);\nlabel(\"5\", A--D, SE+NE); label(\"5\", C--B, E);\n[/asy]",
+    "answer": "13"
+  }
+]

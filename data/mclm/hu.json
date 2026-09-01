@@ -1,0 +1,398 @@
+[
+  {
+    "question": "Tegyük fel, hogy az alábbi ábrán $\\sin D = 0.7$. Mekkora $DE$? [asy]\npair D,E,F;\nF = (0,0);\nD = (sqrt(51),7);\nE = (0,7);\ndraw(D--E--F--D);\ndraw(rightanglemark(D,E,F,15));\nlabel(\"$D$\",D,NE);\nlabel(\"$E$\",E,NW);\nlabel(\"$F$\",F,SW);\nlabel(\"$7$\",(E+F)/2,W);\n[/asy]",
+    "answer": "\\sqrt{51}"
+  },
+  {
+    "question": "Legyen $z = 2 + \\sqrt{2} - (3 + 3 \\sqrt{2})i$, és legyen $c = 2 - 3i$. Legyen $w$ az az eredmény, amikor $z$-t $\\frac{\\pi}{4}$-el forgatjuk el $c$ körül az óramutató járásával ellentétes irányba.\n\n[asy]\nunitsize(0.6 cm);\n\npair C, W, Z;\n\nZ = (2 + sqrt(2), -3 - 3*sqrt(2));\nC = (2,-3);\nW = rotate(45,C)*(Z);\n\ndraw(Z--C--W);\n\ndot(\"$c$\", C, N);\ndot(\"$w$\", W, SE);\ndot(\"$z$\", Z, S);\nlabel(\"$\\frac{\\pi}{4}$\", C + (0.6,-1));\n[/asy]\n\nHatározd meg $w$ értékét.",
+    "answer": "6 - 5i"
+  },
+  {
+    "question": "Egyszerűsítse $\\sqrt{242}$.",
+    "answer": "11\\sqrt2"
+  },
+  {
+    "question": "Hányféleképpen ülhet le 8 ember egy kerek asztal körül, ha 3 ember -- Pierre, Rosa és Thomas -- mind együtt szeretne ülni? (Két ülés ugyanannak számít, ha az egyik a másik forgatása.)",
+    "answer": "720"
+  },
+  {
+    "question": "Találja meg a konstans tagot a $$\\left(10x^3-\\frac{1}{2x^2}\\right)^{5}$$ kifejezés kibővítésében.",
+    "answer": "-125"
+  },
+  {
+    "question": "Ha $n \\equiv 2 \\pmod{7}$, akkor határozza meg a maradékot, amikor $(n + 2)(n + 4)(n + 6)$-ot elosztjuk 7-tel.",
+    "answer": "3"
+  },
+  {
+    "question": "Egy szabályos ötszöget az óramutató járásával ellentétes irányban elforgatunk a középpontja körül. Hány fokkal kell minimálisan elforgatni, hogy egybeessen az eredeti helyzetével?",
+    "answer": "72"
+  },
+  {
+    "question": "Egy paralelogramma koordinátái (5, 3), (6, 8), (7, 4) és $(x, y)$, ahol $x > 7$. Mekkora az $x + y$ értéke?",
+    "answer": "17"
+  },
+  {
+    "question": "A $ABC$ derékszögű háromszögben, ahol $\\angle B = 90^\\circ$, adott, hogy $\\sin A = 2\\cos A$. Mi $\\tan A$ értéke?",
+    "answer": "2"
+  },
+  {
+    "question": "Az $f(x)=\\frac{2x}{x^2-5x-14}$ függvény grafikonjának függőleges aszimptotái $x=a$ és $x=b$, valamint vízszintes aszimptotája $y=c$. Határozd meg $a+b+c$ értékét.",
+    "answer": "5"
+  },
+  {
+    "question": "Számold ki fejben a $99^2+99+1$ értékét.",
+    "answer": "9901"
+  },
+  {
+    "question": "Találd meg a legkisebb pozitív valós számot $C$, amelyre\n\\[\\left\\| \\begin{pmatrix} 2 & 3 \\\\ 0 & -2 \\end{pmatrix} \\bold{v} \\right\\| \\le C \\|\\bold{v}\\|\\] teljesül minden kétdimenziós vektorra $\\bold{v}.$\n\nMegjegyzés: egy kétdimenziós vektor $\\mathbf{a}$ esetén $\\|\\mathbf{a}\\|$ az $\\mathbf{a}$ nagysága.",
+    "answer": "4"
+  },
+  {
+    "question": "Mi az $1^{(2^{235423523})}$?",
+    "answer": "1"
+  },
+  {
+    "question": "Legyen $z$ egy komplex szám, amelyre $z^5 = 1$ és $z \\neq 1.$ Számítsa ki\n\\[z + \\frac{1}{z} + z^2 + \\frac{1}{z^2}.\\]",
+    "answer": "-1"
+  },
+  {
+    "question": "Számítsd ki $58_9 - 18_9.$ Add meg a válaszodat $9$-es számrendszerben.",
+    "answer": "40_9"
+  },
+  {
+    "question": "Egyszerűsítse\n\\[\\frac{\\sec x}{\\sin x} - \\frac{\\sin x}{\\cos x}.\\]",
+    "answer": "\\cot x"
+  },
+  {
+    "question": "Hány treek együttes súlya egyenlő egy squig súlyával, ha tíz treek annyit nyom, mint három squig és egy goolee, és két treek és egy goolee súlya egyenlő egy squig súlyával?",
+    "answer": "3"
+  },
+  {
+    "question": "A $3t^2+5t+a$ és a $4t^2+bt-2$ szorzata $12t^4+26t^3-8t^2-16t+6$. Mennyi $a+b$?",
+    "answer": "-1"
+  },
+  {
+    "question": "Egy kör alapú, egyenes henger alakú tartályt $20\\pi$ köbméter per óra sebességgel töltenek fel vízzel. Ahogy a tartály megtelik, a vízszint négy méter per óra sebességgel emelkedik. Mekkora a tartály sugara méterben? Válaszodat a legegyszerűbb gyökös formában add meg.",
+    "answer": "\\sqrt{5}"
+  },
+  {
+    "question": "Tekintsük az alábbi függvényt \\[ f(x) =\n\\begin{cases}\nax^2 & \\text{ha } x \\geq a,\\\\\nax +2a& \\text{ha } x <a,\n\\end{cases}\n\\]ahol $a$ egy szám.\n\nMi a legnagyobb $a$ érték, amelyre az $y=f(x)$ grafikon minden vízszintes egyenest legalább egyszer metszi?",
+    "answer": "2"
+  },
+  {
+    "question": "Milyen $c$ értékre lesz az $x^2 - 10x + y^2 + 6y + c = 0$ egyenletű kör sugara 1 hosszúságú?",
+    "answer": "33"
+  },
+  {
+    "question": "Legyen $\\lambda$ egy konstans, $0 \\le \\lambda \\le 4,$ és legyen $f : [0,1] \\to [0,1]$ úgy definiálva, hogy\n\\[f(x) = \\lambda x(1 - x).\\]Határozza meg azokat a $\\lambda$ értékeket, $0 \\le \\lambda \\le 4,$ amelyekre létezik olyan $x \\in [0,1]$, hogy $f(x) \\neq x$, de $f(f(x)) = x.$",
+    "answer": "(3,4]"
+  },
+  {
+    "question": "Határozd meg annak a legkisebb pozitív szögnek a fokmértékét, amelyre\n\\[\\tan \\theta = \\frac{\\cos 5^\\circ \\cos 20^\\circ + \\cos 35^\\circ \\cos 50^\\circ - \\sin 5^\\circ \\sin 20^\\circ - \\sin 35^\\circ \\sin 50^\\circ}{\\sin 5^\\circ \\cos 20^\\circ - \\sin 35^\\circ \\cos 50^\\circ + \\cos 5^\\circ \\sin 20^\\circ - \\cos 35^\\circ \\sin 50^\\circ}.\\]",
+    "answer": "120^\\circ"
+  },
+  {
+    "question": "Határozza meg, hányféleképpen lehet elrendezni az ELLIPSE szó betűit.",
+    "answer": "1260"
+  },
+  {
+    "question": "Hány nulla van a $42!$ (42 faktoriális) végén? (Emlékeztető: Az $n!$ szám az 1-től $n$-ig terjedő egész számok szorzata. Például, $5!=5\\cdot 4\\cdot3\\cdot2\\cdot 1= 120$.)",
+    "answer": "9"
+  },
+  {
+    "question": "Határozd meg a maximum értékét a következő függvénynek:\n\\[f(x,y) = x \\sqrt{1 - y^2} + y \\sqrt{1 - x^2},\\] ahol $-1 \\le x,$ $y \\le 1.$",
+    "answer": "1"
+  },
+  {
+    "question": "Az $O,$ $A,$ és $B$ pontok kielégítik, hogy $\\overrightarrow{OA} = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix}$ és $\\overrightarrow{OB} = \\begin{pmatrix} -3 \\\\ -2 \\\\ 1 \\end{pmatrix}.$  Határozd meg az $OAB$ háromszög területét.",
+    "answer": "3 \\sqrt{5}"
+  },
+  {
+    "question": "Legyen $z$ egy komplex szám, amelyre\n\\[z + \\frac{1}{z} = \\frac{1 + \\sqrt{5}}{2}.\\]Számítsa ki\n\\[z^{85} + \\frac{1}{z^{85}}.\\]",
+    "answer": "-2"
+  },
+  {
+    "question": "Az $ABC$ háromszög $AD$, $BE$ és $CF$ súlyvonalai a $G$ súlypontban metszik egymást. A $G$ ponton átmenő, $BC$-vel párhuzamos egyenes az $AB$ és $AC$ oldalakat rendre $M$ és $N$ pontokban metszi. Ha az $ABC$ háromszög területe 144, akkor határozd meg az $ENG$ háromszög területét.",
+    "answer": "8"
+  },
+  {
+    "question": "Egy könyvespolcnak 3 polca van, összesen 24 könyvvel. A felső polcon 8 rejtélyes könyv van. A középső polcon 10 matematikai könyv található. Az alsó polcon 6 tudományos könyv van. Most mindegyik polcról két könyvet vettek le. A három polcon maradt könyvek közül milyen hányad rész a matematikai könyv? Válaszodat közönséges tört formájában add meg.",
+    "answer": "\\frac{4}{9}"
+  },
+  {
+    "question": "Egy kúp térfogatát a $V = \\frac{1}{3}Bh$ képlet adja meg, ahol $B$ az alap területe, $h$ pedig a magasság. Egy kúp alapjának területe 30 négyzetegység, magassága pedig 6,5 egység. Hány köb egység a térfogata?",
+    "answer": "65"
+  },
+  {
+    "question": "Ha egy számtani sorozat negyedik tagja $200$ és a nyolcadik tagja $500$, akkor mennyi a hatodik tag?",
+    "answer": "350"
+  },
+  {
+    "question": "Alakítsa át a $\\frac{21}{2^2 \\cdot 5^7}$ törtet véges tizedestörtté.",
+    "answer": ".0000672"
+  },
+  {
+    "question": "Hány pozitív kétjegyű egész szám osztója mind a 100-nak, mind a 150-nek?",
+    "answer": "3"
+  },
+  {
+    "question": "Hány pozitív egész számra $n>1$ igaz az, hogy $2^{24}$ egy tökéletes $n^{\\text{th}}$ hatvány?",
+    "answer": "7"
+  },
+  {
+    "question": "Hillarynak tizenegy érméje van, mindegyik tízcentes és ötcentes. Összesen az érmék 75 centet érnek. Hány ötcentese van?",
+    "answer": "7"
+  },
+  {
+    "question": "Paul és Jesse véletlenszerűen választanak egy számot az első hat prímszámból. Mi a valószínűsége annak, hogy a választott számok összege páros?",
+    "answer": "\\frac{13}{18}"
+  },
+  {
+    "question": "Az $(a, b)$ pont a $3x + 2y = 12$ egyenletű egyenesen fekszik. Ha $a = 4$, akkor mennyi $b$ értéke?",
+    "answer": "0"
+  },
+  {
+    "question": "Tizenkét 1x1-es négyzet alkot egy téglalapot, ahogy az ábrán látható. Mi a színezett terület teljes nagysága? [asy]\nsize(4cm);defaultpen(linewidth(0.75));\n\n// Kitöltött részek\nfill((0, 4)--(0, 0)--(2, 0)--cycle, gray(0.75));\nfill((0, 4)--(3, 4)--(3, 0)--cycle, gray(0.75));\n\n// rács\nint j;\nfor (j = 0; j < 4; ++j) {draw((j, 0)--(j, 4));}\nfor (j = 0; j < 5; ++j) {draw((0, j)--(3, j));}\n\n//átlók\ndraw((0, 4)--(3, 0)); draw((0, 4)--(2, 0));\n[/asy]",
+    "answer": "10"
+  },
+  {
+    "question": "Mi a legkisebb pozitív 450 többszöröse, amelynek számjegyei mind nullák és egyesek?",
+    "answer": "11,\\! 111,\\! 111,\\! 100"
+  },
+  {
+    "question": "A bemutatott kereket kétszer megpörgetik, így a mutató által jelzett számok véletlenszerűen meghatározódnak (a keréken lévő minden szám egyenlő valószínűséggel jelenik meg). Az így meghatározott két számot feljegyzik. Az első számot elosztják 4-gyel, meghatározva a 1, 2, 3 maradékok egyikét, amelyek a bemutatott sakktábla oszlopait jelölik. A második számot elosztják 5-tel, meghatározva a 1, 2, 3, 4 maradékok egyikét, amelyek a sakktábla sorait jelölik. Végül egy bábút helyeznek arra a négyzetre, ahol ez az oszlop és sor találkozik. Mi a valószínűsége annak, hogy a bábú a sakktábla egy árnyékolt négyzetére kerül?",
+    "answer": "\\frac{1}{2}"
+  },
+  {
+    "question": "Mi a számjegyek összege a tört $\\frac{4321}{5^7\\cdot2^8}$ véges tizedes tört alakjában?",
+    "answer": "14"
+  },
+  {
+    "question": "Találd meg $\\sin 20^\\circ \\sin 40^\\circ \\sin 60^\\circ \\sin 80^\\circ \\sin 100^\\circ \\sin 120^\\circ \\sin 140^\\circ \\sin 160^\\circ$ értékét.",
+    "answer": "\\frac{9}{256}"
+  },
+  {
+    "question": "Egy állandó $c$ esetén, hengeres koordinátákban $(r,\\theta,z),$ határozza meg a következő egyenlet által leírt alakzatot\n\\[z = c.\\](A) Egyenes\n(B) Kör\n(C) Sík\n(D) Gömb\n(E) Henger\n(F) Kúp\n\nAdja meg a helyes opció betűjét.",
+    "answer": "\\text{(C)}"
+  },
+  {
+    "question": "Ha $\\mathbf{a}$ és $\\mathbf{b}$ olyan vektorok, hogy $\\|\\mathbf{a}\\| = 2,$ $\\|\\mathbf{b}\\| = 7,$ és\n\\[\\mathbf{a} \\times \\mathbf{b} = \\begin{pmatrix} 3 \\\\ 2 \\\\ 6 \\end{pmatrix},\\]akkor határozd meg a $\\mathbf{a}$ és $\\mathbf{b}$ közötti legkisebb lehetséges szöget fokokban.",
+    "answer": "30^\\circ"
+  },
+  {
+    "question": "Legyen $f$ az a függvény, amelyet $f(x) = x^3 - 49x^2 + 623x - 2015$ definiál, és legyen $g(x) = f(x + 5).$ Számítsd ki $g$ gyökeinek összegét.",
+    "answer": "34"
+  },
+  {
+    "question": "Számítsa ki\n\\[\\frac{1}{\\cos^2 10^\\circ} + \\frac{1}{\\sin^2 20^\\circ} + \\frac{1}{\\sin^2 40^\\circ}.\\]",
+    "answer": "12"
+  },
+  {
+    "question": "Hány oldala lenne egy konvex sokszögnek, ha az összes belső szögének összege, kivéve egyet, $1070^{\\circ}$?",
+    "answer": "8"
+  },
+  {
+    "question": "Találd meg azt az egyedi $\\textbf{páratlan}$ egész számot $t$, amelyre $0<t<23$ és $t+2$ a $t$ inverze modulo $23$.",
+    "answer": "17"
+  },
+  {
+    "question": "Mekkora a teljes felszín négyzet hüvelykben egy kockának, amelynek térfogata $1$ köb láb?",
+    "answer": "864 \\mbox{ inches}^2"
+  },
+  {
+    "question": "Számítsd ki az $5+\\sqrt{3}$ szám és annak radikális konjugáltjának szorzatát.",
+    "answer": "22"
+  },
+  {
+    "question": "Mi a sorozat 1, 3, 5, 7, $\\dots$ 2003. tagja?",
+    "answer": "4005"
+  },
+  {
+    "question": "Legyen $f(x) = 2x-3$ és $g(x) = x+1$. Mi az értéke $g(f(5)-1)$-nek?",
+    "answer": "7"
+  },
+  {
+    "question": "Találd meg az összes megoldást a következő egyenletre:\n\\[\\sin \\left( \\tan^{-1} (x) + \\cot^{-1} \\left( \\frac{1}{x} \\right) \\right) = \\frac{1}{3}.\\]Add meg az összes megoldást, vesszővel elválasztva.",
+    "answer": "3 \\pm 2 \\sqrt{2}"
+  },
+  {
+    "question": "Az egyik egyenes a következőképpen van definiálva:\n\\[\\begin{pmatrix} 3 \\\\ -10 \\\\ 1 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ -9 \\\\ -2 \\end{pmatrix}.\\]Egy másik egyenes a következőképpen van definiálva:\n\\[\\begin{pmatrix} -5 \\\\ -3 \\\\ 6 \\end{pmatrix} + u \\begin{pmatrix} 4 \\\\ -18 \\\\ -4 \\end{pmatrix}.\\]Ez a két egyenes párhuzamos. Határozza meg a távolságot a két egyenes között.",
+    "answer": "7"
+  },
+  {
+    "question": "Vegyük figyelembe a téglalap alakú területet, amelynek a következő pontok a csúcsai: $$(5,4), (-5,4), (-5,-4), (5,-4).$$ Hány pont van, amelynek egész koordinátái vannak, és szigorúan a téglalap belsejében helyezkedik el?",
+    "answer": "63"
+  },
+  {
+    "question": "Legyen $\\mathbf{a},$ $\\mathbf{b},$ $\\mathbf{c}$ három vektor, amelyekre\n\\[\\mathbf{a} \\times \\mathbf{b} = \\begin{pmatrix} 6 \\\\ -7 \\\\ 3 \\end{pmatrix}, \\quad \\mathbf{a} \\times \\mathbf{c} = \\begin{pmatrix} 4 \\\\ 7 \\\\ 2 \\end{pmatrix}, \\quad \\mathbf{b} \\times \\mathbf{c} = \\begin{pmatrix} 1 \\\\ -7 \\\\ 18 \\end{pmatrix}.\\]Számítsd ki $(2 \\mathbf{b} - \\mathbf{a}) \\times (3 \\mathbf{c} + \\mathbf{a}).$",
+    "answer": "\\begin{pmatrix} -18 \\\\ -49 \\\\ 96 \\end{pmatrix}"
+  },
+  {
+    "question": "$\\textbf{Juan régi bélyeggyűjteménye}$\n\nJuan a gyűjteményében lévő bélyegeket ország és az évtized szerint rendezi, amelyben kiadták őket. Az árak, amelyeket a bélyegboltban fizetett értük: Brazília és Franciaország, $6$ cent darabonként, Peru $4$ cent darabonként, és Spanyolország $5$ cent darabonként. (Brazília és Peru dél-amerikai országok, míg Franciaország és Spanyolország Európában találhatóak.) [asy]\n/* AMC8 2002 #8, 9, 10 Problem */\nsize(3inch, 1.5inch);\nfor ( int y = 0; y <= 5; ++y )\n{\n\ndraw((0,y)--(18,y));\n}\ndraw((0,0)--(0,5));\ndraw((6,0)--(6,5));\ndraw((9,0)--(9,5));\ndraw((12,0)--(12,5));\ndraw((15,0)--(15,5));\ndraw((18,0)--(18,5));\n\nlabel(scale(0.8)*\"50s\", (7.5,4.5));\nlabel(scale(0.8)*\"4\", (7.5,3.5));\nlabel(scale(0.8)*\"8\", (7.5,2.5));\nlabel(scale(0.8)*\"6\", (7.5,1.5));\nlabel(scale(0.8)*\"3\", (7.5,0.5));\n\nlabel(scale(0.8)*\"60s\", (10.5,4.5));\nlabel(scale(0.8)*\"7\", (10.5,3.5));\nlabel(scale(0.8)*\"4\", (10.5,2.5));\nlabel(scale(0.8)*\"4\", (10.5,1.5));\nlabel(scale(0.8)*\"9\", (10.5,0.5));\n\nlabel(scale(0.8)*\"70s\", (13.5,4.5));\nlabel(scale(0.8)*\"12\", (13.5,3.5));\nlabel(scale(0.8)*\"12\", (13.5,2.5));\nlabel(scale(0.8)*\"6\", (13.5,1.5));\nlabel(scale(0.8)*\"13\", (13.5,0.5));\n\nlabel(scale(0.8)*\"80s\", (16.5,4.5));\nlabel(scale(0.8)*\"8\", (16.5,3.5));\nlabel(scale(0.8)*\"15\", (16.5,2.5));\nlabel(scale(0.8)*\"10\", (16.5,1.5));\nlabel(scale(0.8)*\"9\", (16.5,0.5));\n\nlabel(scale(0.8)*\"Country\", (3,4.5));\nlabel(scale(0.8)*\"Brazil\", (3,3.5));\nlabel(scale(0.8)*\"France\", (3,2.5));\nlabel(scale(0.8)*\"Peru\", (3,1.5));\nlabel(scale(0.8)*\"Spain\", (3,0.5));\n\nlabel(scale(0.9)*\"Juan's Stamp Collection\", (9,0), S);\nlabel(scale(0.9)*\"Number of Stamps by Decade\", (9,5), N);\n[/asy] Mi volt a $70\\text{'s}$ bélyegeinek átlagos ára centben? Kerekítsd a válaszodat a legközelebbi tizedes centhez.",
+    "answer": "5.4 \\text{ cents}"
+  },
+  {
+    "question": "Tegyük fel, hogy $ABCD$ egy trapéz, amelyben $\\overline{AD}|| \\overline{BC}$. Adott, hogy $\\overline{AC}\\perp\\overline{CD}$, $\\overline{AC}$ felezi a $\\angle BAD$ szöget, és $[ABCD]=42$. Számítsd ki $[\\triangle ACD]$ értékét.",
+    "answer": "28"
+  },
+  {
+    "question": "Ha $\\frac{\\sqrt{2x}}{\\sqrt{3x-1}}=\\frac32$, oldd meg $x$-re. Fejezd ki a válaszodat a legegyszerűbb tört alakban.",
+    "answer": "\\frac9{19}"
+  },
+  {
+    "question": "A @ művelet úgy van definiálva, hogy $\\frac{m}{n}@\\frac{p}{q} = (m)(p)\\left(\\frac{q}{n}\\right)$ az egyszerűsített $\\frac{p}{q}$ törtek esetén. Mi a $\\frac{7}{30}@\\frac{10}{21}$ egyszerűsített értéke?",
+    "answer": "49"
+  },
+  {
+    "question": "Négy pontot, $A$, $B$, $C$ és $D$, véletlenszerűen és egymástól függetlenül választunk ki egy kör kerületén. Mi a valószínűsége annak, hogy az $AB$ és $CD$ szakaszok metszik egymást?",
+    "answer": "\\frac{1}{3}"
+  },
+  {
+    "question": "A diagramon két kör látható, mindkettő középpontja $D$, sugaraik pedig $1$ és $2$. Az árnyékolt terület teljes területe a nagyobb kör területének $\\frac5{12}$-e. Hány fokos a (kisebb) $\\angle ADC$ szög?",
+    "answer": "120"
+  },
+  {
+    "question": "Egy henger alakú főzőpohár 8 cm magas és 3 cm sugarú. Hány ilyen főzőpohárnyi víz szükséges egy 6 cm sugarú gömb alakú tartály megtöltéséhez?",
+    "answer": "4"
+  },
+  {
+    "question": "Számítsa ki a következőt:\n\\[\\sin (\\arcsin 0.4 + \\arcsin 0.5) \\cdot \\sin (\\arcsin 0.5 - \\arcsin 0.4).\\]",
+    "answer": "\\frac{9}{100}"
+  },
+  {
+    "question": "Egy kerékpár 20 láb per perc sebességgel halad. Mekkora a kerékpár sebessége hüvelyk per másodpercben kifejezve?",
+    "answer": "4"
+  },
+  {
+    "question": "Egy szenátusi bizottságban 8 republikánus és 6 demokrata van. Hányféleképpen alakíthatunk ki egy 5 tagú albizottságot, amelyben legalább egy tag van mindkét pártból?",
+    "answer": "1940"
+  },
+  {
+    "question": "Mennyi a $513^2 - 487^2$ értéke?",
+    "answer": "26000"
+  },
+  {
+    "question": "Három egymást követő egész szám szorzata 120. Ez a szorzat elosztva a három egész szám átlagával 24. Mi a legnagyobb a három egymást követő egész szám közül?",
+    "answer": "6"
+  },
+  {
+    "question": "Oldja meg az $x$ pozitív értékét úgy, hogy $\\sqrt[3]{x^2 - 4x + 4} = 16$.",
+    "answer": "66"
+  },
+  {
+    "question": "Egyszerűsítse\n\\[\\cos \\left( \\frac{2 \\pi}{15} \\right) \\cos \\left (\\frac {4 \\pi}{15} \\right) \\cos \\left( \\frac{8 \\pi}{15} \\right) \\cos \\left( \\frac {16 \\pi}{15} \\right).\\]",
+    "answer": "\\frac{1}{16}"
+  },
+  {
+    "question": "Az $ABC$ háromszög egyenlő szárú, ahol $AB=AC$ és az $AM$ magasság $11.$ Tegyük fel, hogy van egy $D$ pont $\\overline{AM}$-en, ahol $AD=10$ és $\\angle BDC=3\\angle BAC.$ Határozd meg az $ABC$ háromszög kerületét.\n\n[asy]\nunitsize(0.4 cm);\n\npair A, B, C, D, M;\n\nA = (0,11);\nD = (0,1);\nB = (-11/2,0);\nC = (11/2,0);\nM = (B + C)/2;\n\ndraw(A--B--C--cycle);\ndraw(A--M);\ndraw(B--D--C);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, NW);\nlabel(\"$M$\", M, S);\n[/asy]",
+    "answer": "11 \\sqrt{5} + 11"
+  },
+  {
+    "question": "27 egymást követő pozitív egész szám összege $3^7$. Mi a mediánjuk?",
+    "answer": "81"
+  },
+  {
+    "question": "Mely valós $x$ értékekre teljesül a $-4<x^{4}+4x^{2}<21$ egyenlőtlenség? Add meg a választ intervallum jelöléssel.",
+    "answer": "(-\\sqrt{3}, \\sqrt{3})"
+  },
+  {
+    "question": "Tegyük fel, hogy $x,$ $y,$ és $z$ kielégítik az alábbi egyenleteket:\n\\begin{align*}\nxyz &= 4, \\\\\nx^3 + y^3 + z^3 &= 4, \\\\\nxy^2 + x^2 y + xz^2 + x^2 z + yz^2 + y^2 z &= 12.\n\\end{align*}Számítsa ki az $xy + yz + zx$ értékét.",
+    "answer": "6"
+  },
+  {
+    "question": "Az alábbi táblázat adatai a Central H.S. diákjainak felmérésében részt vevő buszjárók százalékát mutatják; minden évfolyamban 300 fiú és 300 lány vett részt a felmérésben. Melyik évfolyam esetében van a fiú buszjárók száma a legközelebb a lány buszjárók számának $135\\%$-ához? \\begin{tabular}{|l|c|c|}\\hline\nÉvfolyam & Fiúk & Lányok \\\\ \\hline\n$9^{\\mathrm{th}}$ évfolyam & $41.1\\%$ & $39.4\\%$ \\\\ \\hline\n$10^{\\mathrm{th}}$ évfolyam & $34.4\\%$ & $33.1\\%$ \\\\ \\hline\n$11^{\\mathrm{th}}$ évfolyam & $20.6\\%$ & $13.8\\%$ \\\\ \\hline\n$12^{\\mathrm{th}}$ évfolyam & $11.6\\%$ & $8.6\\%$ \\\\ \\hline\n\\end{tabular}",
+    "answer": "12"
+  },
+  {
+    "question": "Oldja meg\n\\[\\frac{|x^2 - 81|}{x^2 - 36x} < 0.\\]",
+    "answer": "(0,9) \\cup (9,36)"
+  },
+  {
+    "question": "Egy téglalap alakú mezőt egy atlétikai pálya zár körül, ahogy az alábbiakban látható. A pálya a mező két szélét és két félkört tartalmaz. A pálya hossza 400 méter. Mekkora a mező legnagyobb lehetséges területe négyzetméterben?\n\n[asy]\nunitsize(1 cm);\n\nfilldraw((0,0)--(3,0)--(3,2)--(0,2)--cycle,lightgreen);\ndraw((0,0)--(3,0),linewidth(2*bp));\ndraw((0,2)--(3,2),linewidth(2*bp));\ndraw(arc((3,1),1,-90,90),linewidth(2*bp));\ndraw(arc((0,1),1,90,270),linewidth(2*bp));\n[/asy]",
+    "answer": "\\frac{20000}{\\pi}"
+  },
+  {
+    "question": "A $\\triangle{RST}$ háromszögben, ahogy látható, $\\sin{R}=\\frac{2}{5}$. Mi a $\\sin{T}$ értéke?\n\n[asy]\npair R,S,T;\nT = (0,0);\nS = (2,0);\nR = (2,sqrt(21));\ndraw(R--S--T--R);\ndraw(rightanglemark(R,S,T,10));\nlabel(\"$T$\",T,SW);\nlabel(\"$S$\",S,SE);\nlabel(\"$R$\",R,NE);\nlabel(\"$5$\",(R+T)/2,NW);\n[/asy]",
+    "answer": "\\frac{\\sqrt{21}}{5}"
+  },
+  {
+    "question": "A legkisebb távolság az origó és a $y=\\frac{1}{\\sqrt{2}}\\left(x^2-3\\right)$ grafikonjának egy pontja között kifejezhető $\\sqrt{a}/b$ alakban, ahol $a$ és $b$ pozitív egész számok, és $a$ nem osztható egyetlen kettőnél nagyobb egész szám négyzetével sem. Határozd meg $a+b$ értékét.",
+    "answer": "12"
+  },
+  {
+    "question": "Legyen $f$ az alábbiak szerint definiálva: \\[f(x) = \\left\\{\n\\begin{array}{cl}\n3-x & \\text{ ha } x \\leq 3, \\\\\n-x^3+2x^2+3x & \\text{ ha } x>3.\n\\end{array}\n\\right.\\]Számítsd ki $f^{-1}(0)+f^{-1}(6)$.",
+    "answer": "0"
+  },
+  {
+    "question": "Egy pont $P$ távolságai egy szabályos oktaéder öt csúcsától 3, 7, 8, 9 és 11. Határozd meg a $P$ pont távolságát a hatodik csúcstól.\n\n[asy]\nimport three;\n\nsize(125);\ncurrentprojection = perspective(6,3,1);\n\ntriple A, B, C, D, E, F, P;\n\nA = (1,0,0);\nB = (-1,0,0);\nC = (0,1,0);\nD = (0,-1,0);\nE = (0,0,1);\nF = (0,0,-1);\nP = (1.2,1.5,1);\n\ndraw(A--P,red);\ndraw(B--P,red);\ndraw(C--P,red);\ndraw(D--P,red);\ndraw(E--P,red);\ndraw(F--P,red);\n\ndraw(A--C);\ndraw(A--D);\ndraw(A--E);\ndraw(A--F);\ndraw(C--E--D--F--cycle);\ndraw(D--B--C,dashed);\ndraw(B--C,dashed);\ndraw(B--D,dashed);\ndraw(B--E,dashed);\ndraw(B--F,dashed);\n\nlabel(\"$P$\", P, NE);\n[/asy]",
+    "answer": "\\sqrt{66}"
+  },
+  {
+    "question": "Közismert fizikai képlet, hogy az erő egyenlő a tömeg és a gyorsulás szorzatával. Jen ugyanakkora erővel szeretne eldobni egy softballt, mint amekkora erővel Jack eldob egy baseballt. Ha a softball tömege $200$ g és a baseball tömege $150$ g, akkor mi Jen labdájának gyorsulásának aránya Jackéhez képest? Válaszolj törtként a legegyszerűbb formában.",
+    "answer": "\\frac 34"
+  },
+  {
+    "question": "Hány azonos számjegy található a $629_{10}$ szám 7-es és 8-as alapú ábrázolásában? Például a $121_{3}$ és a $413_{5}$ egy közös számjeggyel rendelkezik.",
+    "answer": "3"
+  },
+  {
+    "question": "Hat boszorkány és tíz varázsló van egy misztikus összejövetelen. A boszorkányok úgy döntöttek, hogy kezet fognak mindegyik varázslóval. Egyik boszorkány sem foglalkozott azzal, hogy kezet fogjon a másikkal, mivel már mindannyian jó barátok, és a varázslók mind utálják egymást, így nem fogtak kezet más varázslókkal. Hány kézfogás történt az összejövetelen?",
+    "answer": "60"
+  },
+  {
+    "question": "Legyen $f(x)$ a következő polinom: \\[f(x)=3x^4+5x^2-9x-2.\\] Ha $g(x)$ egyenlő a $f(x-1)$ polinommal, mi $g$ együtthatóinak az összege?",
+    "answer": "-2"
+  },
+  {
+    "question": "Mi a legrövidebb távolság a $(6, 0)$ ponttól az $y = 2x-2$ egyenesig? Válaszodat a legegyszerűbb gyökös formában add meg.",
+    "answer": "2\\sqrt{5}"
+  },
+  {
+    "question": "A komplex számok $\\alpha_1, \\alpha_2, \\alpha_3$ és $\\alpha_4$ az $x^4+2x^3+2=0$ egyenlet négy különböző gyöke. Határozza meg a következő rendezetlen halmazt: \\[\n\\{\\alpha_1\\alpha_2 + \\alpha_3\\alpha_4, \\alpha_1\\alpha_3 + \\alpha_2\\alpha_4, \\alpha_1\\alpha_4 + \\alpha_2\\alpha_3\\}.\n\\]",
+    "answer": "\\{1\\pm\\sqrt{5},-2\\}"
+  },
+  {
+    "question": "Három ceruza és egy jumbo radír ára $\\$1.24$. Öt ceruza és egy jumbo radír ára $\\$1.82$. Az árak nem tartalmazzák az adót. Hány centbe kerül egy ceruza?",
+    "answer": "29"
+  },
+  {
+    "question": "Mi az utolsó nem nulla számjegy a tizedesvessző jobb oldalán a $\\frac{137}{500}$ tizedes kifejtésében?",
+    "answer": "4"
+  },
+  {
+    "question": "A $ABCD$ téglalap középpontja $O$, és $AB/AD=k$. Véletlenszerűen kiválasztunk egy pontot a $ABCD$ téglalap belsejéből. Mi a valószínűsége annak, hogy közelebb van $O$-hoz, mint bármelyik négy csúcshoz?  [asy]\nsize(200);\ndraw((-250,100)--(250,100)--(250,-100)--(-250,-100)--cycle);\ndot((0,0));\nlabel(\"$O$\",(0,0),N);\nlabel(\"$A$\",(-250,100),NW); label(\"$B$\",(250,100),NE); label(\"$C$\",(250,-100),SE); label(\"$D$\",(-250,-100),SW);[/asy]",
+    "answer": "\\frac{1}{2}"
+  },
+  {
+    "question": "Határozza meg a 54 maradékát (mod 6).",
+    "answer": "0"
+  },
+  {
+    "question": "Legyen \\[f(n) = \\left\\{\n\\begin{array}{cl}\n\\lfloor n \\rfloor & \\text{ ha }n \\geq 4, \\\\\n\\lceil n \\rceil & \\text{ ha } n < 4.\n\\end{array}\n\\right.\\]Számítsa ki $f\\left(\\frac{\\pi}{3}\\right) + f(\\sqrt{45}) + f(8^{2/3})$ értékét.",
+    "answer": "12"
+  },
+  {
+    "question": "Linda, Sherry, June és Connie körbejárták a környéküket, és cserkészlány sütiket árultak. Linda $\\$27.47$-t keresett, Sherry $\\$35.23$-t, June $\\$37.37$-t, és Connie $\\$26.52$-t. Az eladás után összegyűjtötték a pénzüket, és elmentek a bankba, hogy az érméket dollárra váltsák. Mennyi pénz, centben kifejezve, maradt, miután annyi érmét váltottak bankjegyekre, amennyit csak tudtak?",
+    "answer": "59"
+  },
+  {
+    "question": "Egy 30 fős osztály nemrégiben írt egy tesztet. Ha 20 diák 80 pontot ért el, 8 diák 90 pontot, és 2 diák 100 pontot, akkor mennyi volt az osztály átlaga (a számtani közép) ezen a teszten?",
+    "answer": "84"
+  },
+  {
+    "question": "Az alábbi egy mágikus négyzet, ami azt jelenti, hogy a számok összege minden sorban, minden oszlopban és mindkét fő átlóban egyenlő. Mi az $n$ értéke?\n\n[asy]size(125);\nfor(int i = 0; i<4; ++i)\n{\n\ndraw((0,i)--(3,i),linewidth(1));\n}\n\nfor(int j = 0; j<4; ++j)\n{\n\ndraw((j,0)--(j,3),linewidth(1));\n}\n\nlabel(\"$n-3$\",(.5,.5));\nlabel(\"3\",(.5,1.5));\nlabel(\"$n+1$\",(.5,2.5));\n\nlabel(\"$n+2$\",(1.5,.5));\nlabel(\"$2n-9$\",(1.5,1.5));\nlabel(\"$1$\",(1.5,2.5));\n\nlabel(\"$2$\",(2.5,.5));\nlabel(\"$n$\",(2.5,1.5));\nlabel(\"$n-1$\",(2.5,2.5));\n[/asy]",
+    "answer": "7"
+  },
+  {
+    "question": "Jim és Martha együtt állnak egy téglalap alakú mező sarkán. Jim átlósan sétál át a mezőn. Martha ugyanarra a helyre jut el, hogy a mező hosszán és szélességén sétál. A mező 300 láb széles és 400 láb hosszú. Hány lábbal kevesebbet sétál Jim, mint Martha?",
+    "answer": "200"
+  },
+  {
+    "question": "Legyen $\\omega$ egy komplex szám, amelyre $\\omega^3 = 1.$  Határozza meg az összes lehetséges értéket az alábbi kifejezésre:\n\\[\\frac{1}{1 + \\omega} + \\frac{1}{1 + \\omega^2}.\\]Adja meg az összes lehetséges értéket, vesszővel elválasztva.",
+    "answer": "1"
+  },
+  {
+    "question": "Mi a legrövidebb távolság, amelyet meg lehet tenni, ha bármelyik pontból, $A$, $B$, $C$ vagy $D$ kiindulva meglátogatjuk a másik három pontot egyszer?\n\n[asy]\npair A,B,C, D;\nA = (-3,3); B = (3,0); C = (0, -4); D = (0,0);\ndraw(D--B--C--cycle); draw(D--A--B--cycle);draw(D--A--C--cycle);\nlabel(\"$A$\", A, NW);label(\"$B$\", B, E); label(\"$C$\", C, S);label(\"$D$\", D, NE);\nlabel(\"3\", D--B, S); label(\"6\", A--B, NE); label(\"6\", A--C, SW); label(\"4\", D--C, NW+N);\nlabel(\"5\", A--D, SE+NE); label(\"5\", C--B, E);\n[/asy]",
+    "answer": "13"
+  }
+]
