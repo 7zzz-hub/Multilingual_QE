@@ -163,28 +163,6 @@ include
 mclm
 ```
 
-For example:
-
-```bash
---dataset_type klar
-```
-
-can be replaced with:
-
-```bash
---dataset_type include
-```
-
-or:
-
-```bash
---dataset_type mclm
-```
-
-to evaluate the same model and quantization setting on the corresponding dataset.
-
----
-
 ## 1. FP16
 
 ### KLAR
@@ -241,24 +219,6 @@ python main.py \
   --languages ar,ca,el,en,es,fr,he,hu,ja,ko,nl,tr,zh \
   --batch_size 32 \
   --save_path results
-```
-
-To evaluate INCLUDE or MCLM, replace:
-
-```text
---dataset_type klar
-```
-
-with:
-
-```text
---dataset_type include
-```
-
-or:
-
-```text
---dataset_type mclm
 ```
 
 ---
