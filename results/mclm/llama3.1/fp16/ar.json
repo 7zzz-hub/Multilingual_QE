@@ -1,0 +1,1194 @@
+{
+  "accuracy": 0.010101010101010102,
+  "samples": 99,
+  "records": {
+    "0": {
+      "question": "افترض أن $\\sin D = 0.7$ في الرسم البياني أدناه. ما هو $DE$؟ [asy]\npair D,E,F;\nF = (0,0);\nD = (sqrt(51),7);\nE = (0,7);\ndraw(D--E--F--D);\ndraw(rightanglemark(D,E,F,15));\nlabel(\"$D$\",D,NE);\nlabel(\"$E$\",E,NW);\nlabel(\"$F$\",F,SW);\nlabel(\"$7$\",(E+F)/2,W);\n[/asy]",
+      "answer": "\\sqrt{51}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "من خلال الرسم البياني، نجد",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "1": {
+      "question": "ليكن $z = 2 + \\sqrt{2} - (3 + 3 \\sqrt{2})i$، وليكن $c = 2 - 3i$. ليكن $w$ هو الناتج عندما يتم تدوير $z$ حول $c$ بزاوية $\\frac{\\pi}{4}$ عكس اتجاه عقارب الساعة.\n\n[asy]\nunitsize(0.6 cm);\n\npair C, W, Z;\n\nZ = (2 + sqrt(2), -3 - 3*sqrt(2));\nC = (2,-3);\nW = rotate(45,C)*(Z);\n\ndraw(Z--C--W);\n\ndot(\"$c$\", C, N);\ndot(\"$w$\", W, SE);\ndot(\"$z$\", Z, S);\nlabel(\"$\\frac{\\pi}{4}$\", C + (0.6,-1));\n[/asy]\n\nأوجد $w.$",
+      "answer": "6 - 5i",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "نستخدم الصيغة التالية",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "2": {
+      "question": "بسط $\\sqrt{242}$.",
+      "answer": "11\\sqrt2",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "$\\sqrt{242}$ يمكن أن تك",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "3": {
+      "question": "بكم طريقة يمكن لـ 8 أشخاص الجلوس حول طاولة مستديرة إذا كان 3 من هؤلاء الأشخاص -- بيير، روزا، وتوماس -- يرغبون جميعًا في الجلوس معًا؟ (يعتبر الترتيبين متماثلين إذا كان أحدهما دورانًا للآخر.)",
+      "answer": "720",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "إذا أردنا أن نجد",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "4": {
+      "question": "أوجد الحد الثابت في توسع $$\\left(10x^3-\\frac{1}{2x^2}\\right)^{5}$$",
+      "answer": "-125",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "يمكننا استخدام الصيغة التالية",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "5": {
+      "question": "إذا كان $n \\equiv 2 \\pmod{7}$، فجد الباقي عند قسمة $(n + 2)(n + 4)(n + 6)$ على 7.",
+      "answer": "3",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "إذا كان $n \\equiv",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "6": {
+      "question": "يتم تدوير خماسي منتظم عكس اتجاه عقارب الساعة حول مركزه. ما هو الحد الأدنى لعدد الدرجات التي يجب أن يتم تدويره بها حتى يتطابق مع موضعه الأصلي؟",
+      "answer": "72",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "إذا كان لدينا خماسيًا",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "7": {
+      "question": "إحداثيات متوازي الأضلاع هي (5, 3)، (6, 8)، (7, 4) و $(x, y)$ و $x > 7$. ما هي قيمة $x + y$؟",
+      "answer": "17",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لنبدأ بتحليل الإحداث",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "8": {
+      "question": "في المثلث القائم $ABC$ حيث $\\angle B = 90^\\circ$، لدينا $\\sin A = 2\\cos A$. ما هو $\\tan A$؟",
+      "answer": "2",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "من المعادلة $\\sin A =",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "9": {
+      "question": "يمتلك الرسم البياني للدالة $f(x)=\\frac{2x}{x^2-5x-14}$ خطوط تقارب عمودية عند $x=a$ و $x=b$، وخط تقارب أفقي عند $y=c$. أوجد $a+b+c$.",
+      "answer": "5",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لتحديد خطوط التقارب في",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "10": {
+      "question": "احسب $99^2+99+1$ في ذهنك.",
+      "answer": "9901",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "$99^2+99+1",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "11": {
+      "question": "أوجد أصغر عدد حقيقي موجب $C$ بحيث\n\\[\\left\\| \\begin{pmatrix} 2 & 3 \\\\ 0 & -2 \\end{pmatrix} \\bold{v} \\right\\| \\le C \\|\\bold{v}\\|\\] لجميع المتجهات ثنائية الأبعاد $\\bold{v}.$\n\nلاحظ أنه بالنسبة لمتجه ثنائي الأبعاد $\\mathbf{a},$ فإن $\\|\\mathbf{a}\\|$ هو مقدار $\\mathbf{a}.$",
+      "answer": "4",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لتكون الصورة الصحيحة على",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "12": {
+      "question": "ما هو $1^{(2^{235423523})}$؟",
+      "answer": "1",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "$1^{(2^{235423",
+          "correct": true
+        }
+      ],
+      "accuracy": 1.0
+    },
+    "13": {
+      "question": "ليكن $z$ عددًا مركبًا بحيث $z^5 = 1$ و $z \\neq 1.$ احسب\n\\[z + \\frac{1}{z} + z^2 + \\frac{1}{z^2}.\\]",
+      "answer": "-1",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لنفترض أن $z",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "14": {
+      "question": "احسب $58_9 - 18_9.$ عبّر عن إجابتك في الأساس $9.$",
+      "answer": "40_9",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لتحويل $58_9$",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "15": {
+      "question": "بسط\n\\[\\frac{\\sec x}{\\sin x} - \\frac{\\sin x}{\\cos x}.\\]",
+      "answer": "\\cot x",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "للتسليط على هذا الت",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "16": {
+      "question": "عشرة تريكس تزن بقدر ثلاثة سكويجز وواحد جولاي. اثنان تريكس وواحد جولاي يساويان في الوزن سكويج واحد. الوزن المجمع لكم تريكس يساوي وزن سكويج واحد؟",
+      "answer": "3",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "يمكننا حل هذه المشكلة عن",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "17": {
+      "question": "حاصل ضرب $3t^2+5t+a$ و $4t^2+bt-2$ هو $12t^4+26t^3-8t^2-16t+6$. ما هو $a+b$؟",
+      "answer": "-1",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "للتحقق من الصورة،",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "18": {
+      "question": "يتم ملء خزان أسطواني قائم ذو قواعد دائرية بالماء بمعدل $20\\pi$ متر مكعب في الساعة. مع امتلاء الخزان، يرتفع مستوى الماء بمقدار أربعة أمتار في الساعة. ما هو نصف قطر الخزان، بالمتر؟ عبّر عن إجابتك في أبسط صورة جذرية.",
+      "answer": "\\sqrt{5}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "إذا كان نصف قطر الخزان",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "19": {
+      "question": "اعتبر الدالة \\[ f(x) =\n\\begin{cases}\nax^2 & \\text{if } x \\geq a,\\\\\nax +2a& \\text{if } x <a,\n\\end{cases}\n\\] حيث أن $a$ هو عدد ما.\n\nما هي أكبر قيمة لـ $a$ بحيث يتقاطع الرسم البياني لـ $y=f(x)$ مع كل خط أفقي مرة واحدة على الأقل؟",
+      "answer": "2",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "للتقاطع مع كل خط",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "20": {
+      "question": "ما هي قيمة $c$ التي تجعل الدائرة ذات المعادلة $x^2 - 10x + y^2 + 6y + c = 0$ لها نصف قطر بطول 1؟",
+      "answer": "33",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لنحسب معادلة الد",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "21": {
+      "question": "لتكن $\\lambda$ ثابتة، $0 \\le \\lambda \\le 4,$ ولتكن الدالة $f : [0,1] \\to [0,1]$ معرفة بواسطة\n\\[f(x) = \\lambda x(1 - x).\\] أوجد قيم $\\lambda,$ حيث $0 \\le \\lambda \\le 4,$ والتي يوجد عندها $x \\in [0,1]$ بحيث أن $f(x) \\neq x$ ولكن $f(f(x)) = x.$",
+      "answer": "(3,4]",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "نبدأ بتحليل الوظيفة",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "22": {
+      "question": "أوجد قياس الزاوية الموجبة الأصغر $\\theta$ التي تحقق\n\\[\\tan \\theta = \\frac{\\cos 5^\\circ \\cos 20^\\circ + \\cos 35^\\circ \\cos 50^\\circ - \\sin 5^\\circ \\sin 20^\\circ - \\sin 35^\\circ \\sin 50^\\circ}{\\sin 5^\\circ \\cos 20^\\circ - \\sin 35^\\circ \\cos 50^\\circ + \\cos 5^\\circ \\sin 20^\\circ - \\cos 35^\\circ \\sin 50^\\circ}.\\]",
+      "answer": "120^\\circ",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لنبدأ بتحليل التعب",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "23": {
+      "question": "حدد عدد الطرق لترتيب حروف الكلمة ELLIPSE.",
+      "answer": "1260",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "يمكن ترتيب حروف الكلمة",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "24": {
+      "question": "كم عدد الأصفار في نهاية $42!$ (42 مضروب)؟ (تذكير: العدد $n!$ هو حاصل ضرب الأعداد الصحيحة من 1 إلى $n$. على سبيل المثال، $5!=5\\cdot 4\\cdot3\\cdot2\\cdot 1= 120$.)",
+      "answer": "9",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "للتقصي رياضي",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "25": {
+      "question": "أوجد القيمة العظمى لـ\n\\[f(x,y) = x \\sqrt{1 - y^2} + y \\sqrt{1 - x^2},\\] حيث $-1 \\le x,$ $y \\le 1.$",
+      "answer": "1",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لنبدأ بإيجابية.",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "26": {
+      "question": "النقاط $O,$ $A,$ و $B$ تحقق $\\overrightarrow{OA} = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix}$ و $\\overrightarrow{OB} = \\begin{pmatrix} -3 \\\\ -2 \\\\ 1 \\end{pmatrix}.$ أوجد مساحة المثلث $OAB.$",
+      "answer": "3 \\sqrt{5}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "نحسب $\\overrightarrow{AB",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "27": {
+      "question": "ليكن $z$ عددًا مركبًا بحيث\n\\[z + \\frac{1}{z} = \\frac{1 + \\sqrt{5}}{2}.\\] أوجد\n\\[z^{85} + \\frac{1}{z^{85}}.\\]",
+      "answer": "-2",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "$z + \\frac{1}{",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "28": {
+      "question": "تتقاطع المتوسطات $AD$ و $BE$ و $CF$ للمثلث $ABC$ عند مركز الثقل $G$. الخط الذي يمر عبر $G$ والموازي لـ $BC$ يتقاطع مع $AB$ و $AC$ عند $M$ و $N$ على التوالي. إذا كانت مساحة المثلث $ABC$ تساوي 144، فابحث عن مساحة المثلث $ENG$.",
+      "answer": "8",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لأن المتوسطات $AD$",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "29": {
+      "question": "يوجد في خزانة الكتب 3 رفوف تحتوي على 24 كتابًا في المجموع. يحتوي الرف العلوي على 8 كتب غموض. يحتوي الرف الأوسط على 10 كتب رياضيات. يحتوي الرف السفلي على 6 كتب علمية. تم الآن إزالة كتابين من كل رف. ما هو الكسر الذي تمثله كتب الرياضيات من الكتب المتبقية على الرفوف الثلاثة؟ عبّر عن إجابتك في صورة كسر عادي.",
+      "answer": "\\frac{4}{9}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لقد قمت بتحليل المش",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "30": {
+      "question": "حجم المخروط يُعطى بالصيغة $V = \\frac{1}{3}Bh$، حيث $B$ هو مساحة القاعدة و $h$ هو الارتفاع. مساحة قاعدة المخروط هي 30 وحدة مربعة، وارتفاعه 6.5 وحدة. ما هو عدد الوحدات المكعبة في حجمه؟",
+      "answer": "65",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لإيجاد حجم المخروط",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "31": {
+      "question": "إذا كان الحد الرابع في متتالية حسابية هو $200$ والحد الثامن هو $500$، فما هو الحد السادس؟",
+      "answer": "350",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "نرمز بالحرف \"d",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "32": {
+      "question": "حوّل $\\frac{21}{2^2 \\cdot 5^7}$ إلى عدد عشري منتهي.",
+      "answer": ".0000672",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لنحول التعبير إلى",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "33": {
+      "question": "كم عدد الأعداد الصحيحة الموجبة المكونة من رقمين التي تعتبر عوامل لكل من 100 و 150؟",
+      "answer": "3",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لنحسب عدد الأعداد الص",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "34": {
+      "question": "لأي عدد صحيح موجب $n>1$ يكون صحيحًا أن $2^{24}$ هو قوة مثالية لـ $n^{\\text{th}}$؟",
+      "answer": "7",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لنكون نستطيع أن",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "35": {
+      "question": "هيلاري لديها أحد عشر عملة معدنية، جميعها من الديمات والنيكل. في المجموع، تساوي العملات 75 سنتًا. كم عدد عملات النيكل التي لديها؟",
+      "answer": "7",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لنفترض أن عدد عمل",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "36": {
+      "question": "يختار بول وجيسي كل منهما رقمًا عشوائيًا من الأعداد الأولية الستة الأولى. ما هو احتمال أن يكون مجموع الأرقام التي يختارونها زوجيًا؟",
+      "answer": "\\frac{13}{18}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "الأعداد الأولية الستة الأولى",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "37": {
+      "question": "النقطة $(a, b)$ تقع على الخط الذي معادلته $3x + 2y = 12.$ عندما $a = 4$، ما هي قيمة $b$؟",
+      "answer": "0",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لنحل هذه المشكلة،",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "38": {
+      "question": "تُشكل اثنا عشر مربعًا بقياس 1 في 1 مستطيلًا، كما هو موضح. ما هو المساحة الكلية للمنطقة المظللة؟ [asy]\nsize(4cm);defaultpen(linewidth(0.75));\n\n// Filled portions\nfill((0, 4)--(0, 0)--(2, 0)--cycle, gray(0.75));\nfill((0, 4)--(3, 4)--(3, 0)--cycle, gray(0.75));\n\n// grid\nint j;\nfor (j = 0; j < 4; ++j) {draw((j, 0)--(j, 4));}\nfor (j = 0; j < 5; ++j) {draw((0, j)--(3, j));}\n\n//diagonals\ndraw((0, 4)--(3, 0)); draw((0, 4)--(2, 0));\n[/asy]",
+      "answer": "10",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "يُعتبر هذا المخطط",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "39": {
+      "question": "ما هو أصغر مضاعف موجب للعدد 450 تكون جميع أرقامه صفراً وواحداً؟",
+      "answer": "11,\\! 111,\\! 111,\\! 100",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لنحلل العدد 450",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "40": {
+      "question": "العجلة الموضحة يتم تدويرها مرتين، بحيث يتم تحديد الأرقام المشار إليها بواسطة المؤشر بشكل عشوائي (مع احتمال متساوٍ لكل رقم على العجلة). يتم تسجيل الرقمين المحددين بهذه الطريقة. يتم قسمة الرقم الأول على 4، مما يحدد أحد البواقي 1، 2، 3 التي تحدد أعمدة لوحة الشطرنج الموضحة. يتم قسمة الرقم الثاني على 5، مما يحدد أحد البواقي 1، 2، 3، 4 التي تحدد صفوف لوحة الشطرنج. أخيرًا، يتم وضع قطعة شطرنج على المربع حيث يلتقي هذا العمود والصف. ما هو احتمال أن يتم وضع القطعة على مربع مظلل من لوحة الشطرنج؟\n\n[asy]\nunitsize(1cm);\ndraw(Circle((0,0),2),linewidth(0.7));\ndraw((1.7,1)--(-1.7,-1),linewidth(0.7));\ndraw((1.7,-1)--(-1.7,1),linewidth(0.7));\ndraw((0,2)--(0,-2));\nlabel(\"1\",(0.8,0.5),NW);\nlabel(\"2\",(0.8,-0.5),SW);\nlabel(\"6\",(-0.8,0.5),NE);\nlabel(\"9\",(-0.8,-0.5),SE);\nlabel(\"3\",(-0.7,0),W);\nlabel(\"7\",(0.7,0),E);\ndraw((-2.8,0)--(-2.1,0),Arrow);\nlabel(\"Pointer\",(-2.8,0),W);\nfill((3,0)--(3,1)--(4,1)--(4,0)--cycle,gray(0.7));\nfill((3,-2)--(3,-1)--(4,-1)--(4,-2)--cycle,gray(0.7));\nfill((4,1)--(4,2)--(5,2)--(5,1)--cycle,gray(0.7));\nfill((4,-1)--(4,0)--(5,0)--(5,-1)--cycle,gray(0.7));\nfill((5,0)--(5,1)--(6,1)--(6,0)--cycle,gray(0.7));\nfill((5,-2)--(5,-1)--(6,-1)--(6,-2)--cycle,gray(0.7));\ndraw((3,-2)--(3,2)--(6,2)--(6,-2)--cycle,linewidth(0.7));\ndraw((3,-1)--(6,-1),linewidth(0.7));\ndraw((3,0)--(6,0),linewidth(0.7));\ndraw((3,1)--(6,1),linewidth(0.7));\ndraw((4,-2)--(4,2),linewidth(0.7));\ndraw((5,-2)--(5,2),linewidth(0.7));\nlabel(\"1\",(3.5,-2),S);\nlabel(\"2\",(4.5,-2),S);\nlabel(\"3\",(5.5,-2),S);\nlabel(\"1\",(3,-1.5),W);\nlabel(\"2\",(3,-0.5),W);\nlabel(\"3\",(3,0.5),W);\nlabel(\"4\",(3,1.5),W);\n[/asy]",
+      "answer": "\\frac{1}{2}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لنفترض أن العج",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "41": {
+      "question": "ما هو مجموع الأرقام في التمثيل العشري المنتهي للكسر $\\frac{4321}{5^7\\cdot2^8}$؟",
+      "answer": "14",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "$\\frac{4321}{5^",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "42": {
+      "question": "أوجد $\\sin 20^\\circ \\sin 40^\\circ \\sin 60^\\circ \\sin 80^\\circ \\sin 100^\\circ \\sin 120^\\circ \\sin 140^\\circ \\sin 160^\\circ.$",
+      "answer": "\\frac{9}{256}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "$\\sin 20^\\circ \\sin",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "43": {
+      "question": "بالنسبة لثابت $c,$ في الإحداثيات الأسطوانية $(r,\\theta,z),$ حدد الشكل الذي تصفه المعادلة\n\\[z = c.\\](A) خط\n(B) دائرة\n(C) مستوى\n(D) كرة\n(E) أسطوانة\n(F) مخروط\n\nأدخل حرف الخيار الصحيح.",
+      "answer": "\\text{(C)}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "الإجابة الصحيحة (C",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "44": {
+      "question": "إذا كانت $\\mathbf{a}$ و $\\mathbf{b}$ متجهات بحيث أن $\\|\\mathbf{a}\\| = 2,$ $\\|\\mathbf{b}\\| = 7,$ و\n\\[\\mathbf{a} \\times \\mathbf{b} = \\begin{pmatrix} 3 \\\\ 2 \\\\ 6 \\end{pmatrix},\\] فابحث عن أصغر زاوية ممكنة بين $\\mathbf{a}$ و $\\mathbf{b},$ بالدرجات.",
+      "answer": "30^\\circ",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "نستخدم المعادلة $\\math",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "45": {
+      "question": "لتكن $f$ الدالة المعرفة بـ $f(x) = x^3 - 49x^2 + 623x - 2015,$ ولتكن $g(x) = f(x + 5).$ احسب مجموع جذور $g.$",
+      "answer": "34",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "نحسب $g(x)$ من",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "46": {
+      "question": "احسب\n\\[\\frac{1}{\\cos^2 10^\\circ} + \\frac{1}{\\sin^2 20^\\circ} + \\frac{1}{\\sin^2 40^\\circ}.\\]",
+      "answer": "12",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "\\[\\frac{1}{\\cos",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "47": {
+      "question": "كم عدد الأضلاع في مضلع محدب إذا كان مجموع جميع زواياه الداخلية باستثناء واحدة منها هو $1070^{\\circ}$؟",
+      "answer": "8",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "إذا كان مجموع جميع الزوايا",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "48": {
+      "question": "أوجد العدد الصحيح $\\textbf{الفردي}$ الفريد $t$ بحيث أن $0<t<23$ و $t+2$ هو المعكوس لـ $t$ بترديد $23$.",
+      "answer": "17",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "بصيغة أخرى، $t",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "49": {
+      "question": "ما هي المساحة السطحية الكلية، بالبوصة المربعة، لمكعب حجمه $1$ قدم مكعب؟",
+      "answer": "864 \\mbox{ inches}^2",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "المكعب الذي يبلغ حجمه",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "50": {
+      "question": "احسب ناتج ضرب العدد $5+\\sqrt{3}$ ومرافقه الجذري.",
+      "answer": "22",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "إذا أردنا حساب نات",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "51": {
+      "question": "ما هو الحد رقم 2003 في تسلسل الأعداد الفردية 1، 3، 5، 7، $\\dots$؟",
+      "answer": "4005",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "يتم حساب الحد الرقمي",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "52": {
+      "question": "لتكن $f(x) = 2x-3$ و $g(x) = x+1$. ما هي قيمة $g(f(5)-1)$؟",
+      "answer": "7",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لتحديد قيمة $g(f",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "53": {
+      "question": "أوجد جميع الحلول للمعادلة\n\\[\\sin \\left( \\tan^{-1} (x) + \\cot^{-1} \\left( \\frac{1}{x} \\right) \\right) = \\frac{1}{3}.\\] أدخل جميع الحلول، مفصولة بفواصل.",
+      "answer": "3 \\pm 2 \\sqrt{2}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لإيجاد حلول المعاد",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "54": {
+      "question": "يتم تعريف خط واحد بواسطة\n\\[\\begin{pmatrix} 3 \\\\ -10 \\\\ 1 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ -9 \\\\ -2 \\end{pmatrix}.\\]يتم تعريف خط آخر بواسطة\n\\[\\begin{pmatrix} -5 \\\\ -3 \\\\ 6 \\end{pmatrix} + u \\begin{pmatrix} 4 \\\\ -18 \\\\ -4 \\end{pmatrix}.\\]هاتان الخطتان متوازيتان. أوجد المسافة بين هذين الخطين.",
+      "answer": "7",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لتكون الخطوط متوازيتان",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "55": {
+      "question": "اعتبر المنطقة المستطيلة التي تحتوي على النقاط التالية كقمم: $$(5,4), (-5,4), (-5,-4), (5,-4).$$ كم عدد النقاط ذات الإحداثيات الصحيحة التي ستكون داخل هذه المنطقة المستطيلة بشكل صارم؟",
+      "answer": "63",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لتحديد عدد النقاط ذات",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "56": {
+      "question": "لتكن $\\mathbf{a},$ $\\mathbf{b},$ $\\mathbf{c}$ ثلاث متجهات بحيث\n\\[\\mathbf{a} \\times \\mathbf{b} = \\begin{pmatrix} 6 \\\\ -7 \\\\ 3 \\end{pmatrix}, \\quad \\mathbf{a} \\times \\mathbf{c} = \\begin{pmatrix} 4 \\\\ 7 \\\\ 2 \\end{pmatrix}, \\quad \\mathbf{b} \\times \\mathbf{c} = \\begin{pmatrix} 1 \\\\ -7 \\\\ 18 \\end{pmatrix}.\\]احسب $(2 \\mathbf{b} - \\mathbf{a}) \\times (3 \\mathbf{c} + \\mathbf{a}).$",
+      "answer": "\\begin{pmatrix} -18 \\\\ -49 \\\\ 96 \\end{pmatrix}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "$(2 \\mathbf{b}",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "57": {
+      "question": "$\\textbf{الأماكن القديمة لجوان}$\n\nيقوم جوان بتنظيم الطوابع في مجموعته حسب البلد والعقد الذي صدرت فيه. الأسعار التي دفعها في متجر الطوابع كانت: البرازيل وفرنسا، $6$ سنتات لكل منهما، بيرو $4$ سنتات لكل منها، وإسبانيا $5$ سنتات لكل منها. (البرازيل وبيرو هما دولتان في أمريكا الجنوبية وفرنسا وإسبانيا في أوروبا.) [asy]\n/* AMC8 2002 #8, 9, 10 Problem */\nsize(3inch, 1.5inch);\nfor ( int y = 0; y <= 5; ++y )\n{\n\ndraw((0,y)--(18,y));\n}\ndraw((0,0)--(0,5));\ndraw((6,0)--(6,5));\ndraw((9,0)--(9,5));\ndraw((12,0)--(12,5));\ndraw((15,0)--(15,5));\ndraw((18,0)--(18,5));\n\nlabel(scale(0.8)*\"50s\", (7.5,4.5));\nlabel(scale(0.8)*\"4\", (7.5,3.5));\nlabel(scale(0.8)*\"8\", (7.5,2.5));\nlabel(scale(0.8)*\"6\", (7.5,1.5));\nlabel(scale(0.8)*\"3\", (7.5,0.5));\n\nlabel(scale(0.8)*\"60s\", (10.5,4.5));\nlabel(scale(0.8)*\"7\", (10.5,3.5));\nlabel(scale(0.8)*\"4\", (10.5,2.5));\nlabel(scale(0.8)*\"4\", (10.5,1.5));\nlabel(scale(0.8)*\"9\", (10.5,0.5));\n\nlabel(scale(0.8)*\"70s\", (13.5,4.5));\nlabel(scale(0.8)*\"12\", (13.5,3.5));\nlabel(scale(0.8)*\"12\", (13.5,2.5));\nlabel(scale(0.8)*\"6\", (13.5,1.5));\nlabel(scale(0.8)*\"13\", (13.5,0.5));\n\nlabel(scale(0.8)*\"80s\", (16.5,4.5));\nlabel(scale(0.8)*\"8\", (16.5,3.5));\nlabel(scale(0.8)*\"15\", (16.5,2.5));\nlabel(scale(0.8)*\"10\", (16.5,1.5));\nlabel(scale(0.8)*\"9\", (16.5,0.5));\n\nlabel(scale(0.8)*\"Country\", (3,4.5));\nlabel(scale(0.8)*\"Brazil\", (3,3.5));\nlabel(scale(0.8)*\"France\", (3,2.5));\nlabel(scale(0.8)*\"Peru\", (3,1.5));\nlabel(scale(0.8)*\"Spain\", (3,0.5));\n\nlabel(scale(0.9)*\"Juan's Stamp Collection\", (9,0), S);\nlabel(scale(0.9)*\"Number of Stamps by Decade\", (9,5), N);\n[/asy] ما هو متوسط السعر، بالسنتات، لطوابع السبعينيات الخاصة به؟ قم بتقريب إجابتك إلى أقرب عُشر سنت.",
+      "answer": "5.4 \\text{ cents}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "للحصول على متوسط السعر ل",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "58": {
+      "question": "افترض أن $ABCD$ هو شبه منحرف حيث $\\overline{AD}|| \\overline{BC}$. معطى أن $\\overline{AC}\\perp\\overline{CD}$، $\\overline{AC}$ ينصف الزاوية $\\angle BAD$، و $[ABCD]=42$، احسب $[\\triangle ACD]$.",
+      "answer": "28",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "من خلال ما هو موضح في",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "59": {
+      "question": "إذا كان $\\frac{\\sqrt{2x}}{\\sqrt{3x-1}}=\\frac32$، احسب قيمة $x$. عبّر عن إجابتك في أبسط صورة كسرية.",
+      "answer": "\\frac9{19}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "$\\frac{\\sqrt{2x}}",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "60": {
+      "question": "العملية @ تُعرّف على أنها $\\frac{m}{n}@\\frac{p}{q} = (m)(p)\\left(\\frac{q}{n}\\right)$ للكسور المبسطة $\\frac{p}{q}$. ما هو القيمة المبسطة لـ $\\frac{7}{30}@\\frac{10}{21}$؟",
+      "answer": "49",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لإجراء العمليات المطل",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "61": {
+      "question": "تم اختيار أربع نقاط، $A$، $B$، $C$، و $D$، بشكل عشوائي ومستقل على محيط دائرة. ما هو احتمال أن يتقاطع القطع $AB$ و $CD$؟",
+      "answer": "\\frac{1}{3}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لن نعتبر القطع AB",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "62": {
+      "question": "في الرسم البياني، دائرتان، كل منهما مركزها $D$، نصفا قطريهما $1$ و $2$. المساحة الكلية للمنطقة المظللة هي $\\frac5{12}$ من مساحة الدائرة الأكبر. كم عدد الدرجات في قياس (الزاوية الأصغر) $\\angle ADC$؟",
+      "answer": "120",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "نحسب مساحة الدائرة الك",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "63": {
+      "question": "كأس أسطواني ارتفاعه 8 سم وله نصف قطر 3 سم. كم عدد هذه الكؤوس من الماء التي ستحتاجها لملء خزان كروي نصف قطره 6 سم؟",
+      "answer": "4",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "يمكن استخدام النموذج التالي",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "64": {
+      "question": "احسب\n\\[\\sin (\\arcsin 0.4 + \\arcsin 0.5) \\cdot \\sin (\\arcsin 0.5 - \\arcsin 0.4).\\]",
+      "answer": "\\frac{9}{100}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "نستخدم الصيغة التالية",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "65": {
+      "question": "تسير دراجة بسرعة 20 قدمًا في الدقيقة. ما هي سرعة الدراجة معبراً عنها بالبوصات في الثانية؟",
+      "answer": "4",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لإيجاد سرعة الدراج",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "66": {
+      "question": "لدى لجنة مجلس الشيوخ 8 جمهوريين و6 ديمقراطيين. كم عدد الطرق التي يمكننا بها تشكيل لجنة فرعية مكونة من 5 أعضاء تحتوي على عضو واحد على الأقل من كل حزب؟",
+      "answer": "1940",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لتشكيل لجنة فرعية",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "67": {
+      "question": "ما هي قيمة $513^2 - 487^2$؟",
+      "answer": "26000",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لن نستخدم تعريف差",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "68": {
+      "question": "حاصل ضرب ثلاثة أعداد صحيحة متتالية هو 120. هذا الناتج مقسومًا على متوسط الأعداد الثلاثة هو 24. ما هو أكبر الأعداد الصحيحة الثلاثة المتتالية؟",
+      "answer": "6",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "إذا كانت الأعداد الثلاثة",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "69": {
+      "question": "أوجد القيمة الموجبة لـ $x$ بحيث أن $\\sqrt[3]{x^2 - 4x + 4} = 16$.",
+      "answer": "66",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "ل حل هذه المعادلة ، ن",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "70": {
+      "question": "بسط\n\\[\\cos \\left( \\frac{2 \\pi}{15} \\right) \\cos \\left (\\frac {4 \\pi}{15} \\right) \\cos \\left( \\frac{8 \\pi}{15} \\right) \\cos \\left( \\frac {16 \\pi}{15} \\right).\\]",
+      "answer": "\\frac{1}{16}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لتسليط هذا التعبير",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "71": {
+      "question": "المثلث $ABC$ متساوي الساقين، حيث $AB=AC$ والارتفاع $AM=11.$ افترض أن هناك نقطة $D$ على $\\overline{AM}$ بحيث $AD=10$ و $\\angle BDC=3\\angle BAC.$ أوجد محيط المثلث $ABC.$\n\n[asy]\nunitsize(0.4 cm);\n\npair A, B, C, D, M;\n\nA = (0,11);\nD = (0,1);\nB = (-11/2,0);\nC = (11/2,0);\nM = (B + C)/2;\n\ndraw(A--B--C--cycle);\ndraw(A--M);\ndraw(B--D--C);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, NW);\nlabel(\"$M$\", M, S);\n[/asy]",
+      "answer": "11 \\sqrt{5} + 11",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "نعم، نستطيع حل",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "72": {
+      "question": "مجموع 27 عددًا صحيحًا متتاليًا موجبًا هو $3^7$. ما هو الوسيط لهذه الأعداد؟",
+      "answer": "81",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لنفترض أن الأعداد",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "73": {
+      "question": "ما هي القيم الحقيقية لـ $x$ التي تحقق $-4<x^{4}+4x^{2}<21$؟ عبّر عن إجابتك باستخدام ترميز الفترات.",
+      "answer": "(-\\sqrt{3}, \\sqrt{3})",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لنبدأ بإجراء بعض الت",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "74": {
+      "question": "افترض أن $x,$ $y,$ و $z$ تحقق المعادلات\n\\begin{align*}\nxyz &= 4, \\\\\nx^3 + y^3 + z^3 &= 4, \\\\\nxy^2 + x^2 y + xz^2 + x^2 z + yz^2 + y^2 z &= 12.\n\\end{align*} احسب قيمة $xy + yz + zx.$",
+      "answer": "6",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "نستخدم المعادلة $(x",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "75": {
+      "question": "تُظهر البيانات في الجدول أدناه نسبة ركاب الحافلات في استطلاع لطلاب مدرسة Central H.S.؛ تم استطلاع 300 ذكر و300 أنثى في كل صف. لأي صف يكون عدد ركاب الحافلات من الذكور الأقرب إلى $135\\%$ من عدد ركاب الحافلات من الإناث؟ \\begin{tabular}{|l|c|c|}\\hline الصف & الذكور & الإناث \\\\ \\hline $9^{\\mathrm{th}}$ grade & $41.1\\%$ & $39.4\\%$ \\\\ \\hline $10^{\\mathrm{th}}$ grade & $34.4\\%$ & $33.1\\%$ \\\\ \\hline $11^{\\mathrm{th}}$ grade & $20.6\\%$ & $13.8\\%$ \\\\ \\hline $12^{\\mathrm{th}}$ grade & $11.6\\%$ & $8.6\\%$ \\\\ \\hline \\end{tabular}",
+      "answer": "12",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "نحسب نسبة الركاب من",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "76": {
+      "question": "حل\n\\[\\frac{|x^2 - 81|}{x^2 - 36x} < 0.\\]",
+      "answer": "(0,9) \\cup (9,36)",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لت حل المعادلة، نبدأ",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "77": {
+      "question": "حقل مستطيل محاط بمضمار رياضي، كما هو موضح أدناه. يتكون المضمار من حافتين من الحقل ونصف دائرتين. طول المضمار 400 متر. ما هي أكبر مساحة ممكنة للحقل، بالمتر المربع؟\n\n[asy]\nunitsize(1 cm);\n\nfilldraw((0,0)--(3,0)--(3,2)--(0,2)--cycle,lightgreen);\ndraw((0,0)--(3,0),linewidth(2*bp));\ndraw((0,2)--(3,2),linewidth(2*bp));\ndraw(arc((3,1),1,-90,90),linewidth(2*bp));\ndraw(arc((0,1),1,90,270),linewidth(2*bp));\n[/asy]",
+      "answer": "\\frac{20000}{\\pi}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "يمكننا حل هذه المشكلة عن",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "78": {
+      "question": "في $\\triangle{RST}$، كما هو موضح، $\\sin{R}=\\frac{2}{5}$. ما هو $\\sin{T}$؟\n\n[asy]\npair R,S,T;\nT = (0,0);\nS = (2,0);\nR = (2,sqrt(21));\ndraw(R--S--T--R);\ndraw(rightanglemark(R,S,T,10));\nlabel(\"$T$\",T,SW);\nlabel(\"$S$\",S,SE);\nlabel(\"$R$\",R,NE);\nlabel(\"$5$\",(R+T)/2,NW);\n[/asy]",
+      "answer": "\\frac{\\sqrt{21}}{5}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "نستخدم الصيغة $\\sin",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "79": {
+      "question": "أصغر مسافة بين الأصل ونقطة على الرسم البياني لـ $y=\\frac{1}{\\sqrt{2}}\\left(x^2-3\\right)$ يمكن التعبير عنها كـ $\\sqrt{a}/b$، حيث أن $a$ و $b$ هما عددان صحيحان موجبان بحيث أن $a$ ليس قابلاً للقسمة على مربع أي عدد صحيح أكبر من واحد. أوجد $a+b$.",
+      "answer": "12",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "نحول المعادلة إلى شكل",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "80": {
+      "question": "لتكن $f$ معرفة بواسطة \\[f(x) = \\left\\{\n\\begin{array}{cl}\n3-x & \\text{ إذا } x \\leq 3, \\\\\n-x^3+2x^2+3x & \\text{ إذا } x>3.\n\\end{array}\n\\right.\\] احسب $f^{-1}(0)+f^{-1}(6)$.",
+      "answer": "0",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لنبدأ بتحليل الوظيف",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "81": {
+      "question": "المسافات من نقطة $P$ إلى خمسة من رؤوس ثماني الأوجه المنتظم هي 3، 7، 8، 9، و11. أوجد المسافة من $P$ إلى الرأس السادس.\n\n[asy]\nimport three;\n\nsize(125);\ncurrentprojection = perspective(6,3,1);\n\ntriple A, B, C, D, E, F, P;\n\nA = (1,0,0);\nB = (-1,0,0);\nC = (0,1,0);\nD = (0,-1,0);\nE = (0,0,1);\nF = (0,0,-1);\nP = (1.2,1.5,1);\n\ndraw(A--P,red);\ndraw(B--P,red);\ndraw(C--P,red);\ndraw(D--P,red);\ndraw(E--P,red);\ndraw(F--P,red);\n\ndraw(A--C);\ndraw(A--D);\ndraw(A--E);\ndraw(A--F);\ndraw(C--E--D--F--cycle);\ndraw(D--B--C,dashed);\ndraw(B--C,dashed);\ndraw(B--D,dashed);\ndraw(B--E,dashed);\ndraw(B--F,dashed);\n\nlabel(\"$P$\", P, NE);\n[/asy]",
+      "answer": "\\sqrt{66}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لنكون ناقدًا للم",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "82": {
+      "question": "إنها صيغة فيزيائية معروفة أن القوة تساوي الكتلة مضروبة في التسارع. تريد جين أن ترمي كرة سوفتبول بنفس القوة التي يرمي بها جاك كرة بيسبول. إذا كانت كتلة كرة السوفتبول $200$ جرام وكتلة كرة البيسبول $150$ جرام، فما هو نسبة تسارع كرة جين إلى كرة جاك؟ أجب كنسبة في أبسط صورة.",
+      "answer": "\\frac 34",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لنفترض أن القوة",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "83": {
+      "question": "كم عدد الأرقام المتشابهة الموجودة في تمثيلات الأساس 7 والأساس 8 للعدد $629_{10}$؟ على سبيل المثال، $121_{3}$ و $413_{5}$ سيكون لهما رقم واحد مشترك.",
+      "answer": "3",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لنفترض أن $a",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "84": {
+      "question": "ست ساحرات وعشرة سحرة في حفل سحري. قررت الساحرات مصافحة كل واحد من السحرة. لم تهتم أي من الساحرات بمصافحة بعضهن البعض، لأنهن جميعًا صديقات جيدات بالفعل، والسحرة جميعهم يكرهون بعضهم البعض ولم يصافحوا سحرة آخرين. كم عدد المصافحات التي حدثت في الحفل؟",
+      "answer": "60",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "للمصافحة بين الساح",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "85": {
+      "question": "لتكن $f(x)$ هي كثير الحدود \\[f(x)=3x^4+5x^2-9x-2.\\] إذا كان $g(x)$ يساوي كثير الحدود $f(x-1)$، فما هو مجموع معاملات $g$؟",
+      "answer": "-2",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لنبدأ بتوسيع $f",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "86": {
+      "question": "ما هي أقصر مسافة من النقطة $(6, 0)$ إلى الخط $y = 2x-2$؟ عبّر عن إجابتك في أبسط صورة جذرية.",
+      "answer": "2\\sqrt{5}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "نحسب المسافة بين النق",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "87": {
+      "question": "الأعداد المركبة $\\alpha_1, \\alpha_2, \\alpha_3$، و $\\alpha_4$ هي الجذور الأربعة المختلفة للمعادلة $x^4+2x^3+2=0$. حدد المجموعة غير المرتبة \\[\n\\{\\alpha_1\\alpha_2 + \\alpha_3\\alpha_4, \\alpha_1\\alpha_3 + \\alpha_2\\alpha_4, \\alpha_1\\alpha_4 + \\alpha_2\\alpha_3\\}.\n\\]",
+      "answer": "\\{1\\pm\\sqrt{5},-2\\}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "من المعادلة $x^4",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "88": {
+      "question": "ثلاثة أقلام رصاص وممحاة كبيرة تكلف $\\$1.24$. خمسة أقلام رصاص وممحاة كبيرة تكلف $\\$1.82$. لا تشمل الأسعار الضرائب. بالسنتات، ما هو سعر القلم الرصاص؟",
+      "answer": "29",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "إذا كانت السعر للقلم",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "89": {
+      "question": "ما هي آخر رقم غير صفري إلى يمين النقطة العشرية في التوسع العشري لـ $\\frac{137}{500}$؟",
+      "answer": "4",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "$\\frac{137}{500} =",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "90": {
+      "question": "المستطيل $ABCD$ له مركز $O$ و $AB/AD=k$. يتم اختيار نقطة عشوائياً من داخل المستطيل $ABCD$. ما هو احتمال أن تكون أقرب إلى $O$ من أي من الرؤوس الأربعة؟  [asy]\nsize(200);\ndraw((-250,100)--(250,100)--(250,-100)--(-250,-100)--cycle);\ndot((0,0));\nlabel(\"$O$\",(0,0),N);\nlabel(\"$A$\",(-250,100),NW); label(\"$B$\",(250,100),NE); label(\"$C$\",(250,-100),SE); label(\"$D$\",(-250,-100),SW);[/asy]",
+      "answer": "\\frac{1}{2}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "$AB/AD=k$، ف",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "91": {
+      "question": "حدد الباقي من 54 (mod 6).",
+      "answer": "0",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "للتحديد الباقي من",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "92": {
+      "question": "لتكن \\[f(n) = \\left\\{\n\\begin{array}{cl}\n\\lfloor n \\rfloor & \\text{ إذا كان }n \\geq 4, \\\\\n\\lceil n \\rceil & \\text{ إذا كان } n < 4.\n\\end{array}\n\\right.\\] أوجد $f\\left(\\frac{\\pi}{3}\\right) + f(\\sqrt{45}) + f(8^{2/3})$.",
+      "answer": "12",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لقد قمت بتحليل الو",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "93": {
+      "question": "ليندا وشيري وجون وكوني تجولن في أحيائهن لبيع بسكويت فتيات الكشافة. كسبت ليندا $\\$27.47$، وكسبت شيري $\\$35.23$، وكسبت جون $\\$37.37$، وكسبت كوني $\\$26.52$. بعد البيع، جمعن أموالهن معًا وذهبن إلى البنك لتحويل العملات المعدنية إلى دولارات. كم تبقى من المال، بالسنتات، بعد أن حولن أكبر قدر ممكن من العملات المعدنية إلى أوراق نقدية؟",
+      "answer": "59",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لتحويل أكبر قدر ممكن من",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "94": {
+      "question": "أجرى فصل مكون من 30 طالبًا اختبارًا مؤخرًا. إذا حصل 20 طالبًا على درجة 80، و8 طلاب حصلوا على درجة 90، و2 طالبان حصلا على درجة 100، فما هو متوسط درجات الفصل (المتوسط الحسابي) في هذا الاختبار؟",
+      "answer": "84",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لتحديد المتوسط الحسابي",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "95": {
+      "question": "فيما يلي مربع سحري، مما يعني أن مجموع الأرقام في كل صف، في كل عمود، وفي كل من القطرين الرئيسيين $2$ متساوي. ما هي قيمة $n$؟\n\n[asy]size(125);\nfor(int i = 0; i<4; ++i)\n{\n\ndraw((0,i)--(3,i),linewidth(1));\n}\n\nfor(int j = 0; j<4; ++j)\n{\n\ndraw((j,0)--(j,3),linewidth(1));\n}\n\nlabel(\"$n-3$\",(.5,.5));\nlabel(\"3\",(.5,1.5));\nlabel(\"$n+1$\",(.5,2.5));\n\nlabel(\"$n+2$\",(1.5,.5));\nlabel(\"$2n-9$\",(1.5,1.5));\nlabel(\"$1$\",(1.5,2.5));\n\nlabel(\"$2$\",(2.5,.5));\nlabel(\"$n$\",(2.5,1.5));\nlabel(\"$n-1$\",(2.5,2.5));\n[/asy]",
+      "answer": "7",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "مجموع الأرقام في كل عم",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "96": {
+      "question": "يقف جيم ومارثا معًا عند زاوية حقل مستطيل. يمشي جيم بشكل قطري عبر الحقل. تصل مارثا إلى نفس الموقع عن طريق المشي على طوله وعرضه. يبلغ عرض الحقل 300 قدم وطوله 400 قدم. كم قدمًا يمشي جيم أقل من مارثا؟",
+      "answer": "200",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لأن جيم يمشي بشكل قط",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "97": {
+      "question": "لتكن $\\omega$ عددًا مركبًا بحيث $\\omega^3 = 1.$ أوجد جميع القيم الممكنة لـ\n\\[\\frac{1}{1 + \\omega} + \\frac{1}{1 + \\omega^2}.\\] أدخل جميع القيم الممكنة، مفصولة بفواصل.",
+      "answer": "1",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "لنبدأ بتحليل المعاد",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "98": {
+      "question": "ما هي أقصر مسافة يمكن قطعها إذا بدأت من أي نقطة، $A$، $B$، $C$، أو $D$، وزرت النقاط الثلاث الأخرى مرة واحدة؟\n\n[asy]\npair A,B,C, D;\nA = (-3,3); B = (3,0); C = (0, -4); D = (0,0);\ndraw(D--B--C--cycle); draw(D--A--B--cycle);draw(D--A--C--cycle);\nlabel(\"$A$\", A, NW);label(\"$B$\", B, E); label(\"$C$\", C, S);label(\"$D$\", D, NE);\nlabel(\"3\", D--B, S); label(\"6\", A--B, NE); label(\"6\", A--C, SW); label(\"4\", D--C, NW+N);\nlabel(\"5\", A--D, SE+NE); label(\"5\", C--B, E);\n[/asy]",
+      "answer": "13",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "بالنسبة للنقطة $",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    }
+  }
+}

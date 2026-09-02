@@ -1,0 +1,1194 @@
+{
+  "accuracy": 0.020202020202020204,
+  "samples": 99,
+  "records": {
+    "0": {
+      "question": "假设在下图中 $\\sin D = 0.7$。那么 $DE$ 是多少？ [asy]\npair D,E,F;\nF = (0,0);\nD = (sqrt(51),7);\nE = (0,7);\ndraw(D--E--F--D);\ndraw(rightanglemark(D,E,F,15));\nlabel(\"$D$\",D,NE);\nlabel(\"$E$\",E,NW);\nlabel(\"$F$\",F,SW);\nlabel(\"$7$\",(E+F)/2,W);\n[/asy]",
+      "answer": "\\sqrt{51}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "利用勾股定理，我们可以",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "1": {
+      "question": "设 $z = 2 + \\sqrt{2} - (3 + 3 \\sqrt{2})i$，设 $c = 2 - 3i$。设 $w$ 是 $z$ 绕 $c$ 逆时针旋转 $\\frac{\\pi}{4}$ 后的结果。\n\n[asy]\nunitsize(0.6 cm);\n\npair C, W, Z;\n\nZ = (2 + sqrt(2), -3 - 3*sqrt(2));\nC = (2,-3);\nW = rotate(45,C)*(Z);\n\ndraw(Z--C--W);\n\ndot(\"$c$\", C, N);\ndot(\"$w$\", W, SE);\ndot(\"$z$\", Z, S);\nlabel(\"$\\frac{\\pi}{4}$\", C + (0.6,-1));\n[/asy]\n\n求 $w$。",
+      "answer": "6 - 5i",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们首先将 $z$ 和",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "2": {
+      "question": "简化 $\\sqrt{242}$。",
+      "answer": "11\\sqrt2",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们可以先分解 242：",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "3": {
+      "question": "8个人围坐在圆桌旁，如果其中3个人——皮埃尔、罗莎和托马斯——都想坐在一起，有多少种不同的坐法？（如果一个坐法是另一个坐法的旋转，则认为它们是相同的。）",
+      "answer": "720",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "让我们分解一下这个问题：",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "4": {
+      "question": "在展开式 $$\\left(10x^3-\\frac{1}{2x^2}\\right)^{5}$$ 中找到常数项",
+      "answer": "-125",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "展开式为 $$\\left(",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "5": {
+      "question": "如果 $n \\equiv 2 \\pmod{7}$，那么当 $(n + 2)(n + 4)(n + 6)$ 被 7 除时，求余数。",
+      "answer": "3",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "由于 $n \\equiv 2 \\",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "6": {
+      "question": "一个正五边形绕其中心逆时针旋转。它至少需要旋转多少度才能与其原始位置重合？",
+      "answer": "72",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "一个正五边形有 5",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "7": {
+      "question": "一个平行四边形的坐标是 (5, 3), (6, 8), (7, 4) 和 $(x, y)$，且 $x > 7$。那么 $x + y$ 的值是多少？",
+      "answer": "17",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "由于平行四边形的对",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "8": {
+      "question": "在直角三角形 $ABC$ 中，$\\angle B = 90^\\circ$，我们有 $\\sin A = 2\\cos A$。那么 $\\tan A$ 是多少？",
+      "answer": "2",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "在直角三角形 $ABC",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "9": {
+      "question": "函数 $f(x)=\\frac{2x}{x^2-5x-14}$ 的图像有垂直渐近线 $x=a$ 和 $x=b$，以及水平渐近线 $y=c$。求 $a+b+c$。",
+      "answer": "5",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "要找到垂直渐近线，我们",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "10": {
+      "question": "在脑海中计算 $99^2+99+1$。",
+      "answer": "9901",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们可以使用算术平方公式来",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "11": {
+      "question": "求最小的正实数 $C$，使得对于所有二维向量 $\\bold{v}$，都有\n\\[\\left\\| \\begin{pmatrix} 2 & 3 \\\\ 0 & -2 \\end{pmatrix} \\bold{v} \\right\\| \\le C \\|\\bold{v}\\|\\]。\n\n注意，对于一个二维向量 $\\mathbf{a}$，$\\|\\mathbf{a}\\|$ 是 $\\mathbf{a}$ 的模。",
+      "answer": "4",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "给定的矩阵是下三",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "12": {
+      "question": "$1^{(2^{235423523})}$ 是多少？",
+      "answer": "1",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们可以通过分析指数的性质",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "13": {
+      "question": "设 $z$ 是一个复数，满足 $z^5 = 1$ 且 $z \\neq 1.$ 计算\n\\[z + \\frac{1}{z} + z^2 + \\frac{1}{z^2}.\\]",
+      "answer": "-1",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "因为 $z^5 = 1",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "14": {
+      "question": "计算 $58_9 - 18_9.$ 用 $9$ 进制表示你的答案。",
+      "answer": "40_9",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "为了解决这个问题，我们需要从右",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "15": {
+      "question": "化简\n\\[\\frac{\\sec x}{\\sin x} - \\frac{\\sin x}{\\cos x}.\\]",
+      "answer": "\\cot x",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们可以将表达式重写",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "16": {
+      "question": "十个treeks的重量相当于三个squigs和一个goolee。两个treeks和一个goolee的重量等于一个squig。多少个treeks的总重量等于一个squig的重量？",
+      "answer": "3",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "让我们一步一步地分析这个问题",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "17": {
+      "question": "$3t^2+5t+a$ 和 $4t^2+bt-2$ 的乘积是 $12t^4+26t^3-8t^2-16t+6$。那么 $a+b$ 是多少？",
+      "answer": "-1",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们知道两个多项式的乘",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "18": {
+      "question": "一个底面为圆形的直立圆柱形水箱正在以每小时 $20\\pi$ 立方米的速度注水。随着水箱的注满，水位以每小时四米的速度上升。水箱的半径是多少米？请用最简根式形式表达你的答案。",
+      "answer": "\\sqrt{5}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "让我们一步一步地分解这个",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "19": {
+      "question": "考虑函数 \\[ f(x) =\n\\begin{cases}\nax^2 & \\text{if } x \\geq a,\\\\\nax +2a& \\text{if } x <a,\n\\end{cases}\n\\]其中 $a$ 是某个数。\n\n求 $a$ 的最大值，使得 $y=f(x)$ 的图像与每一条水平线至少相交一次。",
+      "answer": "2",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "为了求出 $a$ 的最大",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "20": {
+      "question": "对于什么值的 $c$，使得方程 $x^2 - 10x + y^2 + 6y + c = 0$ 的圆的半径长度为 1？",
+      "answer": "33",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "为了找到满足给定条件的",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "21": {
+      "question": "设 $\\lambda$ 为常数，$0 \\le \\lambda \\le 4,$ 定义函数 $f : [0,1] \\to [0,1]$ 为\n\\[f(x) = \\lambda x(1 - x).\\]找出满足以下条件的 $\\lambda$ 的值，$0 \\le \\lambda \\le 4,$ 使得存在 $x \\in [0,1]$ 使得 $f(x) \\neq x$ 且 $f(f(x)) = x.$",
+      "answer": "(3,4]",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "设 $f(f(x))=x",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "22": {
+      "question": "找到最小正角度 $\\theta$ 的度数，使得 \\[\\tan \\theta = \\frac{\\cos 5^\\circ \\cos 20^\\circ + \\cos 35^\\circ \\cos 50^\\circ - \\sin 5^\\circ \\sin 20^\\circ - \\sin 35^\\circ \\sin 50^\\circ}{\\sin 5^\\circ \\cos 20^\\circ - \\sin 35^\\circ \\cos 50^\\circ + \\cos 5^\\circ \\sin 20^\\circ - \\cos 35^\\circ \\sin 50^\\circ}.\\]",
+      "answer": "120^\\circ",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们有\n\\开始{对齐",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "23": {
+      "question": "确定排列单词 ELLIPSE 中字母的不同方式的数量。",
+      "answer": "1260",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "要确定排列单词 ELL",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "24": {
+      "question": "$42!$（42的阶乘）末尾有多少个零？（提示：数字 $n!$ 是从1到 $n$ 的整数的乘积。例如，$5!=5\\cdot 4\\cdot3\\cdot2\\cdot 1= 120$。）",
+      "answer": "9",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "42! 的末尾有多少个",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "25": {
+      "question": "求函数\n\\[f(x,y) = x \\sqrt{1 - y^2} + y \\sqrt{1 - x^2},\\]的最大值，其中 $-1 \\le x,$ $y \\le 1.$",
+      "answer": "1",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们将求函数\n\\[f(x",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "26": {
+      "question": "点 $O,$ $A,$ 和 $B$ 满足 $\\overrightarrow{OA} = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix}$ 和 $\\overrightarrow{OB} = \\begin{pmatrix} -3 \\\\ -2 \\\\ 1 \\end{pmatrix}.$ 求三角形 $OAB$ 的面积。",
+      "answer": "3 \\sqrt{5}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "为了求三角形 $OAB",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "27": {
+      "question": "设 $z$ 是一个复数，使得\n\\[z + \\frac{1}{z} = \\frac{1 + \\sqrt{5}}{2}.\\]求\n\\[z^{85} + \\frac{1}{z^{85}}.\\]",
+      "answer": "-2",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们有\n\\开始{对齐",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "28": {
+      "question": "三角形 $ABC$ 的中线 $AD$、$BE$ 和 $CF$ 在重心 $G$ 处相交。通过 $G$ 且平行于 $BC$ 的直线分别在 $AB$ 和 $AC$ 上与 $M$ 和 $N$ 相交。如果三角形 $ABC$ 的面积为 144，那么求三角形 $ENG$ 的面积。",
+      "answer": "8",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "三角形 $ABC$ 的中",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "29": {
+      "question": "一个书架有3个架子，总共有24本书。顶层架子上有8本推理书。中间架子上有10本数学书。底层架子上有6本科学书。现在每个架子上都拿掉了两本书。剩下的书中，数学书占多少？请用普通分数表示你的答案。",
+      "answer": "\\frac{4}{9}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "顶层架子原有8本",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "30": {
+      "question": "圆锥的体积由公式 $V = \\frac{1}{3}Bh$ 给出，其中 $B$ 是底面积，$h$ 是高。一个圆锥的底面积是 30 平方单位，高是 6.5 单位。它的体积是多少立方单位？",
+      "answer": "65",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "要找到圆锥的体积",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "31": {
+      "question": "如果一个等差数列的第四项是 $200$，第八项是 $500$，那么第六项是多少？",
+      "answer": "350",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "设等差数列的公差",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "32": {
+      "question": "将 $\\frac{21}{2^2 \\cdot 5^7}$ 转换为一个有限小数。",
+      "answer": ".0000672",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们可以先将分子和分",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "33": {
+      "question": "有多少个正的两位数整数是100和150的公因数？",
+      "answer": "3",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "要找到 100 和 150 的",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "34": {
+      "question": "对于多少个正整数 $n>1$，$2^{24}$ 是一个完美的 $n^{\\text{th}}$ 次幂？",
+      "answer": "7",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "为了找到满足 $2^{24",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "35": {
+      "question": "希拉里有十一枚硬币，全部是10美分和5美分硬币。这些硬币总共价值75美分。她有多少枚5美分硬币？",
+      "answer": "7",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "让我们使用变量来表示问题",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "36": {
+      "question": "保罗和杰西各自从前六个质数中随机选择一个数字。他们选择的数字之和为偶数的概率是多少？",
+      "answer": "\\frac{13}{18}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "前六个质数是 2",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "37": {
+      "question": "点 $(a, b)$ 位于方程 $3x + 2y = 12$ 的直线上。当 $a = 4$ 时，$b$ 的值是多少？",
+      "answer": "0",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "为了找到 $b$ 的值，我们",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "38": {
+      "question": "十二个1乘1的正方形组成一个矩形，如图所示。阴影区域的总面积是多少？[asy]\nsize(4cm);defaultpen(linewidth(0.75));\n\n// 填充部分\nfill((0, 4)--(0, 0)--(2, 0)--cycle, gray(0.75));\nfill((0, 4)--(3, 4)--(3, 0)--cycle, gray(0.75));\n\n// 网格\nint j;\nfor (j = 0; j < 4; ++j) {draw((j, 0)--(j, 4));}\nfor (j = 0; j < 5; ++j) {draw((0, j)--(3, j));}\n\n// 对角线\ndraw((0, 4)--(3, 0)); draw((0, 4)--(2, 0));\n[/asy]",
+      "answer": "10",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们可以将阴影区域分成",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "39": {
+      "question": "450 的最小正倍数，其所有数字均为零和一，是多少？",
+      "answer": "11,\\! 111,\\! 111,\\! 100",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "为了找到 450 的最小正",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "40": {
+      "question": "如图所示的轮盘被旋转两次，因此指针指示的数字是随机确定的（轮盘上的每个数字都是等可能的）。以这种方式确定的两个数字被记录下来。第一个数字除以4，确定余数1,2,3中的一个，标记出棋盘的列。第二个数字除以5，确定余数1,2,3,4中的一个，标记出棋盘的行。最后，将一个棋子放在该列和行相交的方格上。问棋子放在棋盘阴影方格上的概率是多少？\n\n[asy]\nunitsize(1cm);\ndraw(Circle((0,0),2),linewidth(0.7));\ndraw((1.7,1)--(-1.7,-1),linewidth(0.7));\ndraw((1.7,-1)--(-1.7,1),linewidth(0.7));\ndraw((0,2)--(0,-2));\nlabel(\"1\",(0.8,0.5),NW);\nlabel(\"2\",(0.8,-0.5),SW);\nlabel(\"6\",(-0.8,0.5),NE);\nlabel(\"9\",(-0.8,-0.5),SE);\nlabel(\"3\",(-0.7,0),W);\nlabel(\"7\",(0.7,0),E);\ndraw((-2.8,0)--(-2.1,0),Arrow);\nlabel(\"Pointer\",(-2.8,0),W);\nfill((3,0)--(3,1)--(4,1)--(4,0)--cycle,gray(0.7));\nfill((3,-2)--(3,-1)--(4,-1)--(4,-2)--cycle,gray(0.7));\nfill((4,1)--(4,2)--(5,2)--(5,1)--cycle,gray(0.7));\nfill((4,-1)--(4,0)--(5,0)--(5,-1)--cycle,gray(0.7));\nfill((5,0)--(5,1)--(6,1)--(6,0)--cycle,gray(0.7));\nfill((5,-2)--(5,-1)--(6,-1)--(6,-2)--cycle,gray(0.7));\ndraw((3,-2)--(3,2)--(6,2)--(6,-2)--cycle,linewidth(0.7));\ndraw((3,-1)--(6,-1),linewidth(0.7));\ndraw((3,0)--(6,0),linewidth(0.7));\ndraw((3,1)--(6,1),linewidth(0.7));\ndraw((4,-2)--(4,2),linewidth(0.7));\ndraw((5,-2)--(5,2),linewidth(0.7));\nlabel(\"1\",(3.5,-2),S);\nlabel(\"2\",(4.5,-2),S);\nlabel(\"3\",(5.5,-2),S);\nlabel(\"1\",(3,-1.5),W);\nlabel(\"2\",(3,-0.5),W);\nlabel(\"3\",(3,0.5),W);\nlabel(\"4\",(3,1.5),W);\n[/asy]",
+      "answer": "\\frac{1}{2}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们来分析一下轮盘的特",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "41": {
+      "question": "在分数 $\\frac{4321}{5^7\\cdot2^8}$ 的有限小数表示中，数字的和是多少？",
+      "answer": "14",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "为了找到 $\\frac{4321}{",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "42": {
+      "question": "求 $\\sin 20^\\circ \\sin 40^\\circ \\sin 60^\\circ \\sin 80^\\circ \\sin 100^\\circ \\sin 120^\\circ \\sin 140^\\circ \\sin 160^\\circ.$",
+      "answer": "\\frac{9}{256}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们可以使用恒等式\n\n$$",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "43": {
+      "question": "对于一个常数 $c$，在柱坐标系 $(r,\\theta,z)$ 中，找出由方程\n\\[z = c.\\] 描述的形状\n(A) 直线\n(B) 圆\n(C) 平面\n(D) 球\n(E) 圆柱\n(F) 圆锥\n\n输入正确选项的字母。",
+      "answer": "\\text{(C)}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "选项 (C) 平面。",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "44": {
+      "question": "如果$\\mathbf{a}$和$\\mathbf{b}$是向量，且$\\|\\mathbf{a}\\| = 2,$ $\\|\\mathbf{b}\\| = 7,$ 并且\n\\[\\mathbf{a} \\times \\mathbf{b} = \\begin{pmatrix} 3 \\\\ 2 \\\\ 6 \\end{pmatrix},\\]那么求$\\mathbf{a}$和$\\mathbf{b}$之间的最小可能角度，以度为单位。",
+      "answer": "30^\\circ",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们有 $\\|\\mathbf{a",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "45": {
+      "question": "设 $f$ 是由 $f(x) = x^3 - 49x^2 + 623x - 2015$ 定义的函数，并且设 $g(x) = f(x + 5)$。计算 $g$ 的根的和。",
+      "answer": "34",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "首先，我们需要找到 $g(x",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "46": {
+      "question": "计算\n\\[\\frac{1}{\\cos^2 10^\\circ} + \\frac{1}{\\sin^2 20^\\circ} + \\frac{1}{\\sin^2 40^\\circ}.\\]",
+      "answer": "12",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们可以利用以下恒等式：",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "47": {
+      "question": "如果一个凸多边形的所有内角之和（除去一个）是 $1070^{\\circ}$，那么这个多边形有多少条边？",
+      "answer": "8",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "一个凸多边形的内",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "48": {
+      "question": "找出唯一的$\\textbf{奇数}$整数$t$，使得$0<t<23$且$t+2$是$t$在模$23$下的逆。",
+      "answer": "17",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "由于$t+2$是$t$",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "49": {
+      "question": "一个体积为 $1$ 立方英尺的立方体的总表面积是多少平方英寸？",
+      "answer": "864 \\mbox{ inches}^2",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们将立方体的边长",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "50": {
+      "question": "计算数 $5+\\sqrt{3}$ 与其共轭根的乘积。",
+      "answer": "22",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "共轭根是指与原",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "51": {
+      "question": "数列1, 3, 5, 7, $\\dots$的第2003项是什么？",
+      "answer": "4005",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "这个数列是等差数列",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "52": {
+      "question": "设 $f(x) = 2x-3$ 且 $g(x) = x+1$。那么 $g(f(5)-1)$ 的值是多少？",
+      "answer": "7",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "首先，我们需要找到 $f(",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "53": {
+      "question": "求解以下方程的所有解\n\\[\\sin \\left( \\tan^{-1} (x) + \\cot^{-1} \\left( \\frac{1}{x} \\right) \\right) = \\frac{1}{3}.\\]输入所有解，用逗号分隔。",
+      "answer": "3 \\pm 2 \\sqrt{2}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们首先分析给定的方程",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "54": {
+      "question": "一条直线由以下方程定义\n\\[\\begin{pmatrix} 3 \\\\ -10 \\\\ 1 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ -9 \\\\ -2 \\end{pmatrix}.\\]另一条直线由以下方程定义\n\\[\\begin{pmatrix} -5 \\\\ -3 \\\\ 6 \\end{pmatrix} + u \\begin{pmatrix} 4 \\\\ -18 \\\\ -4 \\end{pmatrix}.\\]这两条直线是平行的。求这两条直线之间的距离。",
+      "answer": "7",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "为了找到这两条直线之间",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "55": {
+      "question": "考虑以下列点为顶点的矩形区域：$$(5,4), (-5,4), (-5,-4), (5,-4)。$$ 在这个矩形区域的内部，具有整数坐标的点有多少个？",
+      "answer": "63",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "为了解决这个问题，我们需要考虑�",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "56": {
+      "question": "设 $\\mathbf{a},$ $\\mathbf{b},$ $\\mathbf{c}$ 为三个向量，使得\n\\[\\mathbf{a} \\times \\mathbf{b} = \\begin{pmatrix} 6 \\\\ -7 \\\\ 3 \\end{pmatrix}, \\quad \\mathbf{a} \\times \\mathbf{c} = \\begin{pmatrix} 4 \\\\ 7 \\\\ 2 \\end{pmatrix}, \\quad \\mathbf{b} \\times \\mathbf{c} = \\begin{pmatrix} 1 \\\\ -7 \\\\ 18 \\end{pmatrix}.\\]计算 $(2 \\mathbf{b} - \\mathbf{a}) \\times (3 \\mathbf{c} + \\mathbf{a}).$",
+      "answer": "\\begin{pmatrix} -18 \\\\ -49 \\\\ 96 \\end{pmatrix}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "利用向量运算的性质",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "57": {
+      "question": "$\\textbf{胡安的旧邮票收藏地}$\n\n胡安按国家和发行年代整理他的邮票收藏。他在邮票店购买这些邮票的价格是：巴西和法国每张$6$美分，秘鲁每张$4$美分，西班牙每张$5$美分。（巴西和秘鲁是南美国家，法国和西班牙在欧洲。）[asy]\n/* AMC8 2002 #8, 9, 10 Problem */\nsize(3inch, 1.5inch);\nfor ( int y = 0; y <= 5; ++y )\n{\n\ndraw((0,y)--(18,y));\n}\ndraw((0,0)--(0,5));\ndraw((6,0)--(6,5));\ndraw((9,0)--(9,5));\ndraw((12,0)--(12,5));\ndraw((15,0)--(15,5));\ndraw((18,0)--(18,5));\n\nlabel(scale(0.8)*\"50s\", (7.5,4.5));\nlabel(scale(0.8)*\"4\", (7.5,3.5));\nlabel(scale(0.8)*\"8\", (7.5,2.5));\nlabel(scale(0.8)*\"6\", (7.5,1.5));\nlabel(scale(0.8)*\"3\", (7.5,0.5));\n\nlabel(scale(0.8)*\"60s\", (10.5,4.5));\nlabel(scale(0.8)*\"7\", (10.5,3.5));\nlabel(scale(0.8)*\"4\", (10.5,2.5));\nlabel(scale(0.8)*\"4\", (10.5,1.5));\nlabel(scale(0.8)*\"9\", (10.5,0.5));\n\nlabel(scale(0.8)*\"70s\", (13.5,4.5));\nlabel(scale(0.8)*\"12\", (13.5,3.5));\nlabel(scale(0.8)*\"12\", (13.5,2.5));\nlabel(scale(0.8)*\"6\", (13.5,1.5));\nlabel(scale(0.8)*\"13\", (13.5,0.5));\n\nlabel(scale(0.8)*\"80s\", (16.5,4.5));\nlabel(scale(0.8)*\"8\", (16.5,3.5));\nlabel(scale(0.8)*\"15\", (16.5,2.5));\nlabel(scale(0.8)*\"10\", (16.5,1.5));\nlabel(scale(0.8)*\"9\", (16.5,0.5));\n\nlabel(scale(0.8)*\"Country\", (3,4.5));\nlabel(scale(0.8)*\"Brazil\", (3,3.5));\nlabel(scale(0.8)*\"France\", (3,2.5));\nlabel(scale(0.8)*\"Peru\", (3,1.5));\nlabel(scale(0.8)*\"Spain\", (3,0.5));\n\nlabel(scale(0.9)*\"Juan's Stamp Collection\", (9,0), S);\nlabel(scale(0.9)*\"Number of Stamps by Decade\", (9,5), N);\n[/asy] 他$70\\text{'s}$年代邮票的平均价格是多少美分？请将答案四舍五入到最接近的十分之一美分。",
+      "answer": "5.4 \\text{ cents}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "$70\\text{'s}$年代",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "58": {
+      "question": "假设 $ABCD$ 是一个梯形，其中 $\\overline{AD}|| \\overline{BC}$。已知 $\\overline{AC}\\perp\\overline{CD}$，$\\overline{AC}$ 平分角 $\\angle BAD$，且 $[ABCD]=42$，那么计算 $[\\triangle ACD]$。",
+      "answer": "28",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "因为 $\\overline{AC}\\per",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "59": {
+      "question": "如果 $\\frac{\\sqrt{2x}}{\\sqrt{3x-1}}=\\frac32$，求 $x$。请将你的答案以最简分数形式表示。",
+      "answer": "\\frac9{19}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "首先，我们将等式两边",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "60": {
+      "question": "运算 @ 被定义为 $\\frac{m}{n}@\\frac{p}{q} = (m)(p)\\left(\\frac{q}{n}\\right)$，其中 $\\frac{p}{q}$ 是简化分数。求 $\\frac{7}{30}@\\frac{10}{21}$ 的简化值是多少？",
+      "answer": "49",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们有\n\n\\开始{对齐",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "61": {
+      "question": "在一个圆的周长上随机且独立地选择四个点，$A$，$B$，$C$，和 $D$。线段 $AB$ 和 $CD$ 相交的概率是多少？",
+      "answer": "\\frac{1}{3}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们首先考虑圆周上的四",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "62": {
+      "question": "在图中，两个圆的圆心都是 $D$，半径分别为 $1$ 和 $2$。阴影区域的总面积是大圆面积的 $\\frac5{12}$。求（小圆的）$\\angle ADC$ 的度数。",
+      "answer": "120",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "由于大圆的半径是小",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "63": {
+      "question": "一个圆柱形烧杯高8厘米，半径为3厘米。需要多少这样的烧杯水才能装满一个半径为6厘米的球形水箱？",
+      "answer": "4",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "要计算需要多少个圆柱形",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "64": {
+      "question": "计算\n\\[\\sin (\\arcsin 0.4 + \\arcsin 0.5) \\cdot \\sin (\\arcsin 0.5 - \\arcsin 0.4).\\]",
+      "answer": "\\frac{9}{100}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们可以使用以下恒等式：",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "65": {
+      "question": "一辆自行车以每分钟 20 英尺的速度行驶。自行车的速度用每秒多少英寸表示？",
+      "answer": "4",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "首先，我们需要将每分钟的",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "66": {
+      "question": "一个参议院委员会有8名共和党人和6名民主党人。我们可以用多少种方式组成一个有5名成员的小组委员会，并且每个党派至少有一名成员？",
+      "answer": "1940",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "让我们分解一下这个问题：",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "67": {
+      "question": "$513^2 - 487^2$ 的值是多少？",
+      "answer": "26000",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们可以使用二次差的公式",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "68": {
+      "question": "三个连续整数的乘积是120。该乘积除以这三个整数的平均值是24。三个连续整数中最大的数是多少？",
+      "answer": "6",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "设三个连续整数分别为",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "69": {
+      "question": "求正数 $x$，使得 $\\sqrt[3]{x^2 - 4x + 4} = 16$。",
+      "answer": "66",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "首先，我们可以将等式的",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "70": {
+      "question": "化简\n\\[\\cos \\left( \\frac{2 \\pi}{15} \\right) \\cos \\left (\\frac {4 \\pi}{15} \\right) \\cos \\left( \\frac{8 \\pi}{15} \\right) \\cos \\left( \\frac {16 \\pi}{15} \\right).\\]",
+      "answer": "\\frac{1}{16}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们利用乘积积分公式：",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "71": {
+      "question": "三角形 $ABC$ 是等腰三角形，且 $AB=AC$，高 $AM=11$。假设在 $\\overline{AM}$ 上有一点 $D$，使得 $AD=10$ 且 $\\angle BDC=3\\angle BAC$。求三角形 $ABC$ 的周长。\n\n[asy]\nunitsize(0.4 cm);\n\npair A, B, C, D, M;\n\nA = (0,11);\nD = (0,1);\nB = (-11/2,0);\nC = (11/2,0);\nM = (B + C)/2;\n\ndraw(A--B--C--cycle);\ndraw(A--M);\ndraw(B--D--C);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, NW);\nlabel(\"$M$\", M, S);\n[/asy]",
+      "answer": "11 \\sqrt{5} + 11",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "因为三角形 $ABC$ 是",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "72": {
+      "question": "27个连续正整数的和是$3^7$。它们的中位数是多少？",
+      "answer": "81",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们先来算一下27个连",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "73": {
+      "question": "对于哪些实数 $x$，不等式 $-4<x^{4}+4x^{2}<21$ 成立？用区间表示法表达你的答案。",
+      "answer": "(-\\sqrt{3}, \\sqrt{3})",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们先分析不等式 $-",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "74": {
+      "question": "假设 $x,$ $y,$ 和 $z$ 满足以下方程\n\\begin{align*}\nxyz &= 4, \\\\\nx^3 + y^3 + z^3 &= 4, \\\\\nxy^2 + x^2 y + xz^2 + x^2 z + yz^2 + y^2 z &= 12.\n\\end{align*}计算 $xy + yz + zx$ 的值。",
+      "answer": "6",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "利用以下等式\n\\开始{",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "75": {
+      "question": "下表中的数据显示了中央高中学生调查中乘坐公交车的百分比；每个年级调查了300名男生和300名女生。对于哪个年级，其男生乘坐公交车的人数最接近其女生乘坐公交车人数的$135\\%$？ \\begin{tabular}{|l|c|c|}\\hline\n年级 & 男生 & 女生 \\\\ \\hline\n$9^{\\mathrm{th}}$ 年级 & $41.1\\%$ & $39.4\\%$ \\\\ \\hline\n$10^{\\mathrm{th}}$ 年级 & $34.4\\%$ & $33.1\\%$ \\\\ \\hline\n$11^{\\mathrm{th}}$ 年级 & $20.6\\%$ & $13.8\\%$ \\\\ \\hline\n$12^{\\mathrm{th}}$ 年级 & $11.6\\%$ & $8.6\\%$ \\\\ \\hline\n\\end{tabular}",
+      "answer": "12",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "首先，我们需要确定哪个年",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "76": {
+      "question": "求解\n\\[\\frac{|x^2 - 81|}{x^2 - 36x} < 0.\\]",
+      "answer": "(0,9) \\cup (9,36)",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "首先，我们需要找到表达式",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "77": {
+      "question": "一个矩形场地被一个田径跑道包围，如下图所示。跑道由场地的两条边和两个半圆组成。跑道的长度为400米。场地的最大可能面积是多少平方米？\n\n[asy]\nunitsize(1 cm);\n\nfilldraw((0,0)--(3,0)--(3,2)--(0,2)--cycle,lightgreen);\ndraw((0,0)--(3,0),linewidth(2*bp));\ndraw((0,2)--(3,2),linewidth(2*bp));\ndraw(arc((3,1),1,-90,90),linewidth(2*bp));\ndraw(arc((0,1),1,90,270),linewidth(2*bp));\n[/asy]",
+      "answer": "\\frac{20000}{\\pi}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "由于跑道的长度为 400",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "78": {
+      "question": "在$\\triangle{RST}$中，如图所示，$\\sin{R}=\\frac{2}{5}$。那么$\\sin{T}$是多少？\n\n[asy]\npair R,S,T;\nT = (0,0);\nS = (2,0);\nR = (2,sqrt(21));\ndraw(R--S--T--R);\ndraw(rightanglemark(R,S,T,10));\nlabel(\"$T$\",T,SW);\nlabel(\"$S$\",S,SE);\nlabel(\"$R$\",R,NE);\nlabel(\"$5$\",(R+T)/2,NW);\n[/asy]",
+      "answer": "\\frac{\\sqrt{21}}{5}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "因为 $\\triangle{RST}$ 是",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "79": {
+      "question": "原点与图形上点 $y=\\frac{1}{\\sqrt{2}}\\left(x^2-3\\right)$ 之间的最小距离可以表示为 $\\sqrt{a}/b$，其中 $a$ 和 $b$ 是正整数，并且 $a$ 不能被大于一的任何整数的平方整除。求 $a+b$。",
+      "answer": "12",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "为了找到原点与图形上",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "80": {
+      "question": "设$f$由以下方式定义 \\[f(x) = \\left\\{ \\begin{array}{cl} 3-x & \\text{ if } x \\leq 3, \\\\ -x^3+2x^2+3x & \\text{ if } x>3. \\end{array} \\right.\\]计算$f^{-1}(0)+f^{-1}(6)$。",
+      "answer": "0",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "为了找到 $f^{-1}(0",
+          "correct": true
+        }
+      ],
+      "accuracy": 1.0
+    },
+    "81": {
+      "question": "从点 $P$ 到正八面体的五个顶点的距离分别是 3, 7, 8, 9 和 11。求点 $P$ 到第六个顶点的距离。\n\n[asy]\nimport three;\n\nsize(125);\ncurrentprojection = perspective(6,3,1);\n\ntriple A, B, C, D, E, F, P;\n\nA = (1,0,0);\nB = (-1,0,0);\nC = (0,1,0);\nD = (0,-1,0);\nE = (0,0,1);\nF = (0,0,-1);\nP = (1.2,1.5,1);\n\ndraw(A--P,red);\ndraw(B--P,red);\ndraw(C--P,red);\ndraw(D--P,red);\ndraw(E--P,red);\ndraw(F--P,red);\n\ndraw(A--C);\ndraw(A--D);\ndraw(A--E);\ndraw(A--F);\ndraw(C--E--D--F--cycle);\ndraw(D--B--C,dashed);\ndraw(B--C,dashed);\ndraw(B--D,dashed);\ndraw(B--E,dashed);\ndraw(B--F,dashed);\n\nlabel(\"$P$\", P, NE);\n[/asy]",
+      "answer": "\\sqrt{66}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "让我们先了解一下正八面",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "82": {
+      "question": "众所周知的物理公式是力等于质量乘以加速度。珍想用与杰克投掷棒球相同的力来投掷垒球。如果垒球的质量是$200$克，而棒球的质量是$150$克，那么珍的球的加速度与杰克的球的加速度的比率是多少？请以最简分数形式作答。",
+      "answer": "\\frac 34",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "为了解决这个问题，我们首先需要",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "83": {
+      "question": "在 $629_{10}$ 的七进制和八进制表示中，有多少个相同的数字？例如，$121_{3}$ 和 $413_{5}$ 会有一个共同的数字。",
+      "answer": "3",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "为了找到 $629_{10}$ 在",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "84": {
+      "question": "六位女巫和十位巫师在一个神秘的聚会上。女巫们决定与每位巫师握手。女巫们没有互相握手，因为她们已经是好朋友了，而巫师们彼此有些讨厌，没有与其他巫师握手。在聚会上总共进行了多少次握手？",
+      "answer": "60",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "让我们一步一步地分析这个问题",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "85": {
+      "question": "设 $f(x)$ 为多项式 \\[f(x)=3x^4+5x^2-9x-2.\\] 如果 $g(x)$ 等于多项式 $f(x-1)$，那么 $g$ 的系数之和是多少？",
+      "answer": "-2",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "首先，我们将 $f(x)$",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "86": {
+      "question": "从点 $(6, 0)$ 到直线 $y = 2x-2$ 的最短距离是多少？请用最简根式形式表达你的答案。",
+      "answer": "2\\sqrt{5}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们先找到直线与 x �",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "87": {
+      "question": "复数 $\\alpha_1, \\alpha_2, \\alpha_3$ 和 $\\alpha_4$ 是方程 $x^4+2x^3+2=0$ 的四个不同的根。确定无序集合 \\[\n\\{\\alpha_1\\alpha_2 + \\alpha_3\\alpha_4, \\alpha_1\\alpha_3 + \\alpha_2\\alpha_4, \\alpha_1\\alpha_4 + \\alpha_2\\alpha_3\\}。\n\\]",
+      "answer": "\\{1\\pm\\sqrt{5},-2\\}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "根据韦达公式，方程",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "88": {
+      "question": "三支铅笔和一个大橡皮的价格是$\\$1.24$。五支铅笔和一个大橡皮的价格是$\\$1.82$。所有价格均不含税。铅笔的价格是多少美分？",
+      "answer": "29",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "假设铅笔的价格为",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "89": {
+      "question": "在小数 $\\frac{137}{500}$ 的小数展开中，小数点右边的最后一个非零数字是什么？",
+      "answer": "4",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们可以将 137 除以",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "90": {
+      "question": "矩形 $ABCD$ 的中心为 $O$，且 $AB/AD=k$。从矩形 $ABCD$ 的内部随机选择一个点。求该点距离 $O$ 比距离四个顶点中的任何一个都近的概率是多少？ [asy]\nsize(200);\ndraw((-250,100)--(250,100)--(250,-100)--(-250,-100)--cycle);\ndot((0,0));\nlabel(\"$O$\",(0,0),N);\nlabel(\"$A$\",(-250,100),NW); label(\"$B$\",(250,100),NE); label(\"$C$\",(250,-100),SE); label(\"$D$\",(-250,-100),SW);[/asy]",
+      "answer": "\\frac{1}{2}",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "令 $M$ 为 $AB$",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "91": {
+      "question": "确定 54 (mod 6) 的余数。",
+      "answer": "0",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "要确定 54 (mod 6",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "92": {
+      "question": "设 \\[f(n) = \\left\\{\n\\begin{array}{cl}\n\\lfloor n \\rfloor & \\text{ if }n \\geq 4, \\\\\n\\lceil n \\rceil & \\text{ if } n < 4.\n\\end{array}\n\\right.\\]求 $f\\left(\\frac{\\pi}{3}\\right) + f(\\sqrt{45}) + f(8^{2/3})$。",
+      "answer": "12",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "我们有\n\\开始{对齐",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "93": {
+      "question": "Linda、Sherry、June 和 Connie 在她们的社区里走动，销售女童子军饼干。Linda 赚了 \\$27.47，Sherry 赚了 \\$35.23，June 赚了 \\$37.37，Connie 赚了 \\$26.52。销售结束后，她们把钱凑在一起，去银行把硬币换成纸币。换成纸币后，还剩下多少美分？",
+      "answer": "59",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "首先，我们需要计算四位女",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "94": {
+      "question": "一个有30名学生的班级最近参加了一次考试。如果20名学生得了80分，8名学生得了90分，2名学生得了100分，那么这次考试的班级平均分（即平均值）是多少？",
+      "answer": "84",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "要计算班级平均分，我们需要",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "95": {
+      "question": "下面是一个幻方，这意味着每一行、每一列以及两个主对角线上的数字之和都是相等的。$n$ 的值是多少？\n\n[asy]size(125);\nfor(int i = 0; i<4; ++i)\n{\n\ndraw((0,i)--(3,i),linewidth(1));\n}\n\nfor(int j = 0; j<4; ++j)\n{\n\ndraw((j,0)--(j,3),linewidth(1));\n}\n\nlabel(\"$n-3$\",(.5,.5));\nlabel(\"3\",(.5,1.5));\nlabel(\"$n+1$\",(.5,2.5));\n\nlabel(\"$n+2$\",(1.5,.5));\nlabel(\"$2n-9$\",(1.5,1.5));\nlabel(\"$1$\",(1.5,2.5));\n\nlabel(\"$2$\",(2.5,.5));\nlabel(\"$n$\",(2.5,1.5));\nlabel(\"$n-1$\",(2.5,2.5));\n[/asy]",
+      "answer": "7",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "从上图中，我们可以看出",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "96": {
+      "question": "吉姆和玛莎一起站在一个矩形田地的角落。吉姆沿对角线穿过田地。玛莎则沿着田地的长和宽走到同一个位置。田地宽300英尺，长400英尺。吉姆比玛莎少走多少英尺？",
+      "answer": "200",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "首先，我们需要计算吉姆沿",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "97": {
+      "question": "设 $\\omega$ 是一个复数，满足 $\\omega^3 = 1.$ 求\n\\[\\frac{1}{1 + \\omega} + \\frac{1}{1 + \\omega^2}.\\] 的所有可能值。请用逗号分隔所有可能的值。",
+      "answer": "1",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "由于 $\\omega^3 = 1",
+          "correct": true
+        }
+      ],
+      "accuracy": 1.0
+    },
+    "98": {
+      "question": "如果从任意一点 $A$、$B$、$C$ 或 $D$ 出发，并访问其他三个点各一次，最短的行程距离是多少？\n\n[asy]\npair A,B,C, D;\nA = (-3,3); B = (3,0); C = (0, -4); D = (0,0);\ndraw(D--B--C--cycle); draw(D--A--B--cycle);draw(D--A--C--cycle);\nlabel(\"$A$\", A, NW);label(\"$B$\", B, E); label(\"$C$\", C, S);label(\"$D$\", D, NE);\nlabel(\"3\", D--B, S); label(\"6\", A--B, NE); label(\"6\", A--C, SW); label(\"4\", D--C, NW+N);\nlabel(\"5\", A--D, SE+NE); label(\"5\", C--B, E);\n[/asy]",
+      "answer": "13",
+      "predictions": [
+        {
+          "template_id": 0,
+          "prediction": "最短的行程距离是 $\\",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    }
+  }
+}

@@ -6,7 +6,6 @@ __pycache__/
 
 # Data
 models/
-results/
 data/quantization/wikimedia
 logs/
 run_*.sh
