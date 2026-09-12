@@ -1,4 +1,4 @@
-"""Layer/module precision-recovery experiments for the MCLM dataset."""
+"""Layer/module precision-recovery experiments for supported datasets."""
 
 import argparse
 import copy
@@ -37,7 +37,12 @@ STAGE_ONE_MODULES = {
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Run FP16 module-recovery experiments on a quantized MCLM model."
+        description="Run FP16 module-recovery experiments on a quantized model."
+    )
+    parser.add_argument(
+        "--dataset_type",
+        required=True,
+        choices=("klar", "include", "mclm"),
     )
     parser.add_argument("--checkpoint", required=True)
     parser.add_argument("--fp16_checkpoint", required=True)
@@ -52,6 +57,14 @@ def parse_args():
         nargs="?",
         const=True,
         default=False,
+    )
+    parser.add_argument(
+        "--calculate_ppl",
+        type=evaluation.str2bool,
+        nargs="?",
+        const=True,
+        default=False,
+        help="Calculate PPL for KLAR/INCLUDE (default: False).",
     )
     parser.add_argument("--num_layer_groups", type=int, default=4)
     parser.add_argument(
@@ -288,27 +301,56 @@ def evaluate_experiment(
     for lang in args.languages.split(","):
         print(f"[{experiment['name']}] Evaluating {lang}")
         samples = build_samples(dataset_full, lang, dataset_prompt)
-        records = evaluation.inference(
-            samples=samples,
-            tokenizer=tokenizer,
-            model=model,
-            model_type=args.model_type,
-            enable_thinking=args.enable_thinking,
-            batch_size=args.batch_size,
-            max_new_tokens=args.max_new_tokens,
-            record_output_tokens=True,
-        )
+        if args.dataset_type == "include":
+            records, ppl_result = evaluation.inference_include(
+                samples=samples,
+                tokenizer=tokenizer,
+                model=model,
+                model_type=args.model_type,
+                batch_size=args.batch_size,
+                calculate_ppl=args.calculate_ppl,
+            )
+        else:
+            records = evaluation.inference(
+                samples=samples,
+                tokenizer=tokenizer,
+                model=model,
+                model_type=args.model_type,
+                enable_thinking=args.enable_thinking,
+                batch_size=args.batch_size,
+                max_new_tokens=args.max_new_tokens,
+                record_output_tokens=args.dataset_type == "mclm",
+            )
+            ppl_result = (
+                evaluation.calculate_ppl(
+                    args.dataset_type,
+                    samples,
+                    records,
+                    tokenizer,
+                    model,
+                    args.model_type,
+                    args.batch_size,
+                )
+                if args.calculate_ppl
+                else None
+            )
+
         accuracy = evaluation.evaluate(records)
-        length_metrics = evaluation.calculate_mclm_length_metrics(records)
         result = {
             "accuracy": accuracy,
             "samples": len(records),
-            "generation_length_metrics": length_metrics,
             "records": records,
         }
+        if ppl_result is not None:
+            result["ppl"] = ppl_result["ppl"]
+            result["ppl_metrics"] = ppl_result
+        if args.dataset_type == "mclm":
+            length_metrics = evaluation.calculate_mclm_length_metrics(records)
+            result["generation_length_metrics"] = length_metrics
+            total_tokens += length_metrics["total_generated_tokens"]
+            total_instances += length_metrics["instances"]
+
         language_results[lang] = result
-        total_tokens += length_metrics["total_generated_tokens"]
-        total_instances += length_metrics["instances"]
 
         os.makedirs(output_dir, exist_ok=True)
         with open(
@@ -321,22 +363,39 @@ def evaluate_experiment(
     macro_accuracy = sum(
         result["accuracy"] for result in language_results.values()
     ) / len(language_results)
-    return {
+    aggregate = {
         "macro_accuracy": macro_accuracy,
-        "total_generated_tokens": total_tokens,
-        "mean_generated_tokens": total_tokens / total_instances,
-        "generation_instances": total_instances,
         "languages": {
             lang: {
                 "accuracy": result["accuracy"],
                 "samples": result["samples"],
-                "mean_generated_tokens": result[
-                    "generation_length_metrics"
-                ]["mean_generated_tokens"],
+                **(
+                    {
+                        "ppl": result["ppl"]
+                    }
+                    if "ppl" in result
+                    else {}
+                ),
+                **(
+                    {
+                        "mean_generated_tokens": result[
+                            "generation_length_metrics"
+                        ]["mean_generated_tokens"]
+                    }
+                    if "generation_length_metrics" in result
+                    else {}
+                ),
             }
             for lang, result in language_results.items()
         },
     }
+    if args.dataset_type == "mclm":
+        aggregate.update({
+            "total_generated_tokens": total_tokens,
+            "mean_generated_tokens": total_tokens / total_instances,
+            "generation_instances": total_instances,
+        })
+    return aggregate
 
 
 def main():
@@ -361,7 +420,7 @@ def main():
         torch.cuda.manual_seed_all(args.seed)
 
     languages = args.languages.split(",")
-    dataset_full, dataset_prompt = get_dataset("mclm", languages)
+    dataset_full, dataset_prompt = get_dataset(args.dataset_type, languages)
     reference_model = load_fp16_reference(args.fp16_checkpoint)
     reference_layers, layer_path = find_decoder_layers(reference_model)
     num_layers = len(reference_layers)
@@ -374,7 +433,7 @@ def main():
     recovery_root = os.path.join(
         args.save_path,
         "recovery",
-        "mclm",
+        args.dataset_type,
         args.model_type,
         args.quant_type,
     )
@@ -383,6 +442,7 @@ def main():
     summary = {
         "checkpoint": args.checkpoint,
         "fp16_checkpoint": args.fp16_checkpoint,
+        "dataset_type": args.dataset_type,
         "quant_type": args.quant_type,
         "model_type": args.model_type,
         "languages": languages,
@@ -438,16 +498,18 @@ def main():
         if experiment["name"] == "quant_baseline":
             quant_baseline = aggregate
             result_summary["accuracy_difference"] = 0.0
-            result_summary["mean_generated_tokens_difference"] = 0.0
+            if args.dataset_type == "mclm":
+                result_summary["mean_generated_tokens_difference"] = 0.0
         else:
             result_summary["accuracy_difference"] = (
                 aggregate["macro_accuracy"]
                 - quant_baseline["macro_accuracy"]
             )
-            result_summary["mean_generated_tokens_difference"] = (
-                aggregate["mean_generated_tokens"]
-                - quant_baseline["mean_generated_tokens"]
-            )
+            if args.dataset_type == "mclm":
+                result_summary["mean_generated_tokens_difference"] = (
+                    aggregate["mean_generated_tokens"]
+                    - quant_baseline["mean_generated_tokens"]
+                )
 
         summary["experiments"][experiment["name"]] = result_summary
         with open(
