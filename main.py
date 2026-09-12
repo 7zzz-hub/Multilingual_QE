@@ -38,7 +38,13 @@ def parse_args():
     parser.add_argument("--save_path", default="results")
     parser.add_argument("--enable_thinking", default=False)
     parser.add_argument("--max_new_tokens", type=int, required=True)
-    parser.add_argument("--calculate_ppl", type=str2bool, default=False, help="Calculate PPL for KLAR/INCLUDE (default: False)."
+    parser.add_argument(
+        "--calculate_ppl",
+        type=str2bool,
+        nargs="?",
+        const=True,
+        default=False,
+        help="Calculate PPL for KLAR/INCLUDE (default: False)."
     )
     
 
