@@ -15,6 +15,17 @@ from transformers import (
 )
 
 
+def str2bool(value):
+    if isinstance(value, bool):
+        return value
+    value = value.lower()
+    if value in {"true", "1", "yes", "y"}:
+        return True
+    if value in {"false", "0", "no", "n"}:
+        return False
+    raise argparse.ArgumentTypeError("Expected a boolean value.")
+
+
 def parse_args():
     parser = argparse.ArgumentParser()
 
@@ -27,13 +38,49 @@ def parse_args():
     parser.add_argument("--save_path", default="results")
     parser.add_argument("--enable_thinking", default=False)
     parser.add_argument("--max_new_tokens", type=int, required=True)
+    parser.add_argument("--calculate_ppl", type=str2bool, default=False, help="Calculate PPL for KLAR/INCLUDE (default: False)."
+    )
     
 
     return parser.parse_args()
 
 
+def count_generated_tokens(token_ids, tokenizer, model):
+    """Count generated model tokens before EOS/padding."""
+    eos_token_ids = getattr(model.generation_config, "eos_token_id", None)
+    if eos_token_ids is None:
+        eos_token_ids = tokenizer.eos_token_id
+    if eos_token_ids is None:
+        eos_token_ids = set()
+    elif isinstance(eos_token_ids, int):
+        eos_token_ids = {eos_token_ids}
+    else:
+        eos_token_ids = set(eos_token_ids)
+
+    count = 0
+    for token_id in token_ids.tolist():
+        if token_id in eos_token_ids:
+            break
+        if (
+            tokenizer.pad_token_id is not None
+            and token_id == tokenizer.pad_token_id
+        ):
+            break
+        count += 1
+    return count
+
+
 @torch.no_grad()
-def inference(samples, tokenizer, model, model_type, enable_thinking, batch_size, max_new_tokens):
+def inference(
+    samples,
+    tokenizer,
+    model,
+    model_type,
+    enable_thinking,
+    batch_size,
+    max_new_tokens,
+    record_output_tokens=False
+):
 
     records = {}
     for i in tqdm(
@@ -65,6 +112,15 @@ def inference(samples, tokenizer, model, model_type, enable_thinking, batch_size
         )
         
         input_length = inputs["input_ids"].shape[1]
+        generated_ids = outputs[:, input_length:]
+        generated_token_counts = (
+            [
+                count_generated_tokens(token_ids, tokenizer, model)
+                for token_ids in generated_ids
+            ]
+            if record_output_tokens
+            else [None] * len(batch)
+        )
         
         preds = [
             tokenizer.decode(
@@ -74,7 +130,9 @@ def inference(samples, tokenizer, model, model_type, enable_thinking, batch_size
             for output in outputs
         ]
 
-        for item, pred in zip(batch, preds):
+        for item, pred, generated_tokens in zip(
+            batch, preds, generated_token_counts
+        ):
             sid = item["sid"]
             if sid not in records:
                 records[sid] = {
@@ -83,13 +141,14 @@ def inference(samples, tokenizer, model, model_type, enable_thinking, batch_size
                     "predictions": []
                 }
             correct = item["answer"] in pred
-            records[sid]["predictions"].append(
-                {
-                    "template_id": item["tid"],
-                    "prediction": pred,
-                    "correct": correct
-                }
-            )
+            prediction_record = {
+                "template_id": item["tid"],
+                "prediction": pred,
+                "correct": correct
+            }
+            if record_output_tokens:
+                prediction_record["generated_tokens"] = generated_tokens
+            records[sid]["predictions"].append(prediction_record)
 
     return records
 
@@ -248,7 +307,14 @@ def normalize_include_answer(answer):
 
 
 @torch.no_grad()
-def inference_include(samples, tokenizer, model, model_type, batch_size):
+def inference_include(
+    samples,
+    tokenizer,
+    model,
+    model_type,
+    batch_size,
+    calculate_ppl=False
+):
     """Use one prompt forward pass for INCLUDE prediction and choice-PPL."""
     choices = ["A", "B", "C", "D"]
     records = {}
@@ -278,7 +344,11 @@ def inference_include(samples, tokenizer, model, model_type, batch_size):
         # Inputs are left padded, so the last position is the next-token
         # prediction position for every prompt in the batch.
         next_token_logits = outputs.logits[:, -1, :].float()
-        vocabulary_logprobs = F.log_softmax(next_token_logits, dim=-1)
+        vocabulary_logprobs = (
+            F.log_softmax(next_token_logits, dim=-1)
+            if calculate_ppl
+            else None
+        )
 
         for row, sample in enumerate(batch):
             prompt = render_generation_prompt(
@@ -316,7 +386,6 @@ def inference_include(samples, tokenizer, model, model_type, batch_size):
                     )
                 choice_token_ids.append(continuation_ids[0])
 
-            raw_logprobs = vocabulary_logprobs[row, choice_token_ids]
             normalized_logprobs = F.log_softmax(
                 next_token_logits[row, choice_token_ids], dim=0
             )
@@ -326,7 +395,8 @@ def inference_include(samples, tokenizer, model, model_type, batch_size):
             prediction_index = normalized_logprobs.argmax().item()
             prediction = choices[prediction_index]
             choice_nll = -normalized_logprobs[gold_index].item()
-            total_choice_nll += choice_nll
+            if calculate_ppl:
+                total_choice_nll += choice_nll
 
             sid = sample["sid"]
             if sid not in records:
@@ -335,31 +405,38 @@ def inference_include(samples, tokenizer, model, model_type, batch_size):
                     "answer": sample["answer"],
                     "predictions": []
                 }
-            records[sid]["predictions"].append({
+            prediction_record = {
                 "template_id": sample["tid"],
                 "prediction": prediction,
                 "correct": prediction == gold,
-                "choice_nll": choice_nll,
-                "choice_ppl": math.exp(choice_nll),
-                "choice_probability": math.exp(-choice_nll),
-                "candidate_logprobs": {
+            }
+            if calculate_ppl:
+                raw_logprobs = vocabulary_logprobs[row, choice_token_ids]
+                prediction_record.update({
+                    "choice_nll": choice_nll,
+                    "choice_ppl": math.exp(choice_nll),
+                    "choice_probability": math.exp(-choice_nll),
+                    "candidate_logprobs": {
                     choice: raw_logprobs[index].item()
                     for index, choice in enumerate(choices)
-                },
-                "candidate_probabilities": {
-                    choice: normalized_logprobs[index].exp().item()
-                    for index, choice in enumerate(choices)
-                },
-            })
+                    },
+                    "candidate_probabilities": {
+                        choice: normalized_logprobs[index].exp().item()
+                        for index, choice in enumerate(choices)
+                    },
+                })
+            records[sid]["predictions"].append(prediction_record)
 
-    mean_choice_nll = total_choice_nll / len(samples)
-    ppl_result = {
-        "ppl_type": "abcd_normalized_choice_ppl",
-        "ppl": math.exp(mean_choice_nll),
-        "mean_choice_nll": mean_choice_nll,
-        "instances": len(samples),
-        "single_forward_per_prompt": True,
-    }
+    ppl_result = None
+    if calculate_ppl:
+        mean_choice_nll = total_choice_nll / len(samples)
+        ppl_result = {
+            "ppl_type": "abcd_normalized_choice_ppl",
+            "ppl": math.exp(mean_choice_nll),
+            "mean_choice_nll": mean_choice_nll,
+            "instances": len(samples),
+            "single_forward_per_prompt": True,
+        }
     return records, ppl_result
 
 
@@ -396,6 +473,28 @@ def evaluate(records):
         scores.append(sample_acc)
         
     return sum(scores) / len(scores)
+
+
+def calculate_mclm_length_metrics(records):
+    current_lengths = []
+
+    for item in records.values():
+        question_current_lengths = []
+
+        for prediction in item["predictions"]:
+            current_length = prediction["generated_tokens"]
+            current_lengths.append(current_length)
+            question_current_lengths.append(current_length)
+
+        item["mean_generated_tokens"] = (
+            sum(question_current_lengths) / len(question_current_lengths)
+        )
+
+    return {
+        "instances": len(current_lengths),
+        "total_generated_tokens": sum(current_lengths),
+        "mean_generated_tokens": sum(current_lengths) / len(current_lengths),
+    }
 
 
 
@@ -440,7 +539,8 @@ def main():
                 tokenizer,
                 model,
                 args.model_type,
-                args.batch_size
+                args.batch_size,
+                calculate_ppl=args.calculate_ppl
             )
         else:
             records = inference(
@@ -450,19 +550,28 @@ def main():
                 args.model_type,
                 args.enable_thinking,
                 args.batch_size,
-                args.max_new_tokens
+                args.max_new_tokens,
+                record_output_tokens=args.dataset_type == "mclm"
             )
-            ppl_result = calculate_ppl(
-                args.dataset_type,
-                samples,
-                records,
-                tokenizer,
-                model,
-                args.model_type,
-                args.batch_size
+            ppl_result = (
+                calculate_ppl(
+                    args.dataset_type,
+                    samples,
+                    records,
+                    tokenizer,
+                    model,
+                    args.model_type,
+                    args.batch_size
+                )
+                if args.calculate_ppl
+                else None
             )
 
         acc = evaluate(records)
+        mclm_length_metrics = None
+        if args.dataset_type == "mclm":
+            mclm_length_metrics = calculate_mclm_length_metrics(records)
+
         final_results[lang] = {
             "accuracy": acc,
             "samples": len(records),
@@ -472,10 +581,19 @@ def main():
         if ppl_result is not None:
             final_results[lang]["ppl"] = ppl_result["ppl"]
             final_results[lang]["ppl_metrics"] = ppl_result
+        if mclm_length_metrics is not None:
+            final_results[lang]["generation_length_metrics"] = (
+                mclm_length_metrics
+            )
 
         print(f"{lang} accuracy: {acc:.4f}")
         if ppl_result is not None:
             print(f"{lang} PPL: {ppl_result['ppl']:.4f}")
+        if mclm_length_metrics is not None:
+            print(
+                f"{lang} mean generated tokens: "
+                f"{mclm_length_metrics['mean_generated_tokens']:.2f}"
+            )
 
         save_results(final_results[lang], lang, args)
         
