@@ -1,0 +1,114 @@
+{
+  "format_version": 1,
+  "languages": [
+    "ca",
+    "en",
+    "es",
+    "fr",
+    "hu",
+    "nl",
+    "tr",
+    "ar",
+    "el",
+    "he",
+    "ja",
+    "ko",
+    "zh"
+  ],
+  "samples_per_language_requested": 1000,
+  "seed": 42,
+  "source_root": "/root/autodl-tmp/data/quantization/wikimedia",
+  "files": {
+    "ca": {
+      "path": "ca.jsonl",
+      "records": 1000,
+      "source_parquet_files": [
+        "/root/autodl-tmp/data/quantization/wikimedia/20231101.ca/train-00000-of-00004.parquet"
+      ]
+    },
+    "en": {
+      "path": "en.jsonl",
+      "records": 1000,
+      "source_parquet_files": [
+        "/root/autodl-tmp/data/quantization/wikimedia/20231101.en/train-00001-of-00041.parquet"
+      ]
+    },
+    "es": {
+      "path": "es.jsonl",
+      "records": 1000,
+      "source_parquet_files": [
+        "/root/autodl-tmp/data/quantization/wikimedia/20231101.es/train-00002-of-00013.parquet"
+      ]
+    },
+    "fr": {
+      "path": "fr.jsonl",
+      "records": 1000,
+      "source_parquet_files": [
+        "/root/autodl-tmp/data/quantization/wikimedia/20231101.fr/train-00004-of-00017.parquet"
+      ]
+    },
+    "hu": {
+      "path": "hu.jsonl",
+      "records": 1000,
+      "source_parquet_files": [
+        "/root/autodl-tmp/data/quantization/wikimedia/20231101.hu/train-00000-of-00004.parquet"
+      ]
+    },
+    "nl": {
+      "path": "nl.jsonl",
+      "records": 1000,
+      "source_parquet_files": [
+        "/root/autodl-tmp/data/quantization/wikimedia/20231101.nl/train-00000-of-00006.parquet"
+      ]
+    },
+    "tr": {
+      "path": "tr.jsonl",
+      "records": 1000,
+      "source_parquet_files": [
+        "/root/autodl-tmp/data/quantization/wikimedia/20231101.tr/train-00000-of-00002.parquet"
+      ]
+    },
+    "ar": {
+      "path": "ar.jsonl",
+      "records": 1000,
+      "source_parquet_files": [
+        "/root/autodl-tmp/data/quantization/wikimedia/20231101.ar/train-00000-of-00007.parquet"
+      ]
+    },
+    "el": {
+      "path": "el.jsonl",
+      "records": 1000,
+      "source_parquet_files": [
+        "/root/autodl-tmp/data/quantization/wikimedia/20231101.el/train-00000-of-00003.parquet"
+      ]
+    },
+    "he": {
+      "path": "he.jsonl",
+      "records": 1000,
+      "source_parquet_files": [
+        "/root/autodl-tmp/data/quantization/wikimedia/20231101.he/train-00000-of-00004.parquet"
+      ]
+    },
+    "ja": {
+      "path": "ja.jsonl",
+      "records": 1000,
+      "source_parquet_files": [
+        "/root/autodl-tmp/data/quantization/wikimedia/20231101.ja/train-00000-of-00015.parquet"
+      ]
+    },
+    "ko": {
+      "path": "ko.jsonl",
+      "records": 1000,
+      "source_parquet_files": [
+        "/root/autodl-tmp/data/quantization/wikimedia/20231101.ko/train-00000-of-00003.parquet"
+      ]
+    },
+    "zh": {
+      "path": "zh.jsonl",
+      "records": 1000,
+      "source_parquet_files": [
+        "/root/autodl-tmp/data/quantization/wikimedia/20231101.zh/train-00000-of-00006.parquet"
+      ]
+    }
+  }
+}
