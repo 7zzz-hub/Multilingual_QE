@@ -4,7 +4,7 @@ import json
 LABELS = ["A", "B", "C", "D"]
 
 
-class IncludeDataset:
+class BelebeleDataset:
     def __init__(self, data_dir="data/include", languages=None):
         self.data_dir = data_dir
         self.languages = languages
