@@ -1,5 +1,5 @@
 import json
-from dataset_loader import KLARDataset, IncludeDataset, MCLMDataset
+from dataset_loader import KLARDataset, IncludeDataset, MCLMDataset, BelebeleDataset
 
 from transformers import (
     AutoTokenizer,
@@ -19,6 +19,13 @@ def get_dataset(dataset_name, languages):
         
     elif dataset_name == "include":
         dataset = IncludeDataset(
+            data_dir=f"data/{dataset_name}",
+            languages=languages
+        ).load()
+        return dataset, None
+
+    elif dataset_name == "belebele":
+        dataset = BelebeleDataset(
             data_dir=f"data/{dataset_name}",
             languages=languages
         ).load()
