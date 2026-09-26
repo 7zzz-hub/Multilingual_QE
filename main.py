@@ -36,8 +36,14 @@ def parse_args():
     parser.add_argument("--languages", required=True)
     parser.add_argument("--batch_size", type=int, default=16)
     parser.add_argument("--save_path", default="results")
-    parser.add_argument("--enable_thinking", default=False)
     parser.add_argument("--max_new_tokens", type=int, required=True)
+    parser.add_argument(
+        "--enable_thinking",
+        type=str2bool,
+        nargs="?",
+        const=True,
+        default=False,
+    )
     parser.add_argument(
         "--calculate_ppl",
         type=str2bool,
