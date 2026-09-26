@@ -311,7 +311,7 @@ def calculate_klar_ppl(samples, records, tokenizer, model, model_type, batch_siz
     }
 
 
-def normalize_include_answer(answer):
+def normalize_option_answer(answer):
     answer = str(answer).strip().upper()
     if answer and answer[0] in "ABCD":
         return answer[0]
@@ -319,7 +319,7 @@ def normalize_include_answer(answer):
 
 
 @torch.no_grad()
-def inference_include(
+def inference_option(
     samples,
     tokenizer,
     model,
@@ -402,7 +402,7 @@ def inference_include(
                 next_token_logits[row, choice_token_ids], dim=0
             )
 
-            gold = normalize_include_answer(sample["answer"])
+            gold = normalize_option_answer(sample["answer"])
             gold_index = choices.index(gold)
             prediction_index = normalized_logprobs.argmax().item()
             prediction = choices[prediction_index]
@@ -545,8 +545,8 @@ def main():
         print(f"\nEvaluating {lang}")
 
         samples = build_samples(dataset_full, lang, dataset_prompt)
-        if args.dataset_type == "include":
-            records, ppl_result = inference_include(
+        if args.dataset_type in ["include", "belebele"]:
+            records, ppl_result = inference_option(
                 samples,
                 tokenizer,
                 model,
