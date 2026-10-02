@@ -545,7 +545,7 @@ def main():
         print(f"\nEvaluating {lang}")
 
         samples = build_samples(dataset_full, lang, dataset_prompt)
-        if args.dataset_type in ["include", "belebele"]:
+        if args.dataset_type in ["include", "belebele", "piqa"]:
             records, ppl_result = inference_option(
                 samples,
                 tokenizer,

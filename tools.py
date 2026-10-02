@@ -1,5 +1,5 @@
 import json
-from dataset_loader import KLARDataset, IncludeDataset, MCLMDataset, BelebeleDataset
+from dataset_loader import KLARDataset, IncludeDataset, MCLMDataset, BelebeleDataset, PIQADataset
 
 from transformers import (
     AutoTokenizer,
