@@ -30,6 +30,13 @@ def get_dataset(dataset_name, languages):
             languages=languages
         ).load()
         return dataset, None
+
+    elif dataset_name == "piqa":
+        dataset = PIQADataset(
+            data_dir=f"data/{dataset_name}",
+            languages=languages
+        ).load()
+        return dataset, None
         
     elif dataset_name == "mclm":
         dataset = MCLMDataset(
